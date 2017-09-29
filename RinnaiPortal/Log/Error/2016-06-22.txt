@@ -1,0 +1,24 @@
+2016-06-22 15:13:29.4439|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:13:37.7835|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:13:57.9265|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:14:32.4114|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:16:16.3977|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:17:05.2454|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:17:40.2914|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:18:43.4676|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:20:04.8273|ERROR|
+{"ErrorMessage":"員工編號00554，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:21:10.1180|ERROR|
+{"ErrorMessage":"員工編號00554，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:21:54.5612|ERROR|
+{"ErrorMessage":"員工編號00554，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-22 15:50:31.5564|ERROR|
+{"ErrorMessage":"員工編號00554，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|

@@ -1,0 +1,6 @@
+2016-06-21 13:59:26.9221|ERROR|
+{"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-21 13:59:41.1824|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!送出加班單失敗!"}|
+2016-06-21 15:32:25.8390|ERROR|
+{"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!","ActualException":"Do Not Pass Overtime Validation!"}|

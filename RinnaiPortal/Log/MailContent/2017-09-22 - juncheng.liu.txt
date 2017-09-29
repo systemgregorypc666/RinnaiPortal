@@ -1,0 +1,24 @@
+2017-09-22 12:02:56.3562|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201709220001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201709220001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-09-22 17:20:00</td><td>2017-09-22 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>testy</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-09-22 12:04:10.2322|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201709220002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201709220002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-09-22 17:20:00</td><td>2017-09-22 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>testy</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-09-22 12:04:22.4126|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201709220002 已經送達!
+Content : 系統提醒!簽核單號 : OT201709220002 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201709220002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-09-22 12:55:29.4083|TRACE|
+MailTo : 00412@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201709190001 已經送達!
+Content : 系統提醒!簽核單號 : OT201709190001 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201709190001'>連結</a> <br />此件為系統發送，請勿回覆!
+|

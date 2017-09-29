@@ -1,0 +1,18 @@
+2017-02-17 11:50:41.0162|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201702170003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-02-17 11:58:36.8605|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201702170003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-02-17 13:16:10.9565|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201702170003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

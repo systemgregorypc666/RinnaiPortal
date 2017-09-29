@@ -1,0 +1,8 @@
+2016-05-19 15:31:02.3062|ERROR|
+{"Message":null,"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!"}|
+2016-05-19 15:33:36.9388|ERROR|
+{"Message":null,"ErrorMessage":"於志元系統中查無01497的刷卡記錄!"}|
+2016-05-19 15:33:46.3603|ERROR|
+{"Message":null,"ErrorMessage":"於志元系統中查無01497的刷卡記錄!"}|
+2016-05-19 15:42:26.8623|ERROR|
+{"Message":null,"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|

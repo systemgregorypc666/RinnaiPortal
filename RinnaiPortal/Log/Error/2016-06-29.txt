@@ -1,0 +1,4 @@
+2016-06-29 09:41:10.6397|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-06-29 15:27:19.6614|ERROR|
+{"ErrorMessage":"工號: 01497,加班支付類型不同於前次紀錄!","ActualException":"Do Not Pass Overtime Validation!"}|

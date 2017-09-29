@@ -1,0 +1,1763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="trainModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="PasswordFormat" Type="int" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="ntext" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Path" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="LoweredPath" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="LoweredRoleName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="CompatibleSchemaVersion" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="LoweredUserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_UsersInRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+          <Property Name="EventTime" Type="datetime" Nullable="false" />
+          <Property Name="EventType" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="EventSequence" Type="decimal" Precision="19" Scale="0" Nullable="false" />
+          <Property Name="EventOccurrence" Type="decimal" Precision="19" Scale="0" Nullable="false" />
+          <Property Name="EventCode" Type="int" Nullable="false" />
+          <Property Name="EventDetailCode" Type="int" Nullable="false" />
+          <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="MachineName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+          <Property Name="Details" Type="ntext" />
+        </EntityType>
+        <EntityType Name="CENTER">
+          <Key>
+            <PropertyRef Name="CID" />
+          </Key>
+          <Property Name="CID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CENTERNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADDRESS" Type="nvarchar" MaxLength="100" />
+          <Property Name="PHONE" Type="nvarchar" MaxLength="30" />
+          <Property Name="FAX" Type="nvarchar" MaxLength="30" />
+          <Property Name="WEB" Type="nvarchar" MaxLength="100" />
+          <Property Name="CONTACTPERSON" Type="nvarchar" MaxLength="30" />
+          <Property Name="CPHONE" Type="nvarchar" MaxLength="30" />
+          <Property Name="MOBILE" Type="nvarchar" MaxLength="30" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="60" />
+          <Property Name="MEMO" Type="nvarchar" MaxLength="100" />
+          <Property Name="EXT" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="CHARACTER_ANSWER">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="SERIAL_NO" />
+          </Key>
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TABLE_ID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="QNO" Type="int" Nullable="false" />
+          <Property Name="SERIAL_NO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPTION" Type="nvarchar(max)" />
+          <Property Name="EDIT_DATE" Type="smalldatetime" />
+          <Property Name="EDIT_PERSON" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="CODE">
+          <Key>
+            <PropertyRef Name="TYPECD" />
+            <PropertyRef Name="CODECD" />
+          </Key>
+          <Property Name="TYPECD" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="CODECD" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CODENAME" Type="nvarchar" MaxLength="60" />
+          <Property Name="MARK" Type="tinyint" />
+          <Property Name="FIXEDYN" Type="bit" />
+        </EntityType>
+        <EntityType Name="CODEMST">
+          <Key>
+            <PropertyRef Name="TYPECD" />
+          </Key>
+          <Property Name="TYPECD" Type="tinyint" Nullable="false" />
+          <Property Name="TYPENAME" Type="nvarchar" MaxLength="60" />
+          <Property Name="FIXEDYN" Type="bit" />
+        </EntityType>
+        <EntityType Name="FORM_FORMAT">
+          <Key>
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="EDITION_ID" />
+            <PropertyRef Name="SERIAL_NO" />
+          </Key>
+          <Property Name="TABLE_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TABLE_NAME" Type="nvarchar" MaxLength="20" />
+          <Property Name="START_DATE" Type="datetime" />
+          <Property Name="EDITION_ID" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="SERIAL_NO" Type="int" Nullable="false" />
+          <Property Name="QNO" Type="int" />
+        </EntityType>
+        <EntityType Name="FORM_RECORDS">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="EDITION_ID" />
+          </Key>
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TABLE_ID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="EDITION_ID" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="Edit_Date" Type="smalldatetime" />
+          <Property Name="Edit_Person" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'train.dbo.form_records_tmp' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="form_records_tmp">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="EDITION_ID" />
+            <PropertyRef Name="IsSign" />
+          </Key>
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TABLE_ID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="EDITION_ID" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="SID" Type="nvarchar" MaxLength="10" />
+          <Property Name="SignDocID" Type="nvarchar" MaxLength="20" />
+          <Property Name="IsSign" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FORM_SIGN">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="TABLE_ID" />
+          </Key>
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TABLE_ID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SignDocID" Type="nvarchar" MaxLength="20" />
+          <Property Name="IsSigned" Type="bit" Nullable="false" />
+          <Property Name="Edit_Date" Type="smalldatetime" />
+          <Property Name="Edit_Person" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="NUMERIC_ANSWER">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="SERIAL_NO" />
+          </Key>
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TABLE_ID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="QNO" Type="int" Nullable="false" />
+          <Property Name="SERIAL_NO" Type="int" Nullable="false" />
+          <Property Name="ANS" Type="float" />
+          <Property Name="EDIT_DATE" Type="smalldatetime" />
+          <Property Name="EDIT_PERSON" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="QUESTIONS">
+          <Key>
+            <PropertyRef Name="QNO" />
+          </Key>
+          <Property Name="QNO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TYPECD" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="CODECD" Type="int" Nullable="false" />
+          <Property Name="TYPENAME" Type="nvarchar" MaxLength="20" />
+          <Property Name="CODENAME" Type="nvarchar" MaxLength="60" />
+          <Property Name="ANSTYPE" Type="nvarchar" MaxLength="5" />
+          <Property Name="MARK" Type="tinyint" />
+          <Property Name="FIXEDYN" Type="bit" />
+          <Property Name="CHIEF" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="REQUIRE">
+          <Key>
+            <PropertyRef Name="REQID" />
+          </Key>
+          <Property Name="REQID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CLNAME0" Type="nvarchar" MaxLength="50" />
+          <Property Name="UNITID" Type="nvarchar" MaxLength="10" />
+          <Property Name="UNITNAME" Type="nvarchar" MaxLength="20" />
+          <Property Name="REQYEAR" Type="smallint" />
+          <Property Name="MEMO" Type="nvarchar" MaxLength="50" />
+          <Property Name="CTID" Type="nvarchar" MaxLength="5" />
+          <Property Name="CLTYPE" Type="nvarchar" MaxLength="30" />
+          <Property Name="HOURS0" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="PREMONTH0" Type="tinyint" />
+          <Property Name="TARGET_PEOPLE" Type="nvarchar" MaxLength="30" />
+          <Property Name="TARGET_TITLE" Type="nvarchar" MaxLength="20" />
+          <Property Name="NUM_PEOPLE0" Type="tinyint" />
+          <Property Name="PURPOSE" Type="nvarchar" MaxLength="100" />
+          <Property Name="KID0" Type="tinyint" />
+          <Property Name="KIND0" Type="nvarchar" MaxLength="8" />
+          <Property Name="BUDGET" Type="int" />
+          <Property Name="CATEGORY" Type="tinyint" />
+          <Property Name="APPROVE" Type="bit" />
+          <Property Name="DISABLED" Type="bit" Nullable="false" />
+          <Property Name="EDIT_DATE" Type="smalldatetime" />
+          <Property Name="EDIT_PERSON" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="RTCLASS">
+          <Key>
+            <PropertyRef Name="CLID" />
+          </Key>
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="REQID" Type="int" />
+          <Property Name="CLNAME0" Type="nvarchar" MaxLength="50" />
+          <Property Name="CLNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="UNITID" Type="nvarchar" MaxLength="10" />
+          <Property Name="UNITNAME" Type="nvarchar" MaxLength="20" />
+          <Property Name="REQYEAR" Type="smallint" />
+          <Property Name="MEMO" Type="nvarchar" MaxLength="50" />
+          <Property Name="CTID0" Type="nvarchar" MaxLength="5" />
+          <Property Name="CLTYPE0" Type="nvarchar" MaxLength="30" />
+          <Property Name="CTID" Type="nvarchar" MaxLength="5" />
+          <Property Name="CLTYPE" Type="nvarchar" MaxLength="30" />
+          <Property Name="HOURS0" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="HOURS" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="PREMONTH0" Type="tinyint" />
+          <Property Name="START_DATE" Type="datetime" />
+          <Property Name="END_DATE" Type="datetime" />
+          <Property Name="START_TIME" Type="nvarchar" MaxLength="5" />
+          <Property Name="END_TIME" Type="nvarchar" MaxLength="5" />
+          <Property Name="TARGET_PEOPLE0" Type="nvarchar" MaxLength="30" />
+          <Property Name="TARGET_PEOPLE" Type="nvarchar" MaxLength="100" />
+          <Property Name="TARGET_TITLE0" Type="nvarchar" MaxLength="20" />
+          <Property Name="TARGET_TITLE" Type="nvarchar" MaxLength="20" />
+          <Property Name="NUM_PEOPLE0" Type="tinyint" />
+          <Property Name="NUM_PEOPLE" Type="tinyint" />
+          <Property Name="PURPOSE0" Type="nvarchar" MaxLength="100" />
+          <Property Name="PURPOSE" Type="nvarchar" MaxLength="100" />
+          <Property Name="KID0" Type="tinyint" />
+          <Property Name="KIND0" Type="nvarchar" MaxLength="50" />
+          <Property Name="KID" Type="tinyint" />
+          <Property Name="KIND" Type="nvarchar" MaxLength="8" />
+          <Property Name="BID" Type="tinyint" />
+          <Property Name="FEE0" Type="int" />
+          <Property Name="FEE" Type="int" />
+          <Property Name="REASON" Type="nvarchar" MaxLength="30" />
+          <Property Name="PAYID" Type="tinyint" />
+          <Property Name="PAY_TYPE" Type="nvarchar" MaxLength="20" />
+          <Property Name="FEESID" Type="tinyint" />
+          <Property Name="FEE_STATUS" Type="nvarchar" MaxLength="20" />
+          <Property Name="CATEID0" Type="tinyint" />
+          <Property Name="CATEID" Type="tinyint" />
+          <Property Name="DUTYTIME" Type="nvarchar" MaxLength="5" />
+          <Property Name="CID" Type="nvarchar" MaxLength="10" />
+          <Property Name="ADDRESS" Type="nvarchar" MaxLength="100" />
+          <Property Name="TID" Type="nvarchar" MaxLength="10" />
+          <Property Name="RESULT" Type="tinyint" />
+          <Property Name="STATUS" Type="tinyint" />
+          <Property Name="EDIT_DATE" Type="smalldatetime" />
+          <Property Name="EDIT_PERSON" Type="nvarchar" MaxLength="30" />
+          <Property Name="DISABLED" Type="bit" />
+        </EntityType>
+        <EntityType Name="RTCLASS_TEXT">
+          <Key>
+            <PropertyRef Name="CLID" />
+          </Key>
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Student_Opinion" Type="nvarchar(max)" />
+          <Property Name="BOSS_OPINION" Type="nvarchar(max)" />
+          <Property Name="SYLLABUS" Type="nvarchar(max)" />
+          <Property Name="EFFECT" Type="nvarchar" MaxLength="300" />
+          <Property Name="TSUGGEST" Type="nvarchar" MaxLength="300" />
+          <Property Name="Edit_Date" Type="smalldatetime" />
+          <Property Name="Edit_Person" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="STUDENTS">
+          <Key>
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="CLID" />
+          </Key>
+          <Property Name="SID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CLNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="SNAME" Type="nvarchar" MaxLength="30" />
+          <Property Name="TITLE" Type="nvarchar" MaxLength="20" />
+          <Property Name="UNITID" Type="nvarchar" MaxLength="10" />
+          <Property Name="UNITNAME" Type="nvarchar" MaxLength="20" />
+          <Property Name="CURRENT_BOSS" Type="nvarchar" MaxLength="30" />
+          <Property Name="DUTY" Type="bit" />
+          <Property Name="CERT_NUM" Type="nvarchar" MaxLength="50" />
+          <Property Name="EDIT_DATE" Type="smalldatetime" />
+          <Property Name="EDIT_PERSON" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'train.dbo.students_temp' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="students_temp">
+          <Key>
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="CLID" />
+          </Key>
+          <Property Name="SID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CLNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="SNAME" Type="nvarchar" MaxLength="30" />
+          <Property Name="TITLE" Type="nvarchar" MaxLength="20" />
+          <Property Name="UNITID" Type="nvarchar" MaxLength="10" />
+          <Property Name="UNITNAME" Type="nvarchar" MaxLength="20" />
+          <Property Name="CURRENT_BOSS" Type="nvarchar" MaxLength="30" />
+          <Property Name="DUTY" Type="bit" />
+          <Property Name="CERT_NUM" Type="nvarchar" MaxLength="30" />
+          <Property Name="EDIT_DATE" Type="smalldatetime" />
+          <Property Name="EDIT_PERSON" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="TEACHER">
+          <Key>
+            <PropertyRef Name="TID" />
+          </Key>
+          <Property Name="TID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="UNITID" Type="nvarchar" MaxLength="10" />
+          <Property Name="UNITNAME" Type="nvarchar" MaxLength="20" />
+          <Property Name="CID" Type="nvarchar" MaxLength="10" />
+          <Property Name="CENTERNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="TITLE" Type="nvarchar" MaxLength="20" />
+          <Property Name="SKILL" Type="nvarchar" MaxLength="600" />
+          <Property Name="EDUCATE" Type="nvarchar" MaxLength="20" />
+          <Property Name="EVID" Type="tinyint" />
+          <Property Name="EVALUATE" Type="nvarchar" MaxLength="10" />
+          <Property Name="EXPERIENCE" Type="nvarchar" MaxLength="600" />
+          <Property Name="CERT" Type="nvarchar" MaxLength="600" />
+          <Property Name="EDIT_DATE" Type="smalldatetime" />
+          <Property Name="EDIT_PERSON" Type="nvarchar" MaxLength="30" />
+          <Property Name="FIXEDYN" Type="bit" />
+        </EntityType>
+        <EntityType Name="TEACHER_GROUP">
+          <Key>
+            <PropertyRef Name="GROUPID" />
+            <PropertyRef Name="TID" />
+          </Key>
+          <Property Name="GROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="GROUPNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="TID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="EDIT_DATE" Type="smalldatetime" />
+          <Property Name="EDIT_PERSON" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__0A9D95DB">
+          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__0B91BA14">
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__3C34F16F">
+          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__41EDCAC5">
+          <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="Self.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__45BE5BA9">
+          <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="Self.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__46B27FE2">
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="Self.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__1F98B2C1">
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="Self.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__29221CFB">
+          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__7A672E12">
+          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__RoleI__2DE6D218">
+          <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="Self.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__UserI__2CF2ADDF">
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="Self.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="trainModelStoreContainer">
+          <EntitySet Name="aspnet_Applications" EntityType="Self.aspnet_Applications" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_Membership" EntityType="Self.aspnet_Membership" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_Paths" EntityType="Self.aspnet_Paths" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="Self.aspnet_PersonalizationAllUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="Self.aspnet_PersonalizationPerUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_Profile" EntityType="Self.aspnet_Profile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_Roles" EntityType="Self.aspnet_Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="Self.aspnet_SchemaVersions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_Users" EntityType="Self.aspnet_Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_UsersInRoles" EntityType="Self.aspnet_UsersInRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="Self.aspnet_WebEvent_Events" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CENTER" EntityType="Self.CENTER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CHARACTER_ANSWER" EntityType="Self.CHARACTER_ANSWER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CODE" EntityType="Self.CODE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CODEMST" EntityType="Self.CODEMST" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM_FORMAT" EntityType="Self.FORM_FORMAT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM_RECORDS" EntityType="Self.FORM_RECORDS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM_SIGN" EntityType="Self.FORM_SIGN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NUMERIC_ANSWER" EntityType="Self.NUMERIC_ANSWER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QUESTIONS" EntityType="Self.QUESTIONS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="REQUIRE" EntityType="Self.REQUIRE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RTCLASS" EntityType="Self.RTCLASS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RTCLASS_TEXT" EntityType="Self.RTCLASS_TEXT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="STUDENTS" EntityType="Self.STUDENTS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TEACHER" EntityType="Self.TEACHER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TEACHER_GROUP" EntityType="Self.TEACHER_GROUP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="form_records_tmp" EntityType="Self.form_records_tmp" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [form_records_tmp].[CLID] AS [CLID], 
+    [form_records_tmp].[TABLE_ID] AS [TABLE_ID], 
+    [form_records_tmp].[EDITION_ID] AS [EDITION_ID], 
+    [form_records_tmp].[SID] AS [SID], 
+    [form_records_tmp].[SignDocID] AS [SignDocID], 
+    [form_records_tmp].[IsSign] AS [IsSign]
+    FROM [dbo].[form_records_tmp] AS [form_records_tmp]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="students_temp" EntityType="Self.students_temp" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [students_temp].[SID] AS [SID], 
+    [students_temp].[CLID] AS [CLID], 
+    [students_temp].[CLNAME] AS [CLNAME], 
+    [students_temp].[SNAME] AS [SNAME], 
+    [students_temp].[TITLE] AS [TITLE], 
+    [students_temp].[UNITID] AS [UNITID], 
+    [students_temp].[UNITNAME] AS [UNITNAME], 
+    [students_temp].[CURRENT_BOSS] AS [CURRENT_BOSS], 
+    [students_temp].[DUTY] AS [DUTY], 
+    [students_temp].[CERT_NUM] AS [CERT_NUM], 
+    [students_temp].[EDIT_DATE] AS [EDIT_DATE], 
+    [students_temp].[EDIT_PERSON] AS [EDIT_PERSON]
+    FROM [dbo].[students_temp] AS [students_temp]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__aspnet_Me__Appli__0A9D95DB" Association="Self.FK__aspnet_Me__Appli__0A9D95DB">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__0B91BA14" Association="Self.FK__aspnet_Me__UserI__0B91BA14">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__3C34F16F" Association="Self.FK__aspnet_Pa__Appli__3C34F16F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__41EDCAC5" Association="Self.FK__aspnet_Pe__PathI__41EDCAC5">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__45BE5BA9" Association="Self.FK__aspnet_Pe__PathI__45BE5BA9">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__46B27FE2" Association="Self.FK__aspnet_Pe__UserI__46B27FE2">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__1F98B2C1" Association="Self.FK__aspnet_Pr__UserI__1F98B2C1">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__29221CFB" Association="Self.FK__aspnet_Ro__Appli__29221CFB">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__7A672E12" Association="Self.FK__aspnet_Us__Appli__7A672E12">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__RoleI__2DE6D218" Association="Self.FK__aspnet_Us__RoleI__2DE6D218">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__2CF2ADDF" Association="Self.FK__aspnet_Us__UserI__2CF2ADDF">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="trainModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoweredApplicationName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="Self.FK__aspnet_Me__Appli__0A9D95DB" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="Self.FK__aspnet_Pa__Appli__3C34F16F" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="Self.FK__aspnet_Ro__Appli__29221CFB" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+          <NavigationProperty Name="aspnet_Users" Relationship="Self.FK__aspnet_Us__Appli__7A672E12" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+          <Property Name="PasswordSalt" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MobilePIN" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="LoweredEmail" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="PasswordQuestion" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="PasswordAnswer" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastLoginDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="Self.FK__aspnet_Me__Appli__0A9D95DB" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="Self.FK__aspnet_Me__UserI__0B91BA14" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="Path" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoweredPath" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="Self.FK__aspnet_Pa__Appli__3C34F16F" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="Self.FK__aspnet_Pe__PathI__41EDCAC5" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="Self.FK__aspnet_Pe__PathI__45BE5BA9" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="PageSettings" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="Self.FK__aspnet_Pe__PathI__41EDCAC5" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="PageSettings" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="Self.FK__aspnet_Pe__PathI__45BE5BA9" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Users" Relationship="Self.FK__aspnet_Pe__UserI__46B27FE2" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="PropertyNames" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PropertyValuesString" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PropertyValuesBinary" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Users" Relationship="Self.FK__aspnet_Pr__UserI__1F98B2C1" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoweredRoleName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="Self.FK__aspnet_Ro__Appli__29221CFB" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="Self.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CompatibleSchemaVersion" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoweredUserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="Self.FK__aspnet_Us__Appli__7A672E12" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="Self.FK__aspnet_Me__UserI__0B91BA14" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="Self.FK__aspnet_Pe__UserI__46B27FE2" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+          <NavigationProperty Name="aspnet_Profile" Relationship="Self.FK__aspnet_Pr__UserI__1F98B2C1" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="Self.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EventTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EventType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EventSequence" Type="Decimal" Precision="19" Scale="0" Nullable="false" />
+          <Property Name="EventOccurrence" Type="Decimal" Precision="19" Scale="0" Nullable="false" />
+          <Property Name="EventCode" Type="Int32" Nullable="false" />
+          <Property Name="EventDetailCode" Type="Int32" Nullable="false" />
+          <Property Name="Message" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="ApplicationPath" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="MachineName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RequestUrl" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="ExceptionType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CENTER">
+          <Key>
+            <PropertyRef Name="CID" />
+          </Key>
+          <Property Name="CID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CENTERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PHONE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="FAX" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="WEB" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CONTACTPERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CPHONE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MOBILE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="EMAIL" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="MEMO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EXT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CHARACTER_ANSWER">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="SERIAL_NO" />
+          </Key>
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TABLE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="QNO" Type="Int32" Nullable="false" />
+          <Property Name="SERIAL_NO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EDIT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EDIT_PERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CODE">
+          <Key>
+            <PropertyRef Name="TYPECD" />
+            <PropertyRef Name="CODECD" />
+          </Key>
+          <Property Name="TYPECD" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CODECD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CODENAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="MARK" Type="Byte" />
+          <Property Name="FIXEDYN" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="CODEMST">
+          <Key>
+            <PropertyRef Name="TYPECD" />
+          </Key>
+          <Property Name="TYPECD" Type="Byte" Nullable="false" />
+          <Property Name="TYPENAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="FIXEDYN" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="FORM_FORMAT">
+          <Key>
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="EDITION_ID" />
+            <PropertyRef Name="SERIAL_NO" />
+          </Key>
+          <Property Name="TABLE_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TABLE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="START_DATE" Type="DateTime" Precision="3" />
+          <Property Name="EDITION_ID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SERIAL_NO" Type="Int32" Nullable="false" />
+          <Property Name="QNO" Type="Int32" />
+        </EntityType>
+        <EntityType Name="FORM_RECORDS">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="EDITION_ID" />
+          </Key>
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TABLE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EDITION_ID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Edit_Date" Type="DateTime" Precision="0" />
+          <Property Name="Edit_Person" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="FORM_SIGN">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="TABLE_ID" />
+          </Key>
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TABLE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SignDocID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="IsSigned" Type="Boolean" Nullable="false" />
+          <Property Name="Edit_Date" Type="DateTime" Precision="0" />
+          <Property Name="Edit_Person" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="NUMERIC_ANSWER">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="SERIAL_NO" />
+          </Key>
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TABLE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="QNO" Type="Int32" Nullable="false" />
+          <Property Name="SERIAL_NO" Type="Int32" Nullable="false" />
+          <Property Name="ANS" Type="Double" />
+          <Property Name="EDIT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EDIT_PERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="QUESTIONS">
+          <Key>
+            <PropertyRef Name="QNO" />
+          </Key>
+          <Property Name="QNO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TYPECD" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CODECD" Type="Int32" Nullable="false" />
+          <Property Name="TYPENAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CODENAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="ANSTYPE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="MARK" Type="Byte" />
+          <Property Name="FIXEDYN" Type="Boolean" />
+          <Property Name="CHIEF" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="REQUIRE">
+          <Key>
+            <PropertyRef Name="REQID" />
+          </Key>
+          <Property Name="REQID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CLNAME0" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UNITID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="UNITNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="REQYEAR" Type="Int16" />
+          <Property Name="MEMO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CTID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="CLTYPE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="HOURS0" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="PREMONTH0" Type="Byte" />
+          <Property Name="TARGET_PEOPLE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="TARGET_TITLE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="NUM_PEOPLE0" Type="Byte" />
+          <Property Name="PURPOSE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="KID0" Type="Byte" />
+          <Property Name="KIND0" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="BUDGET" Type="Int32" />
+          <Property Name="CATEGORY" Type="Byte" />
+          <Property Name="APPROVE" Type="Boolean" />
+          <Property Name="DISABLED" Type="Boolean" Nullable="false" />
+          <Property Name="EDIT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EDIT_PERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="RTCLASS">
+          <Key>
+            <PropertyRef Name="CLID" />
+          </Key>
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="REQID" Type="Int32" />
+          <Property Name="CLNAME0" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CLNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UNITID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="UNITNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="REQYEAR" Type="Int16" />
+          <Property Name="MEMO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CTID0" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="CLTYPE0" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CTID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="CLTYPE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="HOURS0" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="HOURS" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="PREMONTH0" Type="Byte" />
+          <Property Name="START_DATE" Type="DateTime" Precision="3" />
+          <Property Name="END_DATE" Type="DateTime" Precision="3" />
+          <Property Name="START_TIME" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="END_TIME" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="TARGET_PEOPLE0" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="TARGET_PEOPLE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TARGET_TITLE0" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="TARGET_TITLE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="NUM_PEOPLE0" Type="Byte" />
+          <Property Name="NUM_PEOPLE" Type="Byte" />
+          <Property Name="PURPOSE0" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PURPOSE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="KID0" Type="Byte" />
+          <Property Name="KIND0" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KID" Type="Byte" />
+          <Property Name="KIND" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="BID" Type="Byte" />
+          <Property Name="FEE0" Type="Int32" />
+          <Property Name="FEE" Type="Int32" />
+          <Property Name="REASON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="PAYID" Type="Byte" />
+          <Property Name="PAY_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="FEESID" Type="Byte" />
+          <Property Name="FEE_STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CATEID0" Type="Byte" />
+          <Property Name="CATEID" Type="Byte" />
+          <Property Name="DUTYTIME" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="CID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="RESULT" Type="Byte" />
+          <Property Name="STATUS" Type="Byte" />
+          <Property Name="EDIT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EDIT_PERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DISABLED" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="RTCLASS_TEXT">
+          <Key>
+            <PropertyRef Name="CLID" />
+          </Key>
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Student_Opinion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BOSS_OPINION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SYLLABUS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EFFECT" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="TSUGGEST" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Edit_Date" Type="DateTime" Precision="0" />
+          <Property Name="Edit_Person" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="STUDENTS">
+          <Key>
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="CLID" />
+          </Key>
+          <Property Name="SID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CLNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SNAME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="TITLE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="UNITID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="UNITNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_BOSS" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DUTY" Type="Boolean" />
+          <Property Name="CERT_NUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EDIT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EDIT_PERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TEACHER">
+          <Key>
+            <PropertyRef Name="TID" />
+          </Key>
+          <Property Name="TID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UNITID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="UNITNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CENTERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TITLE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="SKILL" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="EDUCATE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="EVID" Type="Byte" />
+          <Property Name="EVALUATE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EXPERIENCE" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="CERT" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="EDIT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EDIT_PERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="FIXEDYN" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="TEACHER_GROUP">
+          <Key>
+            <PropertyRef Name="GROUPID" />
+            <PropertyRef Name="TID" />
+          </Key>
+          <Property Name="GROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GROUPNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EDIT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EDIT_PERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="form_records_tmp">
+          <Key>
+            <PropertyRef Name="CLID" />
+            <PropertyRef Name="TABLE_ID" />
+            <PropertyRef Name="EDITION_ID" />
+            <PropertyRef Name="IsSign" />
+          </Key>
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TABLE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EDITION_ID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SignDocID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="IsSign" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="students_temp">
+          <Key>
+            <PropertyRef Name="SID" />
+            <PropertyRef Name="CLID" />
+          </Key>
+          <Property Name="SID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CLID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CLNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SNAME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="TITLE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="UNITID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="UNITNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT_BOSS" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DUTY" Type="Boolean" />
+          <Property Name="CERT_NUM" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="EDIT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EDIT_PERSON" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__0A9D95DB">
+          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__3C34F16F">
+          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__29221CFB">
+          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__7A672E12">
+          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__0B91BA14">
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__41EDCAC5">
+          <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="Self.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__45BE5BA9">
+          <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="Self.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__46B27FE2">
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="Self.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__1F98B2C1">
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="Self.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="aspnet_UsersInRoles">
+          <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="*" />
+          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="DbTRAIN" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="aspnet_Applications" EntityType="Self.aspnet_Applications" />
+          <EntitySet Name="aspnet_Membership" EntityType="Self.aspnet_Membership" />
+          <EntitySet Name="aspnet_Paths" EntityType="Self.aspnet_Paths" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="Self.aspnet_PersonalizationAllUsers" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="Self.aspnet_PersonalizationPerUser" />
+          <EntitySet Name="aspnet_Profile" EntityType="Self.aspnet_Profile" />
+          <EntitySet Name="aspnet_Roles" EntityType="Self.aspnet_Roles" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="Self.aspnet_SchemaVersions" />
+          <EntitySet Name="aspnet_Users" EntityType="Self.aspnet_Users" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="Self.aspnet_WebEvent_Events" />
+          <EntitySet Name="CENTER" EntityType="Self.CENTER" />
+          <EntitySet Name="CHARACTER_ANSWER" EntityType="Self.CHARACTER_ANSWER" />
+          <EntitySet Name="CODE" EntityType="Self.CODE" />
+          <EntitySet Name="CODEMST" EntityType="Self.CODEMST" />
+          <EntitySet Name="FORM_FORMAT" EntityType="Self.FORM_FORMAT" />
+          <EntitySet Name="FORM_RECORDS" EntityType="Self.FORM_RECORDS" />
+          <EntitySet Name="FORM_SIGN" EntityType="Self.FORM_SIGN" />
+          <EntitySet Name="NUMERIC_ANSWER" EntityType="Self.NUMERIC_ANSWER" />
+          <EntitySet Name="QUESTIONS" EntityType="Self.QUESTIONS" />
+          <EntitySet Name="REQUIRE" EntityType="Self.REQUIRE" />
+          <EntitySet Name="RTCLASS" EntityType="Self.RTCLASS" />
+          <EntitySet Name="RTCLASS_TEXT" EntityType="Self.RTCLASS_TEXT" />
+          <EntitySet Name="STUDENTS" EntityType="Self.STUDENTS" />
+          <EntitySet Name="TEACHER" EntityType="Self.TEACHER" />
+          <EntitySet Name="TEACHER_GROUP" EntityType="Self.TEACHER_GROUP" />
+          <EntitySet Name="form_records_tmp" EntityType="Self.form_records_tmp" />
+          <EntitySet Name="students_temp" EntityType="Self.students_temp" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__0A9D95DB" Association="Self.FK__aspnet_Me__Appli__0A9D95DB">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__3C34F16F" Association="Self.FK__aspnet_Pa__Appli__3C34F16F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__29221CFB" Association="Self.FK__aspnet_Ro__Appli__29221CFB">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__7A672E12" Association="Self.FK__aspnet_Us__Appli__7A672E12">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__0B91BA14" Association="Self.FK__aspnet_Me__UserI__0B91BA14">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__41EDCAC5" Association="Self.FK__aspnet_Pe__PathI__41EDCAC5">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__45BE5BA9" Association="Self.FK__aspnet_Pe__PathI__45BE5BA9">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__46B27FE2" Association="Self.FK__aspnet_Pe__UserI__46B27FE2">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__1F98B2C1" Association="Self.FK__aspnet_Pr__UserI__1F98B2C1">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="aspnet_UsersInRoles" Association="Self.aspnet_UsersInRoles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="trainModelStoreContainer" CdmEntityContainer="DbTRAIN">
+          <EntitySetMapping Name="aspnet_Applications">
+            <EntityTypeMapping TypeName="trainModel.aspnet_Applications">
+              <MappingFragment StoreEntitySet="aspnet_Applications">
+                <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+                <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Membership">
+            <EntityTypeMapping TypeName="trainModel.aspnet_Membership">
+              <MappingFragment StoreEntitySet="aspnet_Membership">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+                <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+                <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+                <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+                <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+                <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+                <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+                <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+                <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Paths">
+            <EntityTypeMapping TypeName="trainModel.aspnet_Paths">
+              <MappingFragment StoreEntitySet="aspnet_Paths">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+            <EntityTypeMapping TypeName="trainModel.aspnet_PersonalizationAllUsers">
+              <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+            <EntityTypeMapping TypeName="trainModel.aspnet_PersonalizationPerUser">
+              <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Profile">
+            <EntityTypeMapping TypeName="trainModel.aspnet_Profile">
+              <MappingFragment StoreEntitySet="aspnet_Profile">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+                <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+                <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Roles">
+            <EntityTypeMapping TypeName="trainModel.aspnet_Roles">
+              <MappingFragment StoreEntitySet="aspnet_Roles">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_SchemaVersions">
+            <EntityTypeMapping TypeName="trainModel.aspnet_SchemaVersions">
+              <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+                <ScalarProperty Name="Feature" ColumnName="Feature" />
+                <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+                <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Users">
+            <EntityTypeMapping TypeName="trainModel.aspnet_Users">
+              <MappingFragment StoreEntitySet="aspnet_Users">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+                <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+                <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_WebEvent_Events">
+            <EntityTypeMapping TypeName="trainModel.aspnet_WebEvent_Events">
+              <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+                <ScalarProperty Name="EventId" ColumnName="EventId" />
+                <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+                <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+                <ScalarProperty Name="EventType" ColumnName="EventType" />
+                <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+                <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+                <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+                <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+                <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+                <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CENTER">
+            <EntityTypeMapping TypeName="trainModel.CENTER">
+              <MappingFragment StoreEntitySet="CENTER">
+                <ScalarProperty Name="CID" ColumnName="CID" />
+                <ScalarProperty Name="CENTERNAME" ColumnName="CENTERNAME" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+                <ScalarProperty Name="FAX" ColumnName="FAX" />
+                <ScalarProperty Name="WEB" ColumnName="WEB" />
+                <ScalarProperty Name="CONTACTPERSON" ColumnName="CONTACTPERSON" />
+                <ScalarProperty Name="CPHONE" ColumnName="CPHONE" />
+                <ScalarProperty Name="MOBILE" ColumnName="MOBILE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+                <ScalarProperty Name="EXT" ColumnName="EXT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CHARACTER_ANSWER">
+            <EntityTypeMapping TypeName="trainModel.CHARACTER_ANSWER">
+              <MappingFragment StoreEntitySet="CHARACTER_ANSWER">
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="TABLE_ID" ColumnName="TABLE_ID" />
+                <ScalarProperty Name="QNO" ColumnName="QNO" />
+                <ScalarProperty Name="SERIAL_NO" ColumnName="SERIAL_NO" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="EDIT_DATE" ColumnName="EDIT_DATE" />
+                <ScalarProperty Name="EDIT_PERSON" ColumnName="EDIT_PERSON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CODE">
+            <EntityTypeMapping TypeName="trainModel.CODE">
+              <MappingFragment StoreEntitySet="CODE">
+                <ScalarProperty Name="TYPECD" ColumnName="TYPECD" />
+                <ScalarProperty Name="CODECD" ColumnName="CODECD" />
+                <ScalarProperty Name="CODENAME" ColumnName="CODENAME" />
+                <ScalarProperty Name="MARK" ColumnName="MARK" />
+                <ScalarProperty Name="FIXEDYN" ColumnName="FIXEDYN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CODEMST">
+            <EntityTypeMapping TypeName="trainModel.CODEMST">
+              <MappingFragment StoreEntitySet="CODEMST">
+                <ScalarProperty Name="TYPECD" ColumnName="TYPECD" />
+                <ScalarProperty Name="TYPENAME" ColumnName="TYPENAME" />
+                <ScalarProperty Name="FIXEDYN" ColumnName="FIXEDYN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM_FORMAT">
+            <EntityTypeMapping TypeName="trainModel.FORM_FORMAT">
+              <MappingFragment StoreEntitySet="FORM_FORMAT">
+                <ScalarProperty Name="TABLE_ID" ColumnName="TABLE_ID" />
+                <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="EDITION_ID" ColumnName="EDITION_ID" />
+                <ScalarProperty Name="SERIAL_NO" ColumnName="SERIAL_NO" />
+                <ScalarProperty Name="QNO" ColumnName="QNO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM_RECORDS">
+            <EntityTypeMapping TypeName="trainModel.FORM_RECORDS">
+              <MappingFragment StoreEntitySet="FORM_RECORDS">
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="TABLE_ID" ColumnName="TABLE_ID" />
+                <ScalarProperty Name="EDITION_ID" ColumnName="EDITION_ID" />
+                <ScalarProperty Name="Edit_Date" ColumnName="Edit_Date" />
+                <ScalarProperty Name="Edit_Person" ColumnName="Edit_Person" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM_SIGN">
+            <EntityTypeMapping TypeName="trainModel.FORM_SIGN">
+              <MappingFragment StoreEntitySet="FORM_SIGN">
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="TABLE_ID" ColumnName="TABLE_ID" />
+                <ScalarProperty Name="SignDocID" ColumnName="SignDocID" />
+                <ScalarProperty Name="IsSigned" ColumnName="IsSigned" />
+                <ScalarProperty Name="Edit_Date" ColumnName="Edit_Date" />
+                <ScalarProperty Name="Edit_Person" ColumnName="Edit_Person" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NUMERIC_ANSWER">
+            <EntityTypeMapping TypeName="trainModel.NUMERIC_ANSWER">
+              <MappingFragment StoreEntitySet="NUMERIC_ANSWER">
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="TABLE_ID" ColumnName="TABLE_ID" />
+                <ScalarProperty Name="QNO" ColumnName="QNO" />
+                <ScalarProperty Name="SERIAL_NO" ColumnName="SERIAL_NO" />
+                <ScalarProperty Name="ANS" ColumnName="ANS" />
+                <ScalarProperty Name="EDIT_DATE" ColumnName="EDIT_DATE" />
+                <ScalarProperty Name="EDIT_PERSON" ColumnName="EDIT_PERSON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QUESTIONS">
+            <EntityTypeMapping TypeName="trainModel.QUESTIONS">
+              <MappingFragment StoreEntitySet="QUESTIONS">
+                <ScalarProperty Name="QNO" ColumnName="QNO" />
+                <ScalarProperty Name="TYPECD" ColumnName="TYPECD" />
+                <ScalarProperty Name="CODECD" ColumnName="CODECD" />
+                <ScalarProperty Name="TYPENAME" ColumnName="TYPENAME" />
+                <ScalarProperty Name="CODENAME" ColumnName="CODENAME" />
+                <ScalarProperty Name="ANSTYPE" ColumnName="ANSTYPE" />
+                <ScalarProperty Name="MARK" ColumnName="MARK" />
+                <ScalarProperty Name="FIXEDYN" ColumnName="FIXEDYN" />
+                <ScalarProperty Name="CHIEF" ColumnName="CHIEF" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REQUIRE">
+            <EntityTypeMapping TypeName="trainModel.REQUIRE">
+              <MappingFragment StoreEntitySet="REQUIRE">
+                <ScalarProperty Name="REQID" ColumnName="REQID" />
+                <ScalarProperty Name="CLNAME0" ColumnName="CLNAME0" />
+                <ScalarProperty Name="UNITID" ColumnName="UNITID" />
+                <ScalarProperty Name="UNITNAME" ColumnName="UNITNAME" />
+                <ScalarProperty Name="REQYEAR" ColumnName="REQYEAR" />
+                <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+                <ScalarProperty Name="CTID" ColumnName="CTID" />
+                <ScalarProperty Name="CLTYPE" ColumnName="CLTYPE" />
+                <ScalarProperty Name="HOURS0" ColumnName="HOURS0" />
+                <ScalarProperty Name="PREMONTH0" ColumnName="PREMONTH0" />
+                <ScalarProperty Name="TARGET_PEOPLE" ColumnName="TARGET_PEOPLE" />
+                <ScalarProperty Name="TARGET_TITLE" ColumnName="TARGET_TITLE" />
+                <ScalarProperty Name="NUM_PEOPLE0" ColumnName="NUM_PEOPLE0" />
+                <ScalarProperty Name="PURPOSE" ColumnName="PURPOSE" />
+                <ScalarProperty Name="KID0" ColumnName="KID0" />
+                <ScalarProperty Name="KIND0" ColumnName="KIND0" />
+                <ScalarProperty Name="BUDGET" ColumnName="BUDGET" />
+                <ScalarProperty Name="CATEGORY" ColumnName="CATEGORY" />
+                <ScalarProperty Name="APPROVE" ColumnName="APPROVE" />
+                <ScalarProperty Name="DISABLED" ColumnName="DISABLED" />
+                <ScalarProperty Name="EDIT_DATE" ColumnName="EDIT_DATE" />
+                <ScalarProperty Name="EDIT_PERSON" ColumnName="EDIT_PERSON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RTCLASS">
+            <EntityTypeMapping TypeName="trainModel.RTCLASS">
+              <MappingFragment StoreEntitySet="RTCLASS">
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="REQID" ColumnName="REQID" />
+                <ScalarProperty Name="CLNAME0" ColumnName="CLNAME0" />
+                <ScalarProperty Name="CLNAME" ColumnName="CLNAME" />
+                <ScalarProperty Name="UNITID" ColumnName="UNITID" />
+                <ScalarProperty Name="UNITNAME" ColumnName="UNITNAME" />
+                <ScalarProperty Name="REQYEAR" ColumnName="REQYEAR" />
+                <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+                <ScalarProperty Name="CTID0" ColumnName="CTID0" />
+                <ScalarProperty Name="CLTYPE0" ColumnName="CLTYPE0" />
+                <ScalarProperty Name="CTID" ColumnName="CTID" />
+                <ScalarProperty Name="CLTYPE" ColumnName="CLTYPE" />
+                <ScalarProperty Name="HOURS0" ColumnName="HOURS0" />
+                <ScalarProperty Name="HOURS" ColumnName="HOURS" />
+                <ScalarProperty Name="PREMONTH0" ColumnName="PREMONTH0" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="TARGET_PEOPLE0" ColumnName="TARGET_PEOPLE0" />
+                <ScalarProperty Name="TARGET_PEOPLE" ColumnName="TARGET_PEOPLE" />
+                <ScalarProperty Name="TARGET_TITLE0" ColumnName="TARGET_TITLE0" />
+                <ScalarProperty Name="TARGET_TITLE" ColumnName="TARGET_TITLE" />
+                <ScalarProperty Name="NUM_PEOPLE0" ColumnName="NUM_PEOPLE0" />
+                <ScalarProperty Name="NUM_PEOPLE" ColumnName="NUM_PEOPLE" />
+                <ScalarProperty Name="PURPOSE0" ColumnName="PURPOSE0" />
+                <ScalarProperty Name="PURPOSE" ColumnName="PURPOSE" />
+                <ScalarProperty Name="KID0" ColumnName="KID0" />
+                <ScalarProperty Name="KIND0" ColumnName="KIND0" />
+                <ScalarProperty Name="KID" ColumnName="KID" />
+                <ScalarProperty Name="KIND" ColumnName="KIND" />
+                <ScalarProperty Name="BID" ColumnName="BID" />
+                <ScalarProperty Name="FEE0" ColumnName="FEE0" />
+                <ScalarProperty Name="FEE" ColumnName="FEE" />
+                <ScalarProperty Name="REASON" ColumnName="REASON" />
+                <ScalarProperty Name="PAYID" ColumnName="PAYID" />
+                <ScalarProperty Name="PAY_TYPE" ColumnName="PAY_TYPE" />
+                <ScalarProperty Name="FEESID" ColumnName="FEESID" />
+                <ScalarProperty Name="FEE_STATUS" ColumnName="FEE_STATUS" />
+                <ScalarProperty Name="CATEID0" ColumnName="CATEID0" />
+                <ScalarProperty Name="CATEID" ColumnName="CATEID" />
+                <ScalarProperty Name="DUTYTIME" ColumnName="DUTYTIME" />
+                <ScalarProperty Name="CID" ColumnName="CID" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="TID" ColumnName="TID" />
+                <ScalarProperty Name="RESULT" ColumnName="RESULT" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="EDIT_DATE" ColumnName="EDIT_DATE" />
+                <ScalarProperty Name="EDIT_PERSON" ColumnName="EDIT_PERSON" />
+                <ScalarProperty Name="DISABLED" ColumnName="DISABLED" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RTCLASS_TEXT">
+            <EntityTypeMapping TypeName="trainModel.RTCLASS_TEXT">
+              <MappingFragment StoreEntitySet="RTCLASS_TEXT">
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="Student_Opinion" ColumnName="Student_Opinion" />
+                <ScalarProperty Name="BOSS_OPINION" ColumnName="BOSS_OPINION" />
+                <ScalarProperty Name="SYLLABUS" ColumnName="SYLLABUS" />
+                <ScalarProperty Name="EFFECT" ColumnName="EFFECT" />
+                <ScalarProperty Name="TSUGGEST" ColumnName="TSUGGEST" />
+                <ScalarProperty Name="Edit_Date" ColumnName="Edit_Date" />
+                <ScalarProperty Name="Edit_Person" ColumnName="Edit_Person" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="STUDENTS">
+            <EntityTypeMapping TypeName="trainModel.STUDENTS">
+              <MappingFragment StoreEntitySet="STUDENTS">
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="CLNAME" ColumnName="CLNAME" />
+                <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="UNITID" ColumnName="UNITID" />
+                <ScalarProperty Name="UNITNAME" ColumnName="UNITNAME" />
+                <ScalarProperty Name="CURRENT_BOSS" ColumnName="CURRENT_BOSS" />
+                <ScalarProperty Name="DUTY" ColumnName="DUTY" />
+                <ScalarProperty Name="CERT_NUM" ColumnName="CERT_NUM" />
+                <ScalarProperty Name="EDIT_DATE" ColumnName="EDIT_DATE" />
+                <ScalarProperty Name="EDIT_PERSON" ColumnName="EDIT_PERSON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TEACHER">
+            <EntityTypeMapping TypeName="trainModel.TEACHER">
+              <MappingFragment StoreEntitySet="TEACHER">
+                <ScalarProperty Name="TID" ColumnName="TID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="UNITID" ColumnName="UNITID" />
+                <ScalarProperty Name="UNITNAME" ColumnName="UNITNAME" />
+                <ScalarProperty Name="CID" ColumnName="CID" />
+                <ScalarProperty Name="CENTERNAME" ColumnName="CENTERNAME" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="SKILL" ColumnName="SKILL" />
+                <ScalarProperty Name="EDUCATE" ColumnName="EDUCATE" />
+                <ScalarProperty Name="EVID" ColumnName="EVID" />
+                <ScalarProperty Name="EVALUATE" ColumnName="EVALUATE" />
+                <ScalarProperty Name="EXPERIENCE" ColumnName="EXPERIENCE" />
+                <ScalarProperty Name="CERT" ColumnName="CERT" />
+                <ScalarProperty Name="EDIT_DATE" ColumnName="EDIT_DATE" />
+                <ScalarProperty Name="EDIT_PERSON" ColumnName="EDIT_PERSON" />
+                <ScalarProperty Name="FIXEDYN" ColumnName="FIXEDYN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TEACHER_GROUP">
+            <EntityTypeMapping TypeName="trainModel.TEACHER_GROUP">
+              <MappingFragment StoreEntitySet="TEACHER_GROUP">
+                <ScalarProperty Name="GROUPID" ColumnName="GROUPID" />
+                <ScalarProperty Name="GROUPNAME" ColumnName="GROUPNAME" />
+                <ScalarProperty Name="TID" ColumnName="TID" />
+                <ScalarProperty Name="EDIT_DATE" ColumnName="EDIT_DATE" />
+                <ScalarProperty Name="EDIT_PERSON" ColumnName="EDIT_PERSON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="form_records_tmp">
+            <EntityTypeMapping TypeName="trainModel.form_records_tmp">
+              <MappingFragment StoreEntitySet="form_records_tmp">
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="TABLE_ID" ColumnName="TABLE_ID" />
+                <ScalarProperty Name="EDITION_ID" ColumnName="EDITION_ID" />
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="SignDocID" ColumnName="SignDocID" />
+                <ScalarProperty Name="IsSign" ColumnName="IsSign" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="students_temp">
+            <EntityTypeMapping TypeName="trainModel.students_temp">
+              <MappingFragment StoreEntitySet="students_temp">
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="CLID" ColumnName="CLID" />
+                <ScalarProperty Name="CLNAME" ColumnName="CLNAME" />
+                <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="UNITID" ColumnName="UNITID" />
+                <ScalarProperty Name="UNITNAME" ColumnName="UNITNAME" />
+                <ScalarProperty Name="CURRENT_BOSS" ColumnName="CURRENT_BOSS" />
+                <ScalarProperty Name="DUTY" ColumnName="DUTY" />
+                <ScalarProperty Name="CERT_NUM" ColumnName="CERT_NUM" />
+                <ScalarProperty Name="EDIT_DATE" ColumnName="EDIT_DATE" />
+                <ScalarProperty Name="EDIT_PERSON" ColumnName="EDIT_PERSON" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="trainModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+            <EndProperty Name="aspnet_Roles">
+              <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="aspnet_Users">
+              <ScalarProperty Name="UserId" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

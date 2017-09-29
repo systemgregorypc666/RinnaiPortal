@@ -1,0 +1,12 @@
+2016-11-02 08:55:21.3249|ERROR|
+{"ErrorKey":"DefaultNote","ErrorMessage":"使用 JSON JavaScriptSerializer 序列化或還原序列化期間發生錯誤。字串的長度超過在 maxJsonLength 屬性上設定的值。","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote"}|
+2016-11-02 09:01:32.0407|ERROR|
+{"ErrorKey":"DefaultNote","ErrorMessage":"使用 JSON JavaScriptSerializer 序列化或還原序列化期間發生錯誤。字串的長度超過在 maxJsonLength 屬性上設定的值。","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote"}|
+2016-11-02 09:05:03.6877|ERROR|
+{"ErrorKey":"DefaultNote","ErrorMessage":"使用 JSON JavaScriptSerializer 序列化或還原序列化期間發生錯誤。字串的長度超過在 maxJsonLength 屬性上設定的值。","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote"}|
+2016-11-02 14:54:53.1308|ERROR|
+{"ErrorMessage":"於志元系統中查無00500的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-11-02 14:58:15.8298|ERROR|
+{"ErrorMessage":"工號: 00500,加班申請時間與前次加班申請時間相同!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-11-02 14:58:23.1028|ERROR|
+{"ErrorMessage":"工號: 00500,加班申請時間與前次加班申請時間相同!","ActualException":"Do Not Pass Overtime Validation!"}|

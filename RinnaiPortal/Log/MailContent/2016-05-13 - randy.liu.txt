@@ -1,0 +1,24 @@
+2016-05-13 10:54:45.5477|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201605130001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201605130001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01497</td><td>劉懿鋆</td><td>2016-04-14 17:20:00</td><td>2016-04-14 19:20:00</td><td>資訊課</td><td>補休</td><td>葷食</td><td>qqqq</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-05-13 10:54:48.8138|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201605130001 已經送達!
+Content : 系統提醒!簽核單號 : OT201605130001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201605130001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-05-13 10:55:49.1885|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201605130001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201605130001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-05-13 10:56:32.1798|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201605130001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201605130001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

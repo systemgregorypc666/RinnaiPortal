@@ -1,0 +1,18 @@
+2016-12-27 09:50:51.4094|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201612270002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2016-12-27 13:19:19.2009|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201612270004 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2016-12-27 13:20:57.7802|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201612270004 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

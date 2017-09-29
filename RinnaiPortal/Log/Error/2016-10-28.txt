@@ -1,0 +1,14 @@
+2016-10-28 08:57:09.2226|ERROR|
+{"ErrorMessage":"員工編號00322，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-10-28 09:00:00.4141|ERROR|
+{"ErrorMessage":"員工編號00322，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-10-28 09:13:57.9075|ERROR|
+{"ErrorMessage":"員工編號00322，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-10-28 09:47:11.9011|ERROR|
+{"ErrorMessage":"員工編號00322，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-10-28 11:10:16.6827|ERROR|
+{"ErrorMessage":"員工編號00322，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-10-28 13:39:26.0774|ERROR|
+{"ErrorMessage":"工號: 00322,加班支付類型不同於前次紀錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-10-28 13:39:53.4684|ERROR|
+{"ErrorMessage":"工號: 00322,加班支付類型不同於前次紀錄!","ActualException":"Do Not Pass Overtime Validation!"}|

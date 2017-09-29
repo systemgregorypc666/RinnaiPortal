@@ -1,0 +1,114 @@
+2016-07-05 08:27:29.3569|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050004 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050004 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-07-05 17:20:00</td><td>2016-07-05 19:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 08:28:40.3945|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050005 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050005 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-05-25 17:20:00</td><td>2016-05-25 18:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 08:28:47.7347|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050005 已經送達!
+Content : 系統提醒!簽核單號 : OT201607050005 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201607050005'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-07-05 08:34:11.5609|TRACE|
+MailTo : randy.liu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201607050005 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201607050005 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-07-05 08:42:19.2579|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050009 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050009 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-05-25 17:20:00</td><td>2016-05-25 19:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>etst</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 08:44:48.5518|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050010 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050010 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-05-25 17:20:00</td><td>2016-05-25 19:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>etst</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 08:46:33.0801|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050010 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050010 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-05-25 17:20:00</td><td>2016-05-25 18:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>etst</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 08:48:02.4796|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050010 已經送達!
+Content : 系統提醒!簽核單號 : OT201607050010 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201607050010'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-07-05 08:50:34.2302|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050011 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050011 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-05-25 17:20:00</td><td>2016-05-25 18:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 08:50:37.5851|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050011 已經送達!
+Content : 系統提醒!簽核單號 : OT201607050011 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201607050011'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-07-05 08:58:00.5127|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050011 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201607050011 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-07-05 08:58:54.8739|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050012 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050012 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-05-25 17:20:00</td><td>2016-06-25 18:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 08:59:28.8309|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050013 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050013 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-05-25 17:20:00</td><td>2016-05-25 18:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 08:59:34.3147|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050013 已經送達!
+Content : 系統提醒!簽核單號 : OT201607050013 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201607050013'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-07-05 09:02:11.9210|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050013 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201607050013 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-07-05 09:15:22.4424|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050014 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201607050014 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01497</td><td>劉懿鋆</td><td>2016-05-17 17:20:00</td><td>2016-05-17 19:20:00</td><td>虛擬資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-07-05 09:15:28.5979|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050014 已經送達!
+Content : 系統提醒!簽核單號 : OT201607050014 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201607050014'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-07-05 09:15:46.0722|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201607050014 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201607050014 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-07-05 09:16:26.1471|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201607050014 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201607050014 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

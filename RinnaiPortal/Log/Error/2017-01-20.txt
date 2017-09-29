@@ -1,0 +1,10 @@
+2017-01-20 10:00:24.9477|ERROR|
+{"ErrorKey":"DefaultNote","ErrorMessage":"值不能為 null。\r\n參數名稱: source","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote"}|
+2017-01-20 10:22:11.7564|ERROR|
+{"ErrorMessage":"工號: 01591,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-20 10:22:28.5781|ERROR|
+{"ErrorMessage":"工號: 00229,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-20 10:22:54.3927|ERROR|
+{"ErrorMessage":"工號: 00230,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-20 10:25:31.5567|ERROR|
+{"ErrorMessage":"員工編號00533，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

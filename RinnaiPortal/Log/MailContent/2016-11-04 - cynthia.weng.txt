@@ -1,0 +1,18 @@
+2016-11-04 14:02:38.2754|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201611040002 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201611040002 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-04 15:09:08.3332|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201611040002 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201611040002 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-11-04 15:21:10.4552|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201611040001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201611040001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

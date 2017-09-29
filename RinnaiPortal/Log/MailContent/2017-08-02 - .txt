@@ -1,0 +1,12 @@
+2017-08-02 08:59:27.3118|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708020009 已經送達!
+Content : 系統提醒!簽核單號 : TR201708020009 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708020009'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-02 13:14:38.6164|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708020010 已經送達!
+Content : 系統提醒!簽核單號 : TR201708020010 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708020010'>連結</a> <br />此件為系統發送，請勿回覆!
+|

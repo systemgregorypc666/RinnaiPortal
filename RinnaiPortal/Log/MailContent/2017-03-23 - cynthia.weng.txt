@@ -1,0 +1,12 @@
+2017-03-23 14:59:11.3232|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201703230001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201703230001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-03-23 15:00:08.4227|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201703230001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201703230001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

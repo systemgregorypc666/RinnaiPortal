@@ -1,0 +1,6 @@
+2016-04-26 13:21:45.6961|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-04-26 13:21:59.9174|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-04-26 13:22:07.3516|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|

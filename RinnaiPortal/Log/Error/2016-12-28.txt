@@ -1,0 +1,26 @@
+2016-12-28 08:53:03.1239|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班4小時加班區間應為：2016/12/28 上午 08:00:00~2016/12/28 下午 12:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 09:08:04.4608|ERROR|
+{"ErrorMessage":"提醒 工號:01654的加班時數已超過40小時!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 09:08:08.1198|ERROR|
+{"ErrorMessage":"提醒 工號:01654的加班時數已超過40小時!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 09:48:10.4126|ERROR|
+{"ErrorMessage":null,"ActualException":"指定的索引鍵不在字典中。"}|
+2016-12-28 09:50:11.3326|ERROR|
+{"ErrorMessage":null,"message_alert":"提醒 工號:01654的加班時數已超過40小時!","ActualException":"已經加入含有相同索引鍵的項目。"}|
+2016-12-28 09:53:46.5946|ERROR|
+{"ErrorMessage":null,"message_alert":"提醒 工號:01654的加班時數已超過40小時!","Message":"提醒 工號:01654的加班時數已超過40小時!","ActualException":"已經加入含有相同索引鍵的項目。"}|
+2016-12-28 09:53:58.9946|ERROR|
+{"ErrorMessage":"工號: 01654,加班申請時間與前次加班申請時間相同!","message_alert":"提醒 工號:01654的加班時數已超過40小時!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 11:31:07.0269|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班12小時加班區間應為：2016/12/28 上午 08:00:00~2016/12/28 下午 09:20:00 !","message_alert":"提醒 工號:01654 \r\n","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 11:44:38.1390|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班12小時加班區間應為：2016/12/28 上午 08:00:00~2016/12/28 下午 09:20:00 !","message_alert":"工號:01654 \r\n","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 14:45:35.7123|ERROR|
+{"ErrorMessage":"員工編號01654，加班申請時間與加班起算時間或打卡時間不符!","message_alert":"工號:01654 \r\n","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 14:45:43.8483|ERROR|
+{"ErrorMessage":"員工編號01654，加班申請時間與加班起算時間或打卡時間不符!","message_alert":"工號:01654 \r\n","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 14:46:16.2403|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時間(迄)應為：2016/12/28 下午 06:20:00、\r\n2016/12/28 下午 07:20:00、\r\n2016/12/28 下午 08:20:00、\r\n2016/12/28 下午 09:20:00 !","message_alert":"工號:01654 \r\n","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-28 14:48:52.0673|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時間(迄)應為：\r2016/12/28 下午 06:20:00、\r2016/12/28 下午 07:20:00、\r2016/12/28 下午 08:20:00、\r2016/12/28 下午 09:20:00 !","message_alert":"工號:01654 \r\n","ActualException":"Do Not Pass Overtime Validation!"}|

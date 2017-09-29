@@ -1,0 +1,90 @@
+2016-11-30 15:25:28.9109|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611250003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611250003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-06 17:20:00</td><td>2016-10-06 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-30 15:25:32.7504|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611250003 已經送達!
+Content : 系統提醒!簽核單號 : OT201611250003 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201611250003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-11-30 15:26:33.1422|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201611070001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201611070001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:26:39.3618|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611250003 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611250003 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:27:30.7392|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611220020 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611220020 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:28:56.6348|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611250002 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611250002 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:29:55.6429|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611220032 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611220032 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:41:40.7498|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611220021 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611220021 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:41:49.7728|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611220024 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611220024 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:42:01.5128|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611140003 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611140003 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:43:38.4358|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611230001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611230001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:45:36.3188|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611220025 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201611220025 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:48:53.7478|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611250003 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201611250003 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-11-30 15:51:48.5938|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201611070001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201611070001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-11-30 16:18:04.1618|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611250002 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201611250002 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

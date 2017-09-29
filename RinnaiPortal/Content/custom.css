@@ -1,0 +1,145 @@
+﻿/*Spec LayOut*/
+.body-content fieldset {
+	margin-top: 50px;
+}
+
+#layout-content-wrapper {
+	padding: 20px 0 60px 0;
+}
+
+/*Spec Class*/
+.display-none {
+	display: none;
+}
+
+.bread-crumb-title {
+	height: 20px;
+	margin-top: 10px;
+}
+
+table > tbody > tr > .vertical-middle {
+	vertical-align: middle;
+}
+
+.txt-overflow {
+	text-overflow: ellipsis; /* 超出的文字出現... */ 
+	/*overflow: hidden;*/ /* 超出的文字隱藏 */  /*#0011 取消遮罩*/
+	display: block; /* 或是 inline-block 需要擁有 witdth 或是 height */
+	white-space: nowrap; /* 單行顯示,不換行 */
+}
+
+.vertical-middle {
+	vertical-align: middle;
+}
+/*Spec Fields*/
+.required .control-label:before {
+	content: "✱";
+	color: red;
+	padding-right: 5px;
+}
+
+
+.list-toolbar {
+	position: relative;
+	text-align: center;
+	height: 35px;
+	margin-bottom: 20px;
+}
+
+.datepicker-left-15 {
+	left: 15px;
+}
+
+.enabled-paddingleft-35 {
+	padding-left: 35px;
+}
+
+.top-negative-7 {
+	top: -7px;
+}
+
+.offest-onerow {
+	margin-top: 49px;
+}
+
+.height-180 {
+	height:180px;
+}
+
+.margin-top-7 {
+	margin-top: 7px;
+}
+
+.margin-top-49 {
+	margin-top: 49px;
+}
+
+/* Dialog */
+#DialogWidget .modal-dismiss {
+  position: absolute;
+  right: 12px;
+  top: -9px;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.8;
+}
+#DialogWidget .modal-dismiss:hover {
+  opacity:1;
+  color: #808080;
+  text-shadow: 0 0 3px cornflowerblue;
+}
+
+#DialogWidget .modal-dismiss  .glyphicon{
+	left: 0;
+	position: absolute;
+	text-align: center;
+}
+
+	#DialogWidget .modal-dismiss .glyphicon-remove-sign {
+		color: #d43f3a;
+	}
+
+	#DialogWidget .modal-dismiss .glyphicon-remove {
+		color: white;
+	}
+
+#DialogWidget .modal-dialog {
+  width: 150px;
+}
+
+
+#DialogWidget .modal-content {
+  height: 150px;
+}
+
+
+#DialogWidget .glyphicon-refresh {
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 7;
+  
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+#DialogWidget iframe {
+  background: none;
+  border-radius: 6px;
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+}
+

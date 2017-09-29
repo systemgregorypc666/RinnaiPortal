@@ -1,0 +1,36 @@
+2017-08-16 09:51:38.8251|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708160002 已經送達!
+Content : 系統提醒!簽核單號 : TR201708160002 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708160002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-16 12:52:51.0343|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708160001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201708160001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-16 14:38:25.3197|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708160003 已經送達!
+Content : 系統提醒!簽核單號 : TR201708160003 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708160003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-16 14:56:45.8867|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708160004 已經送達!
+Content : 系統提醒!簽核單號 : TR201708160004 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708160004'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-16 16:51:03.6087|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708160006 已經送達!
+Content : 系統提醒!簽核單號 : TR201708160006 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708160006'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-16 17:24:28.2507|TRACE|
+MailTo : will.hsu@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708160005 已經送達!
+Content : 系統提醒!簽核單號 : TR201708160005 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708160005'>連結</a> <br />此件為系統發送，請勿回覆!
+|

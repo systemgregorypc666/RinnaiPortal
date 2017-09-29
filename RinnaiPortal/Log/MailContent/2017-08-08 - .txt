@@ -1,0 +1,174 @@
+2017-08-08 08:53:29.1681|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080001 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-08 08:53:46.3871|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 09:45:56.8091|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080002 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080002 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-08 11:18:09.8324|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 11:39:11.2974|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080003 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080003 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-08 16:55:12.2658|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080018 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080018 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080018'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-08 17:00:53.8949|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080009 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080009 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:08.0873|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080016 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080016 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:19.7605|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080015 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080015 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:23.2849|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080013 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080013 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:26.3962|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080012 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080012 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:29.2905|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080014 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080014 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:32.5138|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080010 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080010 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:35.3601|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080011 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080011 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:46.3532|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080007 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080007 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:01:49.6655|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:02:05.6641|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080017 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080017 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:02:10.7756|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080018 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080018 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:03:13.7309|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080019 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080019 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080019'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-08 17:03:42.4118|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080019 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080019 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:11:35.5651|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080021 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080021 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080021'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-08 17:16:04.3000|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080021 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080021 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:16:07.9743|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080020 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080020 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:19:47.5783|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080023 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080023 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080023'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-08 17:21:26.9662|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080022 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080022 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:21:31.8877|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080023 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080023 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:22:49.2054|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080024 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080024 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080024'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-08 17:23:01.3077|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : chris.chiu @rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080024 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708080024 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-08 17:23:37.4333|TRACE|
+MailTo : chris.chiu @rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708080025 已經送達!
+Content : 系統提醒!簽核單號 : TR201708080025 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708080025'>連結</a> <br />此件為系統發送，請勿回覆!
+|

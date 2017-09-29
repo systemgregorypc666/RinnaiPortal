@@ -1,0 +1,50 @@
+2016-12-27 09:32:45.7796|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 09:33:30.6376|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 09:51:10.7003|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為例假日，依規定不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 09:52:37.7235|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為例假日，依規定不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 11:00:53.5543|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時數只能在8小時或12小時區間!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 11:05:43.3513|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時數只能在8小時或12小時區間!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 11:07:59.7993|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時數只能在8小時或12小時區間!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 11:16:23.2853|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時數只能在8小時或12小時區間!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 11:16:27.4233|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時數只能在8小時或12小時區間!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 12:07:05.8563|ERROR|
+{"ErrorMessage":"員工編號01654，國定加班8小時規定上班時間區間應填寫2016/12/27 上午 08:00:00~2016/12/27 下午 05:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 12:49:22.2102|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時數只能在8小時或12小時區間內!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 12:50:09.5972|ERROR|
+{"ErrorMessage":"員工編號01654，國定加班8小時規定上班時間區間應填寫2016/12/27 上午 08:00:00~2016/12/27 下午 07:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 12:52:38.4962|ERROR|
+{"ErrorMessage":"員工編號01654，國定加班12小時規定上班時間區間應填寫2016/12/27 上午 08:00:00~2016/12/27 下午 09:20:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 12:53:16.1792|ERROR|
+{"ErrorMessage":"員工編號01654，國定加班12小時規定上班時間區間應填寫2016/12/27 上午 08:00:00~2016/12/27 下午 09:20:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 12:57:01.3792|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班12小時規定上班時間區間應填寫2016/12/27 上午 08:00:00~2016/12/27 下午 09:20:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 13:24:00.6072|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班8小時加班區間應規定為：2016/12/27 上午 08:00:00~2016/12/27 下午 05:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 13:24:07.2662|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班8小時加班區間應規定為：2016/12/27 上午 08:00:00~2016/12/27 下午 05:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 13:24:37.1742|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班4小時加班區間應規定為：2016/12/27 上午 08:00:00~2016/12/27 下午 12:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 13:24:45.6452|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班4小時加班區間應規定為：2016/12/27 上午 08:00:00~2016/12/27 下午 12:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 13:27:18.9902|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為例假日，依規定不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 13:28:48.0432|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時數只能在8小時或12小時區間內!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 13:28:58.4952|ERROR|
+{"ErrorMessage":"員工編號01654，國定假日加班時數只能在8小時或12小時區間內!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 16:53:56.3872|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 17:08:29.1622|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班4小時加班區間應為：2016/12/27 上午 08:00:00~2016/12/27 下午 12:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-27 17:10:43.2972|ERROR|
+{"ErrorMessage":"員工編號01654，休息日加班4小時加班區間應為：2016/12/27 上午 08:00:00~2016/12/27 下午 12:00:00 !","ActualException":"Do Not Pass Overtime Validation!"}|

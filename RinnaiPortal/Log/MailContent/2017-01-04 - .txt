@@ -1,0 +1,48 @@
+2017-01-04 09:50:43.2545|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701040002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701040002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-04 10:43:53.0916|TRACE|
+MailTo : fumika.huang@rinnai.com.tw
+cc : fumika.huang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-04 10:46:37.7336|TRACE|
+MailTo : fumika.huang@rinnai.com.tw
+cc : fumika.huang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-04 10:54:28.6316|TRACE|
+MailTo : fumika.huang@rinnai.com.tw
+cc : fumika.huang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-04 10:59:38.9476|TRACE|
+MailTo : fumika.huang@rinnai.com.tw
+cc : fumika.huang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-04 11:05:58.7466|TRACE|
+MailTo : fumika.huang@rinnai.com.tw
+cc : fumika.huang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-04 11:19:45.5511|TRACE|
+MailTo : fumika.huang@rinnai.com.tw
+cc : fumika.huang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-04 11:24:23.2588|TRACE|
+MailTo : fumika.huang@rinnai.com.tw
+cc : fumika.huang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701040008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

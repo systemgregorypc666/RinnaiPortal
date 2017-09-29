@@ -1,0 +1,16 @@
+2017-02-13 15:50:25.7601|ERROR|
+{"ErrorMessage":"員工編號00322，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-13 15:50:53.1611|ERROR|
+{"ErrorMessage":"員工編號00322，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-13 15:55:32.9936|ERROR|
+{"ErrorMessage":"員工編號00322，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-13 16:24:54.7781|ERROR|
+{"ErrorMessage":"於志元系統中查無00322的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-13 16:39:26.7795|ERROR|
+{"ErrorMessage":"於志元系統中查無00322的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-13 16:39:36.0244|ERROR|
+{"ErrorMessage":"於志元系統中查無00322的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-13 16:39:45.9684|ERROR|
+{"ErrorMessage":"於志元系統中查無00322的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-13 16:39:48.1386|ERROR|
+{"ErrorMessage":"於志元系統中查無00322的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

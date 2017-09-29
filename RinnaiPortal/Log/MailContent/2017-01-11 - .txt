@@ -1,0 +1,36 @@
+2017-01-11 08:51:58.3801|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701050001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701050001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 09:08:57.7798|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701050001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701050001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 10:56:26.8137|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : steven.peng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110005 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110005 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 12:40:01.9255|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : steven.peng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110006 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110006 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 15:53:40.4137|TRACE|
+MailTo : will.hsu@rinnai.com.tw
+cc : will.hsu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110010 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110010 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 15:55:34.5417|TRACE|
+MailTo : will.hsu@rinnai.com.tw
+cc : will.hsu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110010 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110010 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

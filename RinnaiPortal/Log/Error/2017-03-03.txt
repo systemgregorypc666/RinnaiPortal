@@ -1,0 +1,20 @@
+2017-03-03 13:45:13.4966|ERROR|
+{"ErrorMessage":"員工編號01406，加班工時未達1小時標準!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 13:45:33.8996|ERROR|
+{"ErrorMessage":"員工編號01406，加班工時未達1小時標準!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 13:45:40.8983|ERROR|
+{"ErrorMessage":"員工編號01406，加班工時未達1小時標準!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 14:03:19.0580|ERROR|
+{"ErrorMessage":"員工編號01406的加班申請日期為例假日，依規定不得申請加班!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 14:04:45.3210|ERROR|
+{"ErrorMessage":"員工編號01406，假日加班工時未達1小時!請洽，03-3322101#6804-6806。","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 14:04:57.0260|ERROR|
+{"ErrorMessage":"員工編號01406，假日加班工時未達1小時!請洽，03-3322101#6804-6806。","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 14:31:51.2755|ERROR|
+{"ErrorMessage":"員工編號01406，業務、服務、配送員假日加班(起)應落於規定上班時間區間!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 14:32:32.2736|ERROR|
+{"ErrorMessage":"員工編號01406，業務、服務、配送員假日加班(起)應落於規定上班時間區間!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 14:40:08.8663|ERROR|
+{"ErrorMessage":"員工編號01406，業務、服務、配送員假日加班(迄)應落於規定下班時間區間!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-03 14:44:07.7587|ERROR|
+{"ErrorMessage":"員工編號01406，業務、服務、配送員平日不得申請加班!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

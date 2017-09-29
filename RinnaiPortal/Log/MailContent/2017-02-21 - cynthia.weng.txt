@@ -1,0 +1,12 @@
+2017-02-21 15:46:04.9349|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702210001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201702210001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>累計申請時數(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-08 17:20:00</td><td>2016-12-08 19:20:00</td><td>58</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>TEST</td></tr></table>此件為系統發送，請勿回覆!<br /><br /><span style='color:red;font-size:large;'>提醒 工號:01654 本月您申請加班已累積達40H(不含本次)，法規上限為46H!<br /></span><br />
+|
+2017-02-21 16:13:41.0512|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201702170004 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201702170004 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|

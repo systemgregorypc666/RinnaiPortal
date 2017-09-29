@@ -1,0 +1,18 @@
+2017-01-11 10:19:39.6511|ERROR|
+{"ErrorMessage":"員工編號00532的加班申請日期需為相同日期!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-11 10:19:55.1356|ERROR|
+{"ErrorMessage":"員工編號00532的加班申請日期需為相同日期!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-11 10:20:30.5381|ERROR|
+{"ErrorMessage":"員工編號00532，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-11 13:44:50.5907|ERROR|
+{"ErrorMessage":null,"message_alert":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2017-01-11 13:45:53.3037|ERROR|
+{"ErrorMessage":null,"message_alert":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2017-01-11 13:49:14.1677|ERROR|
+{"ErrorMessage":null,"message_alert":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2017-01-11 15:17:00.9657|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-11 15:17:44.0987|ERROR|
+{"ErrorMessage":"於志元系統中查無00274的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-11 15:17:49.2437|ERROR|
+{"ErrorMessage":"於志元系統中查無00274的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

@@ -1,0 +1,474 @@
+2016-12-27 08:09:27.2941|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612260001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612260001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-12-27 08:11:14.9272|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612260001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201612260001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-12-27 09:32:42.0956|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-27 08:00:00</td><td>2016-11-27 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test例假日</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 09:34:56.3796|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-27 08:00:00</td><td>2016-11-27 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test例假日</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 09:34:58.4326|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270002 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 09:48:55.1728|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201612270002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2016-12-27 09:49:03.6666|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-27 08:00:00</td><td>2016-11-27 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test例假日</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 09:49:14.1937|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270002 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 09:51:00.1903|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-27 08:00:00</td><td>2016-11-27 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test例假日</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 10:28:33.0739|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:00:48.4993|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:02:04.0083|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:07:48.4083|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:08:37.1753|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:10:32.3353|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:10:41.2043|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270003 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 11:10:49.8753|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201612270003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2016-12-27 11:14:34.9753|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:16:20.4733|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 16:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:16:49.1873|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 11:16:53.6023|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270003 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 11:17:01.0653|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201612270003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2016-12-27 11:17:24.6863|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 12:06:59.8207|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 09:00:00</td><td>2016-10-10 18:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 12:49:19.6482|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 09:00:00</td><td>2016-10-10 21:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 12:50:06.2892|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 09:00:00</td><td>2016-10-10 22:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 12:52:36.0242|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 09:00:00</td><td>2016-10-10 22:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 12:56:58.0612|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 09:00:00</td><td>2016-10-10 22:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:11:56.4567|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270004 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-19 08:00:00</td><td>2016-11-19 17:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test休息日加班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:12:01.2762|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270004 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270004'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 13:19:30.6681|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270004 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-19 08:00:00</td><td>2016-11-19 17:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test休息日加班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:20:11.0432|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270004 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270004'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 13:21:20.7582|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270004 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-19 08:00:00</td><td>2016-11-19 17:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test休息日加班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:23:38.3832|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270004 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-19 08:00:00</td><td>2016-11-19 17:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test休息日加班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:24:31.2992|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270004 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-19 08:00:00</td><td>2016-11-19 12:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test休息日加班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:26:47.9772|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270004 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-19 08:00:00</td><td>2016-11-19 12:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test休息日加班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:26:51.3212|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270004 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270004'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 13:27:16.7942|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-27 08:00:00</td><td>2016-11-27 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test例假日</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:28:42.9452|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 09:00:00</td><td>2016-10-10 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:28:55.0412|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 09:00:00</td><td>2016-10-10 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:29:09.9822|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-10-10 08:00:00</td><td>2016-10-10 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日區間卡控</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:29:13.5772|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270003 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 13:29:57.5802|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612270003 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612270003 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-12-27 13:30:06.2322|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612270004 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612270004 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-12-27 13:31:05.7302|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270003 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201612270003 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-12-27 13:34:41.6452|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270004 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201612270004 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-12-27 13:55:01.4122|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-27 08:00:00</td><td>2016-11-27 17:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定假日2</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 13:55:04.8292|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270001 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270001 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 13:55:48.3772|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612270001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612270001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-12-27 13:59:16.6532|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201612270001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-12-27 14:06:57.8602|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270005 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270005 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-03 08:00:00</td><td>2016-12-03 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定12小時</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 14:07:01.8372|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270005 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270005 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270005'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 14:07:44.2972|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612270005 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612270005 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-12-27 14:08:12.3841|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270005 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201612270005 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-12-27 14:39:53.9252|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270006 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270006 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-04 08:00:00</td><td>2016-12-04 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test 國定12HHHH</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 14:39:58.2602|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270006 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270006 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270006'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 14:40:49.3402|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612270006 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612270006 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-12-27 14:41:28.1502|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270006 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201612270006 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-12-27 14:49:25.9622|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270007 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270007 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-10 08:00:00</td><td>2016-12-10 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset 國12</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 14:50:30.6302|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270007 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270007 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270007'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 14:53:18.3742|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612270007 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612270007 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-12-27 14:53:44.5982|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270007 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201612270007 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-12-27 15:04:37.4272|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-11 08:00:00</td><td>2016-12-11 21:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test國定12H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 15:05:00.3902|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已經送達!
+Content : 系統提醒!簽核單號 : OT201612270002 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201612270002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-12-27 15:05:41.7932|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612270002 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612270002 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-12-27 15:06:10.6822|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270002 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201612270002 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-12-27 16:53:51.3722|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:00:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 16:55:35.9862|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 16:56:00.6562|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:00:00.2472|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:00:58.9282|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:01:56.8462|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:02:51.6022|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:04:06.3982|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:05:30.3152|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:06:52.4502|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:08:27.0382|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:09:30.1012|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-12-27 17:10:41.2482|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201612270008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201612270008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-24 08:00:00</td><td>2016-12-24 12:30:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>tset休息日4H</td></tr></table>此件為系統發送，請勿回覆!<br />
+|

@@ -1,0 +1,302 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RinnaiPortal.SiteMaster" %>
+
+<%@ Import Namespace="RinnaiPortal.Extensions" %>
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> 台灣林內 Portal</title>
+
+    <asp:PlaceHolder runat="server"></asp:PlaceHolder>
+
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/jquery-1.10.2.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/jquery-ui-1.10.4.custom.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/bootstrap.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/moment.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/bootstrap-datetimepicker.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/Sign/main.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/jquery.validate.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/jquery.validate.unobtrusive.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/jquery.multiselect.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/jquery.multiselect.filter.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/jquery-confirm.min.js") %>' type="text/javascript"></script>
+    <script src='<%: VirtualPathUtility.ToAbsolute(@"~/Scripts/select2.full.min.js") %>' type="text/javascript"></script>
+
+
+
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/favicon.ico") %>" rel="shortcut icon" type="image/x-icon" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/Content/bootstrap.css") %>" rel="stylesheet" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/Content/custom.css") %>" rel="stylesheet" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/Content/bootstrap-datetimepicker.css") %>" rel="stylesheet" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/Content/jquery.multiselect.css") %> " rel="stylesheet" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/Content/jquery.multiselect.filter.css") %> " rel="stylesheet" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/Content/redmond/jquery-ui-1.10.4.custom.css") %> " rel="stylesheet" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/Content/jquery-confirm.css") %> " rel="stylesheet" />
+    <link href="<%: VirtualPathUtility.ToAbsolute(@"/Content/select2.min.css") %> " rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(function () {
+            $('.bread-crumb-title').text($('#MainContent_PageTitle').val());
+
+            $("table th").hover(function (e) {
+                $(this).css("cursor", "pointer");
+            });
+            if ($('input#DisabledDate').length > 0) {
+                $('#DisabledDate').datetimepicker();
+            }
+            if ($('input#BeginDate').length > 0) {
+                $('#BeginDate').datetimepicker();
+            }
+            if ($('input#EndDate').length > 0) {
+                $('#EndDate').datetimepicker();
+            }
+            if ($('input#StartDateTime').length > 0) {
+                $('#StartDateTime').datetimepicker();
+            }
+            if ($('input#EndDateTime').length > 0) {
+                $('#EndDateTime').datetimepicker();
+            }
+            if ($('input#ApplyDateTime').length > 0) {
+                $('#ApplyDateTime').datetimepicker();
+            }
+            if ($('input#LimitDate').length > 0) {
+                $('#LimitDate').datetimepicker();
+            }
+            if ($('input#ForgotPunchInDateTime').length > 0) {
+                $('#ForgotPunchInDateTime').datetimepicker();
+            }
+            if ($('input#ForgotPunchOutDateTime').length > 0) {
+                $('#ForgotPunchOutDateTime').datetimepicker();
+            }
+            if ($('input#DefaultStartDateTime').length > 0) {
+                $('#DefaultStartDateTime').datetimepicker();
+            }
+            if ($('input#DefaultEndDateTime').length > 0) {
+                $('#DefaultEndDateTime').datetimepicker();
+            }
+        });
+    </script>
+    <style>
+        body {
+            /*20161208 修改將MENU置頂*/
+            padding-top: 0px;
+            padding-bottom: 70px;
+        }
+
+        #sitebody {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 13px;
+            height: 100%;
+        }
+
+        #sidebar_left {
+            background-color: #EAF2F5;
+            width: 13%;
+            height: 600px;
+            text-align: left;
+            float: left;
+        }
+
+        #sidebar_right {
+            background-color: #EAF2F5;
+            width: 13%;
+            height: 600px;
+            text-align: left;
+            float: right;
+        }
+
+        #content {
+            margin-left: 13%;
+            margin-right: 13%;
+            height: 600px;
+            width: 74%;
+            background-color: #FFFFFF;
+        }
+
+        .right_side {
+            float: inherit;
+            width: 100%;
+            text-align: left;
+        }
+
+        .dark {
+            color: #353E47;
+        }
+
+        .horzPad h1, .horzPad h2, .horzPad h3, .horzPad h4, .horzPad h5, .horzPad p {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .right_side h3 {
+            display: block;
+            font-size: 1.17em;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+            font-size: 1.17em;
+            color: #586B7A;
+            /*margin-right:10px;
+          margin-bottom: 5px;
+          font-family: verdana;
+          font-size:12.5px;
+          font-weight: bold;
+          line-height:16px;
+          width:100%;
+          color: #FCF8E3;
+          background: #;
+          padding:4px;
+          border:1px solid #3A3B22;
+          text-align:center;*/
+        }
+
+        .lightBlueBg {
+            background-color: #EAF2F5;
+        }
+
+        .floatRight {
+            float: right;
+        }
+
+        .width25 {
+            width: 24%;
+        }
+        /*submenu_s*/
+        ul.submenu1,
+        ul.submenu2 {
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+
+            ul.submenu1 li,
+            ul.submenu2 li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                list-style-image: url(foo.gif); /* because IE is balls */
+            }
+
+                ul.submenu1 li a,
+                ul.submenu2 li a {
+                    display: block;
+                    height: auto !important;
+                    /* Start hide from IE Mac \*/
+                    height: 1%;
+                    /* End hide from IE Mac */
+                    padding: 1px 5px 1px 20px;
+                }
+
+                ul.submenu1 li a {
+                    background: url(img/submenu1.gif) no-repeat 5px 50%;
+                }
+
+            ul.submenu1 a:hover {
+                color: #426F85;
+                background: #B3C6C4 url(img/submenu1.gif) no-repeat 5px 50%;
+            }
+        /*submenu_e*/
+        .right_side p {
+            margin: 5px;
+            margin-bottom: 15px;
+            padding-right: 10px;
+            font-family: verdana;
+            font-size: 11px;
+            line-height: 16px;
+            color: #333333;
+        }
+    </style>
+    <meta name="description" content="Taiwan Rinnai" />
+</head>
+<body>
+    <form runat="server" id="MainHtmlForm">
+
+        <%--<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<asp:Image runat="server" ImageUrl="~/img/logo5.jpg" Width="100%" />
+			</div>
+		</div>--%>
+        <nav class="navbar-default navbar-static-top" role="navigation" id="navigation-bar">
+
+            <div class="container">
+                <div style="float: left; width: 12%;">
+                    <asp:Image runat="server" ImageUrl="~/img/logo5.jpg" Width="100%" />
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">台灣林內 Portal</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">首頁</a></li>
+                        <%--                        <li><a runat="server" href="~/About">關於我們</a></li>
+						<li><a runat="server" href="~/Contact">聯絡方式</a></li>--%>
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled" ID="LoginView">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <%--<li><a runat="server" href="~/Account/Register">註冊</a></li>--%>
+                                <li><a runat="server" href="~/Account/Logon.aspx">登入</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="#" title="Welcome To © Rinnai Taiwan Corporation">Hi, <%: Context.User.Identity.IsAuthenticated ? Context.User.Identity.GetUserName() : "Guest"  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="登出" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" ID="LoginOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+                <div class="pull-right bread-crumb-title navbar-text"></div>
+                <div class="navbar-collapse collapse">
+                    <asp:LoginView runat="server" ViewStateMode="Disabled" ID="menuLoginView">
+                        <AnonymousTemplate>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#navigation-bar').addClass("hide");
+                                });
+                            </script>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <nav class="navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <asp:Menu ID="SystemMenu" runat="server" EnableViewState="false"
+                                        IncludeStyleBlock="false" Orientation="Horizontal"
+                                        StaticMenuStyle-CssClass="nav"
+                                        StaticSelectedStyle-CssClass="active"
+                                        DynamicMenuStyle-CssClass="dropdown-menu"
+                                        SkipLinkText="" Height="40">
+                                    </asp:Menu>
+                                </div>
+                            </nav>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+    <%--<nav class="navbar navbar-inverse navbar-fixed-bottom form-inline" role="navigation" style="">
+		<div class="container" style="vertical-align: middle; text-align: center; display: inline">
+			<div style="color: white">&copy; <%: DateTime.Now.Year %> Taiwan Rinnai .All Rights Reserved </div>
+		</div>
+	</nav>--%>
+</body>
+</html>

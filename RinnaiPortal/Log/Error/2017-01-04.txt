@@ -1,0 +1,10 @@
+2017-01-04 09:01:44.0135|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-04 10:03:03.9956|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-04 10:03:47.1019|ERROR|
+{"ErrorMessage":"員工編號00018，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-04 10:03:58.8911|ERROR|
+{"ErrorMessage":"員工編號00030，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-04 10:07:53.1035|ERROR|
+{"ErrorMessage":"員工編號00018，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

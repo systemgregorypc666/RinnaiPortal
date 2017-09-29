@@ -1,0 +1,4 @@
+2017-01-05 14:01:37.4932|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期需為相同日期!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-05 14:03:53.9517|ERROR|
+{"ErrorMessage":"員工編號00519，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

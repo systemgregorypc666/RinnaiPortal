@@ -1,0 +1,2 @@
+2017-07-21 17:17:55.4809|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

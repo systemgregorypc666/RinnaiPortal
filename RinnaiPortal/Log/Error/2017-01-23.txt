@@ -1,0 +1,10 @@
+2017-01-23 10:57:13.7163|ERROR|
+{"ErrorMessage":"工號: 01654,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-23 10:58:03.5803|ERROR|
+{"ErrorMessage":"工號: 01654,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-23 10:58:29.2399|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-23 10:59:27.2276|ERROR|
+{"ErrorMessage":"工號: 01654,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-01-23 10:59:30.4900|ERROR|
+{"ErrorMessage":"工號: 01654,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

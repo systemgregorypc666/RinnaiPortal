@@ -1,0 +1,8 @@
+2017-03-01 15:09:03.0143|ERROR|
+{"ErrorMessage":"員工編號01638，業務、服務、配送員平日不得申請加班!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-01 15:10:48.3963|ERROR|
+{"ErrorMessage":"員工編號01638，業務、服務、配送員平日不得申請加班!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-01 15:11:21.3393|ERROR|
+{"ErrorMessage":"員工編號01638，業務、服務、配送員平日不得申請加班!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-01 15:11:38.4483|ERROR|
+{"ErrorMessage":"於志元系統中查無01638的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

@@ -1,0 +1,56 @@
+2016-04-21 14:43:40.8142|ERROR|
+Error Key : NewRowEmpID 
+ErrorMessage: 查無人員編號! 
+Keys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID|
+2016-04-21 14:44:46.0966|ERROR|
+Error Key : NewRowEmpID 
+ErrorMessage: 查無人員編號! 
+Keys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID|
+2016-04-21 14:46:19.2248|ERROR|
+Error Key : NewRowEmpID 
+ErrorMessage: 查無人員編號! 
+Keys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID|
+2016-04-21 14:46:40.8712|ERROR|
+Error Key : NewRowEmpID 
+ErrorMessage: 查無人員編號! 
+Keys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID|
+2016-04-21 14:52:16.7437|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-04-21 14:52:32.9037|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-04-21 14:55:47.8271|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-04-21 14:55:51.4586|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-04-21 14:56:00.9574|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-04-21 16:08:32.9704|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:08:36.7044|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:08:41.0097|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:08:44.1743|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:08:46.6877|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:09:53.3308|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:10:09.9333|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:10:14.3766|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:10:20.6948|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |
+2016-04-21 16:11:25.6489|ERROR|
+ErrorMessage: 已發生類型 'System.Exception' 的例外狀況。 
+Keys: |

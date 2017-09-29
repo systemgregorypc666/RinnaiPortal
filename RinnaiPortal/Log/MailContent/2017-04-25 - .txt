@@ -1,0 +1,6 @@
+2017-04-25 15:18:54.3608|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703060003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201703060003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

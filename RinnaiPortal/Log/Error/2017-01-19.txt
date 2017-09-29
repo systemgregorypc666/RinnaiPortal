@@ -1,0 +1,6 @@
+2017-01-19 14:47:32.7336|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2017-01-19 14:47:38.1942|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2017-01-19 16:09:52.0085|ERROR|
+{"ErrorMessage":"員工編號01654，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

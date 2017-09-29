@@ -1,0 +1,4 @@
+2017-03-02 08:54:47.6407|ERROR|
+{"ErrorMessage":"員工編號01406，業務、服務、配送員平日不得申請加班!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-03-02 08:55:13.8826|ERROR|
+{"ErrorMessage":"員工編號01536，加班工時未達1小時標準!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

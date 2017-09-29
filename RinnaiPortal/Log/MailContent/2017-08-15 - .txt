@@ -1,0 +1,18 @@
+2017-08-15 07:58:19.8095|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201708150001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : FP201708150001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-15 07:58:39.3235|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708090001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708090001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-15 07:58:43.2605|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708090002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708090002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

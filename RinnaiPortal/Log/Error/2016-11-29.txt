@@ -1,0 +1,8 @@
+2016-11-29 15:38:16.8605|ERROR|
+{"ErrorMessage":"於志元系統中查無00304的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-11-29 15:38:43.9152|ERROR|
+{"ErrorMessage":"員工編號00360，假日加班工時未達1小時!請洽，03-3322101#6804-6806。","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-11-29 15:40:47.4895|ERROR|
+{"ErrorMessage":"於志元系統中查無01231的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-11-29 15:41:02.2090|ERROR|
+{"ErrorMessage":"員工編號00360，假日加班工時未達1小時!請洽，03-3322101#6804-6806。","ActualException":"Do Not Pass Overtime Validation!"}|

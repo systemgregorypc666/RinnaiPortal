@@ -1,0 +1,56 @@
+2016-05-11 11:32:43.6667|ERROR|
+{"message":"員工編號，加班申請時間與加班起算時間或打卡時間不符!"}|
+2016-05-11 11:32:54.4476|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:33:32.2158|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:33:41.5807|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:33:49.7833|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:33:54.2071|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:34:34.7779|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:36:31.9784|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:36:50.2750|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:37:07.0611|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:38:09.8896|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:38:35.0285|ERROR|
+{"message":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-11 11:50:32.0395|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-05-11 11:50:40.9356|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-05-11 11:51:27.0178|ERROR|
+"Error Key : NewRowEmpID \r\nErrorMessage: 查無人員編號! \r\nKeys: ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"|
+2016-05-11 11:54:57.4455|ERROR|
+"Error Key : NewRowEmpID,\r\nErrorMessage: 查無人員編號!,\r\nKeys: \u0027ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID\u0027"|
+2016-05-11 11:56:51.4200|ERROR|
+"Error Key : NewRowEmpID,\r\nErrorMessage: \u0027查無人員編號!\u0027,\r\nKeys: \u0027ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID\u0027"|
+2016-05-11 14:02:46.7284|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2016-05-11 14:02:58.6301|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2016-05-11 14:09:12.6187|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2016-05-11 14:09:17.1522|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2016-05-11 14:41:30.7842|ERROR|
+{"Message":null,"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!"}|
+2016-05-11 14:42:00.8863|ERROR|
+{"Message":null,"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!"}|
+2016-05-11 14:45:58.6199|ERROR|
+{"Message":null,"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!"}|
+2016-05-11 15:34:24.6988|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2016-05-11 15:34:27.6296|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2016-05-11 15:35:30.0952|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"查無人員編號!","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|
+2016-05-11 15:36:21.8136|ERROR|
+{"Message":null,"ErrorMessage":"員工編號00192，加班(起)落於規定上班時間區間!"}|

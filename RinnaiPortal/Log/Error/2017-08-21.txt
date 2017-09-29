@@ -1,0 +1,8 @@
+2017-08-21 14:38:41.6222|ERROR|
+{"ErrorMessage":"工號: 01702,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-21 14:39:05.9025|ERROR|
+{"ErrorMessage":"工號: 01702,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-21 14:39:19.9217|ERROR|
+{"ErrorMessage":"工號: 01702,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-21 15:10:02.5043|ERROR|
+{"ErrorKey":"NewRowEmpID","ErrorMessage":"並未將物件參考設定為物件的執行個體。","Keys":"ApplyID_FK,DefaultDeptID,DefaultDeptName,DefaultStartDateTime,DefaultSupportDeptID,DefaultSupportDeptName,DefaultMealOrderKey,DefaultMealOrderValue,DefaultPayTypeKey,DefaultPayTypeValue,DefaultEndDateTime,DefaultNote,IsAddRow,NewRowEmpID"}|

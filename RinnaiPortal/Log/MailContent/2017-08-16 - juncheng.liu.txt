@@ -1,0 +1,42 @@
+2017-08-16 09:43:04.5705|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708160001 已經送達!
+Content : 系統提醒!簽核單號 : TR201708160001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708160001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-16 12:07:04.6630|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708160001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201708160001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-08-16 17:20:00</td><td>2017-08-16 19:20:00</td><td>2</td><td>2</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-08-16 12:07:45.3857|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708160001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201708160001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-08-16 17:20:00</td><td>2017-08-16 19:20:00</td><td>2</td><td>2</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-08-16 12:08:57.8694|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708160001 已經送達!
+Content : 系統提醒!簽核單號 : OT201708160001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201708160001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-16 15:00:05.0737|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : TR201708160004 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : TR201708160004 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-08-16 15:26:01.1142|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708160005 已經送達!
+Content : 系統提醒!簽核單號 : TR201708160005 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708160005'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-16 16:52:33.5737|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : TR201708160006 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : TR201708160006 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|

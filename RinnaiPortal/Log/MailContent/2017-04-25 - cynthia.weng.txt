@@ -1,0 +1,36 @@
+2017-04-25 15:03:54.0548|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703060003 已經送達!
+Content : <span style='color:red;font-size:medium;'>此加班單為事後補單!</span><br />系統提醒!簽核單號 : OT201703060003 已經送達，請儘速檢視!<br /><a href='websrv:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201703060003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-04-25 15:04:05.2828|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703060003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201703060003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-04-25 15:06:02.2068|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703060003 已經送達!
+Content : <span style='color:red;font-size:medium;'>此加班單為事後補單!</span><br />系統提醒!簽核單號 : OT201703060003 已經送達，請儘速檢視!<br /><a href='websrv:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201703060003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-04-25 15:06:07.7008|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703060003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201703060003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-04-25 15:17:36.9098|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703060003 已經送達!
+Content : <span style='color:red;font-size:medium;'>此加班單為事後補單!</span><br />系統提醒!簽核單號 : OT201703060003 已經送達，請儘速檢視!<br /><a href='portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201703060003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-04-25 15:19:05.9738|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703060003 已經送達!
+Content : <span style='color:red;font-size:medium;'>此加班單為事後補單!</span><br />系統提醒!簽核單號 : OT201703060003 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201703060003'>連結</a> <br />此件為系統發送，請勿回覆!
+|

@@ -1,0 +1,10 @@
+2016-12-23 14:33:36.3435|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-23 14:34:09.9959|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-23 14:35:00.8230|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-23 14:38:23.4933|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-23 14:40:40.6450|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為例假日，依規定不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|

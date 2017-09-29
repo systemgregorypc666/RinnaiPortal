@@ -1,0 +1,108 @@
+2017-08-07 08:51:13.2837|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708070001 已經送達!
+Content : 系統提醒!簽核單號 : TR201708070001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708070001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-07 08:54:31.1842|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708070002 已經送達!
+Content : 系統提醒!簽核單號 : TR201708070002 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708070002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-07 11:01:41.3118|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708070003 已經送達!
+Content : 系統提醒!簽核單號 : TR201708070003 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708070003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-07 12:08:17.0594|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708070003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708070003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:08:20.3568|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201707310003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201707310003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:08:23.4561|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708010001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708010001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:08:26.7854|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201708010001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : FP201708010001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:08:29.8887|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708010012 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708010012 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:08:36.4844|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708020007 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708020007 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:08:39.3717|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708020008 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708020008 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:09:05.5293|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708020009 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708020009 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:09:08.9526|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708020010 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708020010 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:09:11.9989|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708030001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708030001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:09:14.6462|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708040002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708040002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:52:05.0875|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708040003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708040003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:52:08.4285|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708040004 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708040004 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:52:11.2965|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708070001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708070001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-07 12:52:14.0315|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708070002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201708070002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

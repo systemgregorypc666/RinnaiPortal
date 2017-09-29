@@ -1,0 +1,42 @@
+2016-05-26 11:27:47.5451|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201605260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201605260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01497</td><td>劉懿鋆</td><td>2016-05-17 17:20:00</td><td>2016-05-17 21:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>zzzz</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-05-26 11:27:50.6185|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201605260001 已經送達!
+Content : 系統提醒!簽核單號 : OT201605260001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201605260001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-05-26 11:46:15.0232|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201605260002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201605260002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01497</td><td>劉懿鋆</td><td>2016-05-17 17:20:00</td><td>2016-05-17 19:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>zzzz</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-05-26 11:46:17.8891|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201605260002 已經送達!
+Content : 系統提醒!簽核單號 : OT201605260002 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201605260002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-05-26 13:02:48.6603|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605260004 已被駁回，請儘速修改!
+Content : 系統提醒!簽核單號 : FP201605260004 已被駁回，請儘速修改!此件為系統發送，請勿回覆!
+|
+2016-05-26 13:22:54.8683|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605260004 已被駁回，請儘速修改!
+Content : 系統提醒!簽核單號 : FP201605260004 已被駁回，請儘速修改!此件為系統發送，請勿回覆!
+|
+2016-05-26 13:52:36.1264|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605260004 已被駁回，請儘速修改!
+Content : 系統提醒!簽核單號 : FP201605260004 已被駁回，請儘速修改!此件為系統發送，請勿回覆!
+|

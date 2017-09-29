@@ -1,0 +1,66 @@
+2017-03-02 08:56:13.8592|TRACE|
+MailTo : mark.lee@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703020002 已經送達!
+Content : <span style='color:red;font-size:medium;'>此加班單為事後補單!</span><br />系統提醒!簽核單號 : OT201703020002 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201703020002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-03-02 08:56:22.5391|TRACE|
+MailTo : mark.lee@rinnai.com.tw
+cc : mark.lee@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201703020002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201703020002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:37:41.6529|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201703020001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201703020001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:38:51.6751|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201703020001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201703020001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:40:00.4982|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201703020001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201703020001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:40:10.4330|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201703020001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201703020001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:42:17.5553|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201703020001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201703020001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:44:33.8237|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201703020002 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201703020002 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:45:02.4405|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201703020002 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201703020002 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:50:07.8487|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201703020003 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201703020003 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-03-02 10:50:44.8446|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201703020003 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201703020003 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

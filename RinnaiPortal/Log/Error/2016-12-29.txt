@@ -1,0 +1,2 @@
+2016-12-29 15:16:38.2603|ERROR|
+{"ErrorMessage":"工號: 01654,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

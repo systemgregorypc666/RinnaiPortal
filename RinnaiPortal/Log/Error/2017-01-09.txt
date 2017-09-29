@@ -1,0 +1,2 @@
+2017-01-09 13:53:40.8817|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

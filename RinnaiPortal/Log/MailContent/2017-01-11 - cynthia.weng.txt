@@ -1,0 +1,138 @@
+2017-01-11 08:52:18.2811|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701050001 已經送達!
+Content : 系統提醒!簽核單號 : OT201701050001 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701050001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 09:34:58.8089|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201701050002 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201701050002 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-01-11 09:36:10.2559|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201612300005 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201612300005 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-01-11 10:22:23.3674|TRACE|
+MailTo : steven.peng@rinnai.com.tw,steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110005 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110005 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110005'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 11:14:37.6707|TRACE|
+MailTo : steven.peng@rinnai.com.tw,steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110005 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110005 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110005'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 11:14:55.1747|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : steven.peng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110005 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110005 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 11:18:24.8447|TRACE|
+MailTo : steven.peng@rinnai.com.tw,steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110005 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110005 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110005'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 12:38:23.8307|TRACE|
+MailTo : steven.peng@rinnai.com.tw,steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110006 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110006 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110006'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 12:39:00.4473|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : steven.peng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110006 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110006 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 12:39:13.2386|TRACE|
+MailTo : steven.peng@rinnai.com.tw,steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110006 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110006 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110006'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 13:53:16.5117|TRACE|
+MailTo : steven.peng@rinnai.com.tw,steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110006 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110006 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110006'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 13:53:39.2167|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : steven.peng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110006 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110006 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 13:54:08.9757|TRACE|
+MailTo : steven.peng@rinnai.com.tw,steven.peng@rinnai.com.tw,george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110006 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110006 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110006'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 15:12:30.6887|TRACE|
+MailTo : steven.peng@rinnai.com.tw,steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110007 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701110007 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00304</td><td>徐明增</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>00360</td><td>翻英俊</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>00874</td><td>阮越恢</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>00876</td><td>朱黃定</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>00877</td><td>何文位</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01012</td><td>許美玉</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01022</td><td>李國輝</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01078</td><td>林保元</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01167</td><td>阮克職</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01188</td><td>陳文泰</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01189</td><td>阮江南</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01231</td><td>曾緯宸</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01454</td><td>徐偉欽</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01572</td><td>高玉炫</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr><tr><td>01600</td><td>謝柳妹</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>qqq</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2017-01-11 15:15:37.8487|TRACE|
+MailTo : steven.peng@rinnai.com.tw,will.hsu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701110008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00265</td><td>葉惠美</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00267</td><td>李雪娥</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00269</td><td>吳盛程</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00271</td><td>黎瑞珠</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00273</td><td>江秀尾</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00274</td><td>溫玉花</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00275</td><td>朱水美</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00276</td><td>溫美菊</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00277</td><td>張美英</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00279</td><td>陳素珍</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00280</td><td>彭忠林</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00284</td><td>韓素娟</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00293</td><td>許梅英</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00294</td><td>陳美華</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00315</td><td>廖玉蘭</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00316</td><td>張楓明</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00324</td><td>姜玉琴</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00353</td><td>武文河</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00474</td><td>李美花</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00495</td><td>梁文訓</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00573</td><td>梁景威</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00808</td><td>宋紹嘉</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00875</td><td>趙文勇</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00885</td><td>呂學炫</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00924</td><td>繆文雯</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00973</td><td>陳耀韡</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00991</td><td>蘇淑翎</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01000</td><td>何熙隆</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01128</td><td>陳鈺雲</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01150</td><td>阮光偉</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01165</td><td>張子耘</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01171</td><td>陰清平</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01174</td><td>黎清水</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01185</td><td>葉淑淘</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01195</td><td>陳仁德</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01243</td><td>何衡</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01245</td><td>陳麗仙</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01250</td><td>陳威成</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01302</td><td>吳垂彰</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01328</td><td>阮光榮</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01403</td><td>吳妤涵</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01418</td><td>張宗凱</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01462</td><td>江鈺敏</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01473</td><td>謝仁瑋</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01476</td><td>姚長安</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01477</td><td>莊于輝</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01503</td><td>黃章誠</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01585</td><td>林振宏</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01614</td><td>潘文量</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01628</td><td>蕭凱文</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0281</td><td>黃俊皓</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0283</td><td>傅睿恩</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0329</td><td>林新榮</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0332</td><td>施俊宇</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0335</td><td>葉治倫</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0337</td><td>楊曜齊</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2017-01-11 15:16:57.2427|TRACE|
+MailTo : steven.peng@rinnai.com.tw,will.hsu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110008 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701110008 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00265</td><td>葉惠美</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00267</td><td>李雪娥</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00269</td><td>吳盛程</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00271</td><td>黎瑞珠</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00273</td><td>江秀尾</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00274</td><td>溫玉花</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00275</td><td>朱水美</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00276</td><td>溫美菊</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00277</td><td>張美英</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00279</td><td>陳素珍</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00280</td><td>彭忠林</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00284</td><td>韓素娟</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00293</td><td>許梅英</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00294</td><td>陳美華</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00315</td><td>廖玉蘭</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00316</td><td>張楓明</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00324</td><td>姜玉琴</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00353</td><td>武文河</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00474</td><td>李美花</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00495</td><td>梁文訓</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00573</td><td>梁景威</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00808</td><td>宋紹嘉</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00875</td><td>趙文勇</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00885</td><td>呂學炫</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00924</td><td>繆文雯</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00973</td><td>陳耀韡</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>00991</td><td>蘇淑翎</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01000</td><td>何熙隆</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01128</td><td>陳鈺雲</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01150</td><td>阮光偉</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01165</td><td>張子耘</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01171</td><td>陰清平</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01174</td><td>黎清水</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01185</td><td>葉淑淘</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01195</td><td>陳仁德</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01243</td><td>何衡</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01245</td><td>陳麗仙</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01250</td><td>陳威成</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01302</td><td>吳垂彰</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01328</td><td>阮光榮</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01403</td><td>吳妤涵</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01418</td><td>張宗凱</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01462</td><td>江鈺敏</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01473</td><td>謝仁瑋</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01476</td><td>姚長安</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01477</td><td>莊于輝</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01503</td><td>黃章誠</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01585</td><td>林振宏</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01614</td><td>潘文量</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>01628</td><td>蕭凱文</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0281</td><td>黃俊皓</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0283</td><td>傅睿恩</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0329</td><td>林新榮</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0332</td><td>施俊宇</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0335</td><td>葉治倫</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr><tr><td>F0337</td><td>楊曜齊</td><td>2017-01-11 17:20:00</td><td>2017-01-11 19:20:00</td><td>水箱課人員</td><td>加班費</td><td>葷食</td><td>5050</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2017-01-11 15:18:34.8637|TRACE|
+MailTo : steven.peng@rinnai.com.tw,will.hsu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110009 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110009 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110009'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 15:20:06.0690|TRACE|
+MailTo : will.hsu@rinnai.com.tw
+cc : will.hsu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110009 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110009 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 15:30:52.3835|TRACE|
+MailTo : steven.peng@rinnai.com.tw,will.hsu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110009 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110009 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110009'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 15:31:19.4432|TRACE|
+MailTo : will.hsu@rinnai.com.tw
+cc : will.hsu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110009 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110009 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-11 15:43:33.0107|TRACE|
+MailTo : steven.peng@rinnai.com.tw,will.hsu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110010 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110010 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110010'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 17:10:46.3767|TRACE|
+MailTo : steven.peng@rinnai.com.tw,will.hsu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110010 已經送達!
+Content : 系統提醒!簽核單號 : OT201701110010 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701110010'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-11 17:10:53.4937|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : steven.peng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701110010 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701110010 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

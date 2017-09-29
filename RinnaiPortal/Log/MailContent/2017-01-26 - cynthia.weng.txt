@@ -1,0 +1,90 @@
+2017-01-26 08:57:42.1066|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00554</td><td>戴美玉</td><td>2016-11-08 17:20:00</td><td>2016-11-08 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr><tr><td>01654</td><td>翁敏純</td><td>2016-11-08 17:20:00</td><td>2016-11-08 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><span style='color:red;font-size:large;'></span>
+|
+2017-01-26 08:58:09.8586|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-11 17:20:00</td><td>2016-12-11 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><span style='color:red;font-size:large;'>提醒工號:01654 今日您申請加班已累積達40H(不含本次)，法規上限為46H!</span>
+|
+2017-01-26 08:58:20.9736|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-12-11 17:20:00</td><td>2016-12-11 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><span style='color:red;font-size:large;'>提醒工號:01654 今日您申請加班已累積達40H(不含本次)，法規上限為46H!</span>
+|
+2017-01-26 09:05:43.7216|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr><tr><td>00554</td><td>戴美玉</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><span style='color:red;font-size:large;'>提醒工號:01654 今日您申請加班已累積達40H(不含本次)，法規上限為46H!提醒工號:00554 今日您申請加班已累積達40H(不含本次)，法規上限為46H!</span>
+|
+2017-01-26 09:07:10.5652|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr><tr><td>00554</td><td>戴美玉</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><br /><span style='color:red;font-size:large;'>提醒工號:01654 今日您申請加班已累積達40H(不含本次)，法規上限為46H!<br />提醒工號:00554 今日您申請加班已累積達40H(不含本次)，法規上限為46H!<br /></span><br />
+|
+2017-01-26 09:09:56.2838|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr><tr><td>00554</td><td>戴美玉</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><br /><span style='color:red;font-size:large;'>提醒工號:01654 今日您申請加班已累積達40H(不含本次)，法規上限為46H!<br />提醒工號:00554 今日您申請加班已累積達40H(不含本次)，法規上限為46H!<br /></span><br />
+|
+2017-01-26 09:19:32.8885|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr><tr><td>00554</td><td>戴美玉</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><br /><span style='color:red;font-size:large;'>提醒工號:01654 本月您申請加班<span style='color:red;font-size:large;'>已累積達40H(不含本次)</span>，法規上限為46H!<br />提醒工號:00554 本月您申請加班<span style='color:red;font-size:large;'>已累積達40H(不含本次)</span>，法規上限為46H!<br /></span><br />
+|
+2017-01-26 09:32:06.9545|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260002 已經送達!
+Content : 系統提醒!簽核單號 : OT201701260002 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701260002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-26 09:32:44.0125|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701260002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-26 09:38:03.9685|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260002 已經送達!
+Content : 系統提醒!簽核單號 : OT201701260002 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701260002'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-26 09:46:40.0505|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr><tr><td>00554</td><td>戴美玉</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><br /><span style='color:red;font-size:large;'>提醒<br />工號:01654 本月您申請加班已累積達40H(不含本次)，法規上限為46H!<br />提醒<br />工號:00554 本月您申請加班已累積達40H(不含本次)，法規上限為46H!<br /></span><br />
+|
+2017-01-26 09:48:09.9015|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201701260001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01654</td><td>翁敏純</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr><tr><td>00554</td><td>戴美玉</td><td>2016-11-22 17:20:00</td><td>2016-11-22 19:20:00</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test maiil</td></tr></table>此件為系統發送，請勿回覆!<br /><br /><span style='color:red;font-size:large;'>提醒 工號:01654 本月您申請加班已累積達40H(不含本次)，法規上限為46H!<br />提醒 工號:00554 本月您申請加班已累積達40H(不含本次)，法規上限為46H!<br /></span><br />
+|
+2017-01-26 11:58:18.5448|TRACE|
+MailTo : george.chang@rinnai.com.tw,will.hsu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經送達!
+Content : 系統提醒!簽核單號 : OT201701260001 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701260001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-26 11:58:59.0668|TRACE|
+MailTo : will.hsu@rinnai.com.tw
+cc : will.hsu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701260001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-01-26 11:59:15.3891|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701260002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

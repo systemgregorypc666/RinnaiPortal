@@ -1,0 +1,24 @@
+2016-05-12 09:54:20.1210|ERROR|
+{"Message":null,"ErrorMessage":"員工編號01306，加班(起)落於規定上班時間區間!"}|
+2016-05-12 10:49:25.4960|ERROR|
+{"Message":null,"ErrorMessage":"員工編號01497的加班申請日期需為相同日期!"}|
+2016-05-12 10:51:56.1274|ERROR|
+{"Message":null,"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-12 10:53:01.6523|ERROR|
+{"Message":null,"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-12 10:53:22.0446|ERROR|
+{"Message":null,"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-12 10:59:23.5456|ERROR|
+{"Message":null,"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-12 11:04:38.4881|ERROR|
+{"Message":null,"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-12 11:15:38.0776|ERROR|
+{"Message":null,"ErrorMessage":"工號: 01497,加班申請時間與前次加班申請時間相同!"}|
+2016-05-12 12:49:01.6433|ERROR|
+{"Message":null,"ErrorMessage":"員工編號，加班工時未達1小時標準!"}|
+2016-05-12 14:06:45.8928|ERROR|
+{"Message":null,"ErrorMessage":"員工編號，加班工時未達1小時標準!"}|
+2016-05-12 14:09:10.1584|ERROR|
+{"Message":null,"ErrorMessage":"員工編號，加班工時未達1小時標準!"}|
+2016-05-12 14:12:18.1358|ERROR|
+{"Message":null,"ErrorMessage":"員工編號，加班工時未達1小時標準!"}|

@@ -1,0 +1,8 @@
+2017-04-25 15:03:13.0328|ERROR|
+{"ErrorMessage":"員工編號01654，加班申請時間有少申報，請修正!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-04-25 15:03:39.7898|ERROR|
+{"ErrorMessage":"員工編號01654，加班申請時間有少申報，請修正!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-04-25 15:04:59.9548|ERROR|
+{"ErrorMessage":"員工編號01654，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-04-25 15:05:32.7358|ERROR|
+{"ErrorMessage":"員工編號01654，加班申請時間有少申報，請修正!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

@@ -1,0 +1,16 @@
+2017-08-07 12:55:42.1185|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-07 15:08:30.9639|ERROR|
+{"ErrorMessage":"工號: 01702,加班申請時間與前次加班申請時間相同!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-07 15:49:41.9416|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-07 15:51:00.5534|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-07 15:51:53.3877|ERROR|
+{"ErrorMessage":"員工編號01702，加班工時未達1小時標準!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-07 15:52:29.7663|ERROR|
+{"ErrorMessage":"員工編號01702，加班工時未達1小時標準!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-07 15:56:27.1191|ERROR|
+{"ErrorMessage":"員工編號01702，加班工時未達1小時標準!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-08-07 15:56:33.3297|ERROR|
+{"ErrorMessage":"員工編號01702，加班工時未達1小時標準!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

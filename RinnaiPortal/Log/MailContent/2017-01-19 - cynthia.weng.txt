@@ -1,0 +1,42 @@
+2017-01-19 14:49:10.2984|TRACE|
+MailTo : carol.chen@rinnai.com.tw,carol.chen@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701190001 已經送達!
+Content : 系統提醒!簽核單號 : OT201701190001 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701190001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-19 15:53:57.8645|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701050001 已經送達!
+Content : 系統提醒!簽核單號 : OT201701050001 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701050001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-19 15:55:34.7585|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201701050001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201701050001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-01-19 15:56:23.7965|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701050001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201701050001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2017-01-19 16:10:44.2865|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701190003 已經送達!
+Content : 系統提醒!簽核單號 : OT201701190003 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201701190003'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-01-19 16:11:20.9115|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201701190003 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201701190003 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-01-19 16:12:04.6125|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701190003 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201701190003 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

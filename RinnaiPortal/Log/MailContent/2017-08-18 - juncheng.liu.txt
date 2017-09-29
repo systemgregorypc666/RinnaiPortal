@@ -1,0 +1,66 @@
+2017-08-18 08:12:25.6127|TRACE|
+MailTo : juncheng.liu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : TR201708180001 已被駁回，請儘速修改!
+Content : 系統提醒!簽核單號 : TR201708180001 已被駁回，請儘速修改!此件為系統發送，請勿回覆!
+|
+2017-08-18 08:14:38.9023|TRACE|
+MailTo : juncheng.liu@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708180001 已經送達!
+Content : 系統提醒!簽核單號 : TR201708180001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708180001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-18 11:37:21.5822|TRACE|
+MailTo : haruyuki.morii@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : TR201708180001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : TR201708180001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-08-18 11:54:49.4592|TRACE|
+MailTo : will.hsu@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708180001 已經送達!
+Content : 系統提醒!簽核單號 : TR201708180001 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708180001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-18 11:57:40.2032|TRACE|
+MailTo : haruyuki.morii@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : TR201708180001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : TR201708180001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-08-18 12:04:53.4162|TRACE|
+MailTo : will.hsu@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201708180001 已經送達!
+Content : 系統提醒!簽核單號 : TR201708180001 已經送達，請儘速檢視!<br /><a href='http://portal.rinnai.com.tw/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201708180001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-18 14:26:08.1614|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708180001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201708180001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-08-18 17:20:00</td><td>2017-08-18 19:20:00</td><td>2</td><td>2</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-08-18 14:26:47.1054|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708180001 已經送達!
+Content : 系統提醒!簽核單號 : OT201708180001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201708180001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-08-18 14:28:14.8624|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708180001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201708180001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-18 17:04:23.1819|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708180002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201708180002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-08-18 17:20:00</td><td>2017-08-18 19:20:00</td><td>2</td><td>2</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-08-18 17:06:07.8379|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201708180002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201708180002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-08-18 17:20:00</td><td>2017-08-18 19:20:00</td><td>2</td><td>2</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|

@@ -1,0 +1,24 @@
+2017-08-01 09:41:12.0197|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : TR201707310003 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : TR201707310003 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-08-01 14:08:30.6638|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201708010001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201708010001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-08-01 14:19:35.6089|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170004 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201702170004 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-08-01 14:19:42.1695|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201702170002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

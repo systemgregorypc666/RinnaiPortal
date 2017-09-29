@@ -1,0 +1,1349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70019705-5525-4426-8E21-ACD5077E7780}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RinnaiPortal</RootNamespace>
+    <AssemblyName>RinnaiPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.17815, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cynthia\Web\MyforepiNotice_Project\MyforepiNotice_Project\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DBTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DBTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Mailer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Mailer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.2.1\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Validator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Source\ValidationAPI\Validator\bin\Debug\Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.1.0\lib\dotnet\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.1.0\lib\dotnet\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.execution.2.1.0\lib\net45\xunit.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Logon.aspx" />
+    <Content Include="Admin.aspx" />
+    <Content Include="AdminInDebug.aspx" />
+    <Content Include="Area\Manage\MealTaxiReport.aspx" />
+    <Content Include="Area\Manage\OvertimeReport.aspx" />
+    <Content Include="Area\Manage\OvertimeSetting.aspx" />
+    <Content Include="Area\Report\AddedBusinessBaseWarehouse.aspx" />
+    <Content Include="Area\Report\BusinessSalesNumberStatistics.aspx" />
+    <Content Include="Area\Report\DealerSalesPerformance.aspx" />
+    <Content Include="Area\Report\DeliveryStaffPerformanceDetailsBase.aspx" />
+    <Content Include="Area\Report\DeliveryStaffPerformanceDetailsDashOne.aspx" />
+    <Content Include="Area\Report\DepreciationOfFixedAssets.aspx" />
+    <Content Include="Area\Report\DistributorModelSalesSubsidiary.aspx" />
+    <Content Include="Area\Report\InventorySummary.aspx" />
+    <Content Include="Area\Report\LogisticsClassSpecialShipmentDetailsDraw.aspx" />
+    <Content Include="Area\Report\LogisticsClassSpecialShipmentDetailsSex.aspx" />
+    <Content Include="Area\Report\ModelCategorySalesPerformance.aspx" />
+    <Content Include="Area\Report\ProductionSalesStockNew.aspx" />
+    <Content Include="Area\Report\ProductionSalesStockRealTime.aspx" />
+    <Content Include="Area\Report\MonthAccumulativeTotalSales.aspx" />
+    <Content Include="Area\Report\ReturnDailyReportWithDiscount.aspx" />
+    <Content Include="Area\Report\SalesmanAndCustomerSalesAmount.aspx" />
+    <Content Include="Area\Report\SalesmanCheckoutPerformance.aspx" />
+    <Content Include="Area\Sign\AgentData.aspx" />
+    <Content Include="Area\Sign\AgentDataList.aspx" />
+    <Content Include="Area\Sign\DepartmentData.aspx" />
+    <Content Include="Area\Sign\DepartmentDataList.aspx" />
+    <Content Include="Area\Sign\EmployeeData.aspx" />
+    <Content Include="Area\Sign\EmployeeDataList.aspx" />
+    <Content Include="Area\Sign\Forms\ForgotPunchListD.aspx" />
+    <Content Include="Area\Sign\Forms\ForgotPunchList.aspx" />
+    <Content Include="Area\Sign\Forms\ForgotPunch.aspx" />
+    <Content Include="Area\Sign\Forms\OvertimeSummary.aspx" />
+    <Content Include="Area\Sign\Forms\OvertimeList.aspx" />
+    <Content Include="Area\Sign\Forms\Overtime.aspx" />
+    <Content Include="Area\Sign\Forms\TrainDetail03.aspx" />
+    <Content Include="Area\Sign\Forms\TrainDetail02.aspx" />
+    <Content Include="Area\Sign\Forms\TrainDetail01.aspx" />
+    <Content Include="Area\Sign\Forms\TrainList03.aspx" />
+    <Content Include="Area\Sign\Forms\TrainList02.aspx" />
+    <Content Include="Area\Sign\Forms\TrainList01.aspx" />
+    <Content Include="Area\Sign\GroupData.aspx" />
+    <Content Include="Area\Sign\GroupDataList.aspx" />
+    <Content Include="Area\Sign\ProcedureData.aspx" />
+    <Content Include="Area\Sign\ProcedureDataList.aspx" />
+    <Content Include="Area\Sign\ProcessWorkflow.aspx" />
+    <Content Include="Area\Sign\ProcessWorkflowList.aspx" />
+    <Content Include="Area\Sign\SalaryLimit.aspx" />
+    <Content Include="Area\Sign\TypeData.aspx" />
+    <Content Include="Area\Sign\TypeDataList.aspx" />
+    <Content Include="Area\Sign\WorkflowDetail_C.aspx" />
+    <Content Include="Area\Sign\WorkflowDetail.aspx" />
+    <Content Include="Area\Sign\WorkflowQueryList.aspx" />
+    <Content Include="Area\Training\TrainingEvaluate\EvaluateTracking.aspx" />
+    <Content Include="Area\Training\TrainingEvaluate\StudentsOpinion.aspx" />
+    <Content Include="Area\Training\TrainingEvaluate\StudentsReport.aspx" />
+    <Content Include="Area\Training\TrainingEvaluate\TrainingEffect.aspx" />
+    <Content Include="Area\Training\TrainingPrint\AfClassMatrixChartALL.aspx" />
+    <Content Include="Area\Training\TrainingPrint\ClassList.aspx" />
+    <Content Include="Area\Training\TrainingPrint\DocStatusLis.aspx" />
+    <Content Include="Area\Training\TrainingPrint\EmpInnerTraining.aspx" />
+    <Content Include="Area\Training\TrainingPrint\EmpTrainingHistory.aspx" />
+    <Content Include="Area\Training\TrainingPrint\ProfessorList.aspx" />
+    <Content Include="Area\Training\TrainingPrint\ReportSummary.aspx" />
+    <Content Include="Area\Training\TrainingPrint\TrainEffectReport.aspx" />
+    <Content Include="Area\Training\TrainingPrint\TrainingNotify.aspx" />
+    <Content Include="Area\Training\TrainingPrint\YearlyOkChart.aspx" />
+    <Content Include="Area\Training\TrainingPrint\YearlyPlanNoRun.aspx" />
+    <Content Include="Area\Training\TrainingPrint\YearlyPlanRun.aspx" />
+    <Content Include="Area\Training\TrainingPrint\YearsClassQty.aspx" />
+    <Content Include="Area\Training\TrainingSetting\CodeSetting.aspx" />
+    <Content Include="Area\Training\TrainingSetting\EvaluateQuery.aspx" />
+    <Content Include="Area\Training\TrainingSetting\FormSetting.aspx" />
+    <Content Include="Area\Training\TrainingSetting\ProfessorGroup.aspx" />
+    <Content Include="Area\Training\TrainingSetting\ProfessorGroupMaintain.aspx" />
+    <Content Include="Area\Training\TrainingSetting\ProfessorProfile.aspx" />
+    <Content Include="Area\Training\TrainingSetting\ProfessorProfileList.aspx" />
+    <Content Include="Area\Training\TrainingSetting\TrainingUnit.aspx" />
+    <Content Include="Area\Training\TrainingInfo\StudentsTraining.aspx" />
+    <Content Include="Area\Training\TrainingInfo\StudentsTrainingMaintain.aspx" />
+    <Content Include="Area\Training\TrainingInfo\TrainingClass.aspx" />
+    <Content Include="Area\Training\TrainingInfo\TrainingClassMaintain.aspx" />
+    <Content Include="Area\Training\TrainingInfo\UnitBasicSetting.aspx" />
+    <Content Include="Area\Training\TrainingInfo\UnitOrder.aspx" />
+    <Content Include="Area\Training\TrainingInfo\UnitTranslate.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\DBTools.dll" />
+    <Content Include="bin\DBTools.XML" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\RinnaiPortal.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-datetimepicker.css" />
+    <Content Include="Content\bootstrap-datetimepicker.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\custom.css" />
+    <Content Include="Content\dialog-layout.css" />
+    <Content Include="Content\easy-autocomplete.css" />
+    <Content Include="Content\easy-autocomplete.themes.css" />
+    <Content Include="Content\jquery-confirm.css" />
+    <Content Include="Content\jquery-confirm.min.css" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Content\jquery.multiselect.css" />
+    <Content Include="Content\jquery.multiselect.filter.css" />
+    <Content Include="Content\redmond\images\animated-overlay.gif" />
+    <Content Include="Content\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Content\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Content\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Content\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Content\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Content\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Content\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Content\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Content\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Content\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Content\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Content\redmond\jquery-ui-1.10.4.custom.css" />
+    <Content Include="Content\redmond\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Content\select2.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Files\25img.gif" />
+    <Content Include="Files\phone.gif" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Area\Sign\ProcessSignedList.aspx" />
+    <Content Include="Files\FetchFromFile.pdf" />
+    <Content Include="Files\FetchFromFile_總.pdf" />
+    <Content Include="Files\rinnai_Ch.pps" />
+    <Content Include="Files\rinnai_En.pps" />
+    <Content Include="Files\rinnai_Jp.pps" />
+    <Content Include="Files\員工旅遊.pdf" />
+    <Content Include="Files\員工旅遊招募表.xlsx" />
+    <Content Include="Files\員工福利項目.pdf" />
+    <Content Include="Files\旅平險簡式費率表.xls" />
+    <Content Include="Files\特約廠商一覽表%28整合版%29.pdf" />
+    <Content Include="Files\旅遊費用申請表.doc" />
+    <Content Include="24IMG.aspx" />
+    <Content Include="Area\Sign\bbs_content.aspx" />
+    <Content Include="Area\Sign\bbs_contentList.aspx" />
+    <Content Include="Area\Sign\bbs_Detail.aspx" />
+    <Content Include="img\SetpTeach\1.jpg" />
+    <Content Include="img\SetpTeach\2.jpg" />
+    <Content Include="img\SetpTeach\3.jpg" />
+    <Content Include="img\SetpTeach\4.jpg" />
+    <Content Include="Monthly_Result.aspx" />
+    <Content Include="Daily_Result.aspx" />
+    <Content Include="Area\Sign\Forms\TrainData.aspx" />
+    <Content Include="Content\jquery-confirm.less" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NLog.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\PublishProfiles\RinnaiPortal.pubxml" />
+    <None Include="Properties\PublishProfiles\本機.pubxml" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="icon\ajax-loader-bar.gif" />
+    <Content Include="icon\ajax-loader.gif" />
+    <Content Include="img\25img.gif" />
+    <Content Include="img\Del.jpg" />
+    <Content Include="img\logo5.jpg" />
+    <Content Include="img\PageNotFound.png" />
+    <Content Include="img\QualityIsOurDestiny.jpg" />
+    <Content Include="img\Remove.png" />
+    <Content Include="img\submenu1.gif" />
+    <Content Include="PageNotFound.aspx" />
+    <Content Include="Scripts\jquery-confirm.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.custom.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Scripts\jquery.easy-autocomplete.js" />
+    <Content Include="Scripts\jquery.multiselect.filter.js" />
+    <Content Include="Scripts\jquery.multiselect.filter.min.js" />
+    <Content Include="Scripts\jquery.multiselect.js" />
+    <Content Include="Scripts\jquery.multiselect.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\select2.full.min.js" />
+    <Content Include="Scripts\Sign\EmployeeData.js" />
+    <Content Include="Scripts\Sign\Forms\OvertimeList.js" />
+    <Content Include="Scripts\Sign\Forms\TrainList.js" />
+    <Content Include="Scripts\Sign\GroupData.js" />
+    <Content Include="Scripts\Sign\validate-summary.js" />
+    <Content Include="Scripts\Sign\ProcessWorkflow.js" />
+    <Content Include="Service\Sign\Forms\Overtime.asmx" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="bin\RinnaiPortal.dll.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Sign\Forms\Overtime.js" />
+    <Content Include="Scripts\Sign\main.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Service\Sign\Forms\Train.asmx" />
+    <Content Include="Site.Master" />
+    <Content Include="TEST.aspx" />
+    <Content Include="testLoginError.html" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInDebug.aspx.cs">
+      <DependentUpon>AdminInDebug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminInDebug.aspx.designer.cs">
+      <DependentUpon>AdminInDebug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\DBClass.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Area\Manage\ManageDataList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Manage\OvertimeReport.aspx.cs">
+      <DependentUpon>OvertimeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Manage\OvertimeReport.aspx.designer.cs">
+      <DependentUpon>OvertimeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Manage\OvertimeSetting.aspx.cs">
+      <DependentUpon>OvertimeSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Manage\OvertimeSetting.aspx.designer.cs">
+      <DependentUpon>OvertimeSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\AddedBusinessBaseWarehouse.aspx.cs">
+      <DependentUpon>AddedBusinessBaseWarehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\AddedBusinessBaseWarehouse.aspx.designer.cs">
+      <DependentUpon>AddedBusinessBaseWarehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\BusinessSalesNumberStatistics.aspx.cs">
+      <DependentUpon>BusinessSalesNumberStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\BusinessSalesNumberStatistics.aspx.designer.cs">
+      <DependentUpon>BusinessSalesNumberStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\DealerSalesPerformance.aspx.cs">
+      <DependentUpon>DealerSalesPerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\DealerSalesPerformance.aspx.designer.cs">
+      <DependentUpon>DealerSalesPerformance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\DeliveryStaffPerformanceDetailsBase.aspx.cs">
+      <DependentUpon>DeliveryStaffPerformanceDetailsBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\DeliveryStaffPerformanceDetailsBase.aspx.designer.cs">
+      <DependentUpon>DeliveryStaffPerformanceDetailsBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\DeliveryStaffPerformanceDetailsDashOne.aspx.cs">
+      <DependentUpon>DeliveryStaffPerformanceDetailsDashOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\DeliveryStaffPerformanceDetailsDashOne.aspx.designer.cs">
+      <DependentUpon>DeliveryStaffPerformanceDetailsDashOne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\DepreciationOfFixedAssets.aspx.cs">
+      <DependentUpon>DepreciationOfFixedAssets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\DepreciationOfFixedAssets.aspx.designer.cs">
+      <DependentUpon>DepreciationOfFixedAssets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\DistributorModelSalesSubsidiary.aspx.cs">
+      <DependentUpon>DistributorModelSalesSubsidiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\DistributorModelSalesSubsidiary.aspx.designer.cs">
+      <DependentUpon>DistributorModelSalesSubsidiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\InventorySummary.aspx.cs">
+      <DependentUpon>InventorySummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\InventorySummary.aspx.designer.cs">
+      <DependentUpon>InventorySummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\LogisticsClassSpecialShipmentDetailsDraw.aspx.cs">
+      <DependentUpon>LogisticsClassSpecialShipmentDetailsDraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\LogisticsClassSpecialShipmentDetailsDraw.aspx.designer.cs">
+      <DependentUpon>LogisticsClassSpecialShipmentDetailsDraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\LogisticsClassSpecialShipmentDetailsSex.aspx.cs">
+      <DependentUpon>LogisticsClassSpecialShipmentDetailsSex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\LogisticsClassSpecialShipmentDetailsSex.aspx.designer.cs">
+      <DependentUpon>LogisticsClassSpecialShipmentDetailsSex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\ModelCategorySalesPerformance.aspx.cs">
+      <DependentUpon>ModelCategorySalesPerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\ModelCategorySalesPerformance.aspx.designer.cs">
+      <DependentUpon>ModelCategorySalesPerformance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\ProductionSalesStockNew.aspx.cs">
+      <DependentUpon>ProductionSalesStockNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\ProductionSalesStockNew.aspx.designer.cs">
+      <DependentUpon>ProductionSalesStockNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\ProductionSalesStockRealTime.aspx.cs">
+      <DependentUpon>ProductionSalesStockRealTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\ProductionSalesStockRealTime.aspx.designer.cs">
+      <DependentUpon>ProductionSalesStockRealTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\MonthAccumulativeTotalSales.aspx.cs">
+      <DependentUpon>MonthAccumulativeTotalSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\MonthAccumulativeTotalSales.aspx.designer.cs">
+      <DependentUpon>MonthAccumulativeTotalSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\ReturnDailyReportWithDiscount.aspx.cs">
+      <DependentUpon>ReturnDailyReportWithDiscount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\ReturnDailyReportWithDiscount.aspx.designer.cs">
+      <DependentUpon>ReturnDailyReportWithDiscount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\SalesmanAndCustomerSalesAmount.aspx.cs">
+      <DependentUpon>SalesmanAndCustomerSalesAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\SalesmanAndCustomerSalesAmount.aspx.designer.cs">
+      <DependentUpon>SalesmanAndCustomerSalesAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Report\SalesmanCheckoutPerformance.aspx.cs">
+      <DependentUpon>SalesmanCheckoutPerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Report\SalesmanCheckoutPerformance.aspx.designer.cs">
+      <DependentUpon>SalesmanCheckoutPerformance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\ForgotPunchListD.aspx.cs">
+      <DependentUpon>ForgotPunchListD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\ForgotPunchListD.aspx.designer.cs">
+      <DependentUpon>ForgotPunchListD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainDetail03.aspx.cs">
+      <DependentUpon>TrainDetail03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainDetail03.aspx.designer.cs">
+      <DependentUpon>TrainDetail03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainDetail02.aspx.cs">
+      <DependentUpon>TrainDetail02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainDetail02.aspx.designer.cs">
+      <DependentUpon>TrainDetail02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainDetail01.aspx.cs">
+      <DependentUpon>TrainDetail01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainDetail01.aspx.designer.cs">
+      <DependentUpon>TrainDetail01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainList03.aspx.cs">
+      <DependentUpon>TrainList03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainList03.aspx.designer.cs">
+      <DependentUpon>TrainList03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainList02.aspx.cs">
+      <DependentUpon>TrainList02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainList02.aspx.designer.cs">
+      <DependentUpon>TrainList02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainList01.aspx.cs">
+      <DependentUpon>TrainList01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainList01.aspx.designer.cs">
+      <DependentUpon>TrainList01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\GroupData.aspx.cs">
+      <DependentUpon>GroupData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\GroupData.aspx.designer.cs">
+      <DependentUpon>GroupData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\GroupDataList.aspx.cs">
+      <DependentUpon>GroupDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\GroupDataList.aspx.designer.cs">
+      <DependentUpon>GroupDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Handlers\SectionChief.cs" />
+    <Compile Include="Area\Sign\SalaryLimit.aspx.cs">
+      <DependentUpon>SalaryLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\SalaryLimit.aspx.designer.cs">
+      <DependentUpon>SalaryLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\WorkflowDetail_C.aspx.cs">
+      <DependentUpon>WorkflowDetail_C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\WorkflowDetail_C.aspx.designer.cs">
+      <DependentUpon>WorkflowDetail_C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\WorkflowHandler.cs" />
+    <Compile Include="Area\Training\TrainingEvaluate\EvaluateTracking.aspx.cs">
+      <DependentUpon>EvaluateTracking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingEvaluate\EvaluateTracking.aspx.designer.cs">
+      <DependentUpon>EvaluateTracking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingEvaluate\StudentsOpinion.aspx.cs">
+      <DependentUpon>StudentsOpinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingEvaluate\StudentsOpinion.aspx.designer.cs">
+      <DependentUpon>StudentsOpinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingEvaluate\StudentsReport.aspx.cs">
+      <DependentUpon>StudentsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingEvaluate\StudentsReport.aspx.designer.cs">
+      <DependentUpon>StudentsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingEvaluate\TrainingEffect.aspx.cs">
+      <DependentUpon>TrainingEffect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingEvaluate\TrainingEffect.aspx.designer.cs">
+      <DependentUpon>TrainingEffect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\AfClassMatrixChartALL.aspx.cs">
+      <DependentUpon>AfClassMatrixChartALL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\AfClassMatrixChartALL.aspx.designer.cs">
+      <DependentUpon>AfClassMatrixChartALL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\ClassList.aspx.cs">
+      <DependentUpon>ClassList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\ClassList.aspx.designer.cs">
+      <DependentUpon>ClassList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\DocStatusLis.aspx.cs">
+      <DependentUpon>DocStatusLis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\DocStatusLis.aspx.designer.cs">
+      <DependentUpon>DocStatusLis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\EmpInnerTraining.aspx.cs">
+      <DependentUpon>EmpInnerTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\EmpInnerTraining.aspx.designer.cs">
+      <DependentUpon>EmpInnerTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\EmpTrainingHistory.aspx.cs">
+      <DependentUpon>EmpTrainingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\EmpTrainingHistory.aspx.designer.cs">
+      <DependentUpon>EmpTrainingHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\ProfessorList.aspx.cs">
+      <DependentUpon>ProfessorList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\ProfessorList.aspx.designer.cs">
+      <DependentUpon>ProfessorList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\ReportSummary.aspx.cs">
+      <DependentUpon>ReportSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\ReportSummary.aspx.designer.cs">
+      <DependentUpon>ReportSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\TrainEffectReport.aspx.cs">
+      <DependentUpon>TrainEffectReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\TrainEffectReport.aspx.designer.cs">
+      <DependentUpon>TrainEffectReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\TrainingNotify.aspx.cs">
+      <DependentUpon>TrainingNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\TrainingNotify.aspx.designer.cs">
+      <DependentUpon>TrainingNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\YearlyOkChart.aspx.cs">
+      <DependentUpon>YearlyOkChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\YearlyOkChart.aspx.designer.cs">
+      <DependentUpon>YearlyOkChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\YearlyPlanNoRun.aspx.cs">
+      <DependentUpon>YearlyPlanNoRun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\YearlyPlanNoRun.aspx.designer.cs">
+      <DependentUpon>YearlyPlanNoRun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\YearlyPlanRun.aspx.cs">
+      <DependentUpon>YearlyPlanRun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\YearlyPlanRun.aspx.designer.cs">
+      <DependentUpon>YearlyPlanRun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\YearsClassQty.aspx.cs">
+      <DependentUpon>YearsClassQty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingPrint\YearsClassQty.aspx.designer.cs">
+      <DependentUpon>YearsClassQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\CodeSetting.aspx.cs">
+      <DependentUpon>CodeSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\CodeSetting.aspx.designer.cs">
+      <DependentUpon>CodeSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\EvaluateQuery.aspx.cs">
+      <DependentUpon>EvaluateQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\EvaluateQuery.aspx.designer.cs">
+      <DependentUpon>EvaluateQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\FormSetting.aspx.cs">
+      <DependentUpon>FormSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\FormSetting.aspx.designer.cs">
+      <DependentUpon>FormSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\ProfessorGroup.aspx.cs">
+      <DependentUpon>ProfessorGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\ProfessorGroup.aspx.designer.cs">
+      <DependentUpon>ProfessorGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\ProfessorGroupMaintain.aspx.cs">
+      <DependentUpon>ProfessorGroupMaintain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\ProfessorGroupMaintain.aspx.designer.cs">
+      <DependentUpon>ProfessorGroupMaintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\ProfessorProfile.aspx.cs">
+      <DependentUpon>ProfessorProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\ProfessorProfile.aspx.designer.cs">
+      <DependentUpon>ProfessorProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\ProfessorProfileList.aspx.cs">
+      <DependentUpon>ProfessorProfileList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\ProfessorProfileList.aspx.designer.cs">
+      <DependentUpon>ProfessorProfileList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\TrainingUnit.aspx.cs">
+      <DependentUpon>TrainingUnit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingSetting\TrainingUnit.aspx.designer.cs">
+      <DependentUpon>TrainingUnit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\StudentsTraining.aspx.cs">
+      <DependentUpon>StudentsTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\StudentsTraining.aspx.designer.cs">
+      <DependentUpon>StudentsTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\StudentsTrainingMaintain.aspx.cs">
+      <DependentUpon>StudentsTrainingMaintain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\StudentsTrainingMaintain.aspx.designer.cs">
+      <DependentUpon>StudentsTrainingMaintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\TrainingClass.aspx.cs">
+      <DependentUpon>TrainingClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\TrainingClass.aspx.designer.cs">
+      <DependentUpon>TrainingClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\TrainingClassMaintain.aspx.cs">
+      <DependentUpon>TrainingClassMaintain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\TrainingClassMaintain.aspx.designer.cs">
+      <DependentUpon>TrainingClassMaintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\UnitBasicSetting.aspx.cs">
+      <DependentUpon>UnitBasicSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\UnitBasicSetting.aspx.designer.cs">
+      <DependentUpon>UnitBasicSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\UnitOrder.aspx.cs">
+      <DependentUpon>UnitOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\UnitOrder.aspx.designer.cs">
+      <DependentUpon>UnitOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\UnitTranslate.aspx.cs">
+      <DependentUpon>UnitTranslate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Training\TrainingInfo\UnitTranslate.aspx.designer.cs">
+      <DependentUpon>UnitTranslate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\api\Default1Controller.cs" />
+    <Compile Include="DailyDataList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultDataList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Enums\SignTypeEnum.cs" />
+    <Compile Include="Enums\TrainingTableTypeEnum.cs" />
+    <Compile Include="Enums\WorkflowTypeEnum.cs" />
+    <Compile Include="Extensions\DateTimeFormat.cs" />
+    <Compile Include="Extensions\ObjectConvert.cs" />
+    <Compile Include="Extensions\ResponseAction.cs" />
+    <Compile Include="Extensions\StringConvert.cs" />
+    <Compile Include="Extensions\ValueCheck.cs" />
+    <Compile Include="FactoryMethod\ConnectionFactory.cs" />
+    <Compile Include="FactoryMethod\RepositoryFactory.cs" />
+    <Compile Include="Interface\IForms.cs" />
+    <Compile Include="Interface\IManageRepository.cs" />
+    <Compile Include="Interface\ISignRepository.cs" />
+    <Compile Include="Models\ApiModels\EmpDataModel.cs" />
+    <Compile Include="Models\OverDetailsModel.cs" />
+    <Compile Include="Repository\APIRepository.cs" />
+    <Compile Include="Repository\BbsListRepository.cs" />
+    <Compile Include="Repository\DailyRepository.cs" />
+    <Compile Include="Repository\MonthlyRepository.cs" />
+    <Compile Include="Repository\PublicRepository.cs" />
+    <Compile Include="Repository\Sign\BbsRepository.cs" />
+    <Compile Include="Repository\Manage\OvertimeReportRepository.cs" />
+    <Compile Include="Repository\Manage\OvertimeSettingRepository.cs" />
+    <Compile Include="Repository\Sign\Forms\TrainDetailRepository.cs" />
+    <Compile Include="Repository\Sign\Forms\TrainRepository.cs" />
+    <Compile Include="Repository\Sign\SalaryLimitRepository.cs" />
+    <Compile Include="Repository\Sign\ProcessSignedRepository.cs" />
+    <Compile Include="Repository\SmartMan\AutoInsertHandler.cs" />
+    <Compile Include="Repository\RecreateRepository.cs" />
+    <Compile Include="Controllers\api\AdminServiceApiController.cs" />
+    <Compile Include="TEST.aspx.cs">
+      <DependentUpon>TEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TEST.aspx.designer.cs">
+      <DependentUpon>TEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ConfigUtils.cs" />
+    <Compile Include="Tools\Sign\Forms\DateTimeCompare.cs" />
+    <Compile Include="Tools\Sign\Forms\RangeComputor.cs" />
+    <Compile Include="ViewModel\Sign\BbsViewModel.cs" />
+    <Compile Include="ViewModel\Sign\Forms\OvertimeVerifyViewModel.cs" />
+    <Compile Include="ViewModel\Sign\Forms\TrainViewModel.cs" />
+    <Compile Include="Repository\Sign\GroupRepository.cs" />
+    <Compile Include="Service\Sign\Forms\Train.asmx.cs">
+      <DependentUpon>Train.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewModel\PaggerParms.cs" />
+    <Compile Include="Tools\GetSeqIDUtils.cs" />
+    <Compile Include="Repository\RootRepository.cs" />
+    <Compile Include="Tools\ViewUtils.cs" />
+    <Compile Include="Tools\WebUtils.cs" />
+    <Compile Include="ViewModel\Manage\ManageListParms.cs" />
+    <Compile Include="Area\Manage\MealTaxiReport.aspx.cs">
+      <DependentUpon>MealTaxiReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Manage\MealTaxiReport.aspx.designer.cs">
+      <DependentUpon>MealTaxiReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\AgentData.aspx.cs">
+      <DependentUpon>AgentData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\AgentData.aspx.designer.cs">
+      <DependentUpon>AgentData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\AgentDataList.aspx.cs">
+      <DependentUpon>AgentDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\AgentDataList.aspx.designer.cs">
+      <DependentUpon>AgentDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\DepartmentData.aspx.cs">
+      <DependentUpon>DepartmentData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\DepartmentData.aspx.designer.cs">
+      <DependentUpon>DepartmentData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\DepartmentDataList.aspx.cs">
+      <DependentUpon>DepartmentDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\DepartmentDataList.aspx.designer.cs">
+      <DependentUpon>DepartmentDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\EmployeeData.aspx.cs">
+      <DependentUpon>EmployeeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\EmployeeData.aspx.designer.cs">
+      <DependentUpon>EmployeeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\EmployeeDataList.aspx.cs">
+      <DependentUpon>EmployeeDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\EmployeeDataList.aspx.designer.cs">
+      <DependentUpon>EmployeeDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\ForgotPunchList.aspx.cs">
+      <DependentUpon>ForgotPunchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\ForgotPunchList.aspx.designer.cs">
+      <DependentUpon>ForgotPunchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\ForgotPunch.aspx.cs">
+      <DependentUpon>ForgotPunch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\ForgotPunch.aspx.designer.cs">
+      <DependentUpon>ForgotPunch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\OvertimeSummary.aspx.cs">
+      <DependentUpon>OvertimeSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\OvertimeSummary.aspx.designer.cs">
+      <DependentUpon>OvertimeSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\OvertimeList.aspx.cs">
+      <DependentUpon>OvertimeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\OvertimeList.aspx.designer.cs">
+      <DependentUpon>OvertimeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\Overtime.aspx.cs">
+      <DependentUpon>Overtime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\Overtime.aspx.designer.cs">
+      <DependentUpon>Overtime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\ProcedureData.aspx.cs">
+      <DependentUpon>ProcedureData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\ProcedureData.aspx.designer.cs">
+      <DependentUpon>ProcedureData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\ProcedureDataList.aspx.cs">
+      <DependentUpon>ProcedureDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\ProcedureDataList.aspx.designer.cs">
+      <DependentUpon>ProcedureDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\ProcessWorkflow.aspx.cs">
+      <DependentUpon>ProcessWorkflow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\ProcessWorkflow.aspx.designer.cs">
+      <DependentUpon>ProcessWorkflow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\ProcessWorkflowList.aspx.cs">
+      <DependentUpon>ProcessWorkflowList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\ProcessWorkflowList.aspx.designer.cs">
+      <DependentUpon>ProcessWorkflowList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\SignDataList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\TypeData.aspx.cs">
+      <DependentUpon>TypeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\TypeData.aspx.designer.cs">
+      <DependentUpon>TypeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\TypeDataList.aspx.cs">
+      <DependentUpon>TypeDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\TypeDataList.aspx.designer.cs">
+      <DependentUpon>TypeDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\WorkflowDetail.aspx.cs">
+      <DependentUpon>WorkflowDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\WorkflowDetail.aspx.designer.cs">
+      <DependentUpon>WorkflowDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\WorkflowQueryList.aspx.cs">
+      <DependentUpon>WorkflowQueryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\WorkflowQueryList.aspx.designer.cs">
+      <DependentUpon>WorkflowQueryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IRepository.cs" />
+    <Compile Include="LdapAuthentication\LdapAuthentication.cs" />
+    <Compile Include="LdapAuthentication\Models\IdentityModels.cs" />
+    <Compile Include="PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Manage\MealTaxiRepository.cs" />
+    <Compile Include="Repository\MemberRepository.cs" />
+    <Compile Include="Repository\Sign\Forms\OvertimeRepository.cs" />
+    <Compile Include="Repository\SmartMan\SmartManRepository.cs" />
+    <Compile Include="Service\Sign\Forms\Overtime.asmx.cs">
+      <DependentUpon>Overtime.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\RinnaiPortalRepository.cs" />
+    <Compile Include="Repository\Sign\AgentRepository.cs" />
+    <Compile Include="Repository\Sign\DepartmentRepository.cs" />
+    <Compile Include="Repository\Sign\EmployeeRepository.cs" />
+    <Compile Include="Repository\Sign\ProcedureRepository.cs" />
+    <Compile Include="Repository\Sign\ProcessWorkflowRepository.cs" />
+    <Compile Include="Repository\Sign\TypeRepository.cs" />
+    <Compile Include="Repository\Sign\WorkflowDetailRepository.cs" />
+    <Compile Include="Repository\Sign\WorkflowQueryRepository.cs" />
+    <Compile Include="Repository\Sign\Forms\ForgotPunchRepository.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="Tools\Authentication.cs" />
+    <Compile Include="ViewModel\ListParms.cs" />
+    <Compile Include="ViewModel\MemberViewModel.cs" />
+    <Compile Include="ViewModel\Sign\Forms\RinnaiForms.cs" />
+    <Compile Include="ViewModel\Sign\Forms\OvertimeViewModel.cs" />
+    <Compile Include="ViewModel\Sign\GroupViewModel.cs" />
+    <Compile Include="ViewModel\Sign\IdentifyViewModel.cs" />
+    <Compile Include="ViewModel\Sign\ProcessWorkflowViewModel.cs" />
+    <Compile Include="ViewModel\Sign\AgentViewModel.cs" />
+    <Compile Include="ViewModel\Sign\DepartmentViewModel.cs" />
+    <Compile Include="ViewModel\Sign\EmployeeViewModel.cs" />
+    <Compile Include="ViewModel\Sign\ProcedureViewModel.cs" />
+    <Compile Include="ViewModel\Sign\SalaryLimitViewModel.cs" />
+    <Compile Include="ViewModel\Sign\SignListParms.cs" />
+    <Compile Include="ViewModel\Sign\TypeViewModel.cs" />
+    <Compile Include="ViewModel\Sign\Forms\ForgotPunchViewModel.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\ProcessSignedList.aspx.cs">
+      <DependentUpon>ProcessSignedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\ProcessSignedList.aspx.designer.cs">
+      <DependentUpon>ProcessSignedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="24IMG.aspx.cs">
+      <DependentUpon>24IMG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="24IMG.aspx.designer.cs">
+      <DependentUpon>24IMG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\bbs_content.aspx.cs">
+      <DependentUpon>bbs_content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\bbs_content.aspx.designer.cs">
+      <DependentUpon>bbs_content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\bbs_contentList.aspx.cs">
+      <DependentUpon>bbs_contentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\bbs_contentList.aspx.designer.cs">
+      <DependentUpon>bbs_contentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\bbs_Detail.aspx.cs">
+      <DependentUpon>bbs_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\bbs_Detail.aspx.designer.cs">
+      <DependentUpon>bbs_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly_Result.aspx.cs">
+      <DependentUpon>Monthly_Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monthly_Result.aspx.designer.cs">
+      <DependentUpon>Monthly_Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Daily_Result.aspx.cs">
+      <DependentUpon>Daily_Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Daily_Result.aspx.designer.cs">
+      <DependentUpon>Daily_Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainData.aspx.cs">
+      <DependentUpon>TrainData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Sign\Forms\TrainData.aspx.designer.cs">
+      <DependentUpon>TrainData.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Upload\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52982</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52982/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:52982/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

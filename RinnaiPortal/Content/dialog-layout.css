@@ -1,0 +1,62 @@
+﻿#DialogLayout {
+    background: #fff;
+}
+
+    #DialogLayout .modal-header,
+    #DialogLayout .modal-body,
+    #DialogLayout .modal-footer {
+        position: fixed;
+        right: 0;
+        left: 0;
+    }
+
+    #DialogLayout .modal-header {
+        padding: 10px 15px;
+        top: 0;
+    }
+
+    #DialogLayout .modal-body {
+        top: 0;
+        bottom: 60px;
+        max-height: none;
+    }
+
+        #DialogLayout .modal-body.auto {
+            overflow: auto;
+        }
+
+    #DialogLayout .modal-footer {
+        padding: 9px 20px 10px;
+        bottom: 0;
+    }
+
+        #DialogLayout .modal-footer .page-links {
+            margin: 5px 0;
+        }
+
+    #DialogLayout .modal-header + .modal-body {
+        top: 49px;
+    }
+
+    #DialogLayout .modal-body:last-child {
+        bottom: 0;
+    }
+
+    #DialogLayout .modal-close {
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        line-height: 1em;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0;
+        z-index: 9999;
+        zoom: 1;
+        color: #fff;
+        background: #333;
+        border-radius: 15px;
+        opacity: 0.4;
+        text-align: center;
+    }

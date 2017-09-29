@@ -1,0 +1,20 @@
+2017-02-17 09:04:40.3716|ERROR|
+{"ErrorMessage":"員工編號01544，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-17 09:04:45.0234|ERROR|
+{"ErrorMessage":"員工編號01544，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-17 09:22:38.1908|ERROR|
+{"ErrorMessage":"員工編號01544，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-17 10:13:29.6878|ERROR|
+{"ErrorMessage":"員工編號00912的加班申請日期為例假日，依規定不得申請加班!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-17 10:17:03.1968|ERROR|
+{"ErrorMessage":"員工編號01544，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-17 10:19:01.4398|ERROR|
+{"ErrorMessage":"員工編號01544，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-17 10:19:41.1888|ERROR|
+{"ErrorMessage":"員工編號01544，加班申請時間與加班起算時間或打卡時間不符!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-17 11:13:15.0948|ERROR|
+{"ErrorMessage":"於志元系統中查無01654的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-02-17 11:51:20.7602|ERROR|
+{"ErrorMessage":null,"message_alert":null,"ActualException":"資料行 \u0027CreatDate\u0027 不屬於資料表 Table。"}|
+2017-02-17 11:58:43.9165|ERROR|
+{"ErrorMessage":null,"message_alert":null,"ActualException":"資料行 \u0027CreatDate\u0027 不屬於資料表 GET。"}|

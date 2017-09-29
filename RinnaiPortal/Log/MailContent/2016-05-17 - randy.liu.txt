@@ -1,0 +1,66 @@
+2016-05-17 13:38:02.6188|TRACE|
+MailTo : randy.liu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605160001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201605160001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-05-17 15:34:05.0387|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605170001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201605170001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:12:11.5066|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201605170001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201605170001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:18:26.8401|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605170002 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201605170002 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:18:53.3313|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201605170002 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201605170002 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:22:13.5993|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605170003 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201605170003 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:22:36.1969|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201605170003 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201605170003 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:25:14.0815|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605170004 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201605170004 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:25:36.2471|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201605170004 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201605170004 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:27:21.6242|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : FP201605170005 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : FP201605170005 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2016-05-17 20:27:45.8306|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liud@rinnai.com.tw
+Title : 系統提醒!簽核單號 : FP201605170005 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : FP201605170005 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

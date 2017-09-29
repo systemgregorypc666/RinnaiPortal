@@ -1,0 +1,24 @@
+2016-11-03 15:30:36.1523|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201610280001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201610280001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-11-03 15:30:44.1516|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201610280002 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201610280002 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-11-03 16:04:26.0796|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611020001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201611020001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-11-03 16:40:34.8710|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201610210005 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201610210005 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

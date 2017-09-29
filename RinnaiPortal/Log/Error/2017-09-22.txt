@@ -1,0 +1,4 @@
+2017-09-22 12:03:07.3010|ERROR|
+{"ErrorMessage":"於志元系統中查無當日刷卡紀錄的刷卡記錄!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|
+2017-09-22 12:53:53.0266|ERROR|
+{"ErrorMessage":"員工編號00073，業務、服務、配送員平日不得申請加班!","message_alert":null,"ActualException":"Do Not Pass Overtime Validation!"}|

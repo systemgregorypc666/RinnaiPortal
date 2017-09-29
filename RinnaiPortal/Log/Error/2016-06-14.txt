@@ -1,0 +1,2 @@
+2016-06-14 11:47:15.2407|ERROR|
+{"ErrorMessage":"員工編號，加班申請時間與加班起算時間或打卡時間不符!","ActualException":"Do Not Pass Overtime Validation!"}|

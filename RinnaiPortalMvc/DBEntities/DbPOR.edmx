@@ -1,0 +1,1310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RinnaiPortal_FormalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BbsContent">
+          <Key>
+            <PropertyRef Name="bbs_id" />
+          </Key>
+          <Property Name="bbs_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="bbs_title" Type="nvarchar" MaxLength="50" />
+          <Property Name="bbs_content" Type="nvarchar" MaxLength="500" />
+          <Property Name="startdatetime" Type="datetime" />
+          <Property Name="enddatetime" Type="datetime" />
+          <Property Name="bbs_http" Type="nvarchar" MaxLength="100" />
+          <Property Name="bbs_photo" Type="nvarchar" MaxLength="50" />
+          <Property Name="bbs_file" Type="nvarchar" MaxLength="50" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentID" />
+          </Key>
+          <Property Name="DepartmentID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DepartmentName" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ChiefID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="UpperDepartmentID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DepartmentLevel" Type="int" Nullable="false" />
+          <Property Name="FilingEmployeeID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Virtual" Type="nchar" MaxLength="1" />
+          <Property Name="Disabled" Type="bit" />
+          <Property Name="DisabledDate" Type="datetime" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="EmployeeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DepartmentID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CostDepartmentID" Type="nvarchar" MaxLength="10" />
+          <Property Name="AgentID" Type="nvarchar" MaxLength="10" />
+          <Property Name="Disabled" Type="bit" Nullable="false" />
+          <Property Name="DisabledDate" Type="datetime" />
+          <Property Name="ADAccount" Type="nvarchar" MaxLength="30" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+          <Property Name="AccessType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NationalType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SexType" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'RinnaiPortal_Formal.dbo.ForgotPunchForm' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="ForgotPunchForm">
+          <Key>
+            <PropertyRef Name="SN" />
+            <PropertyRef Name="FormID_FK" />
+            <PropertyRef Name="SignDocID_FK" />
+            <PropertyRef Name="ApplyID_FK" />
+            <PropertyRef Name="ApplyDateTime" />
+            <PropertyRef Name="EmployeeID_FK" />
+            <PropertyRef Name="DepartmentID_FK" />
+            <PropertyRef Name="PeriodType" />
+            <PropertyRef Name="Creator" />
+            <PropertyRef Name="CreateDate" />
+          </Key>
+          <Property Name="SN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FormID_FK" Type="int" Nullable="false" />
+          <Property Name="SignDocID_FK" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ApplyID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="ApplyDateTime" Type="datetime" Nullable="false" />
+          <Property Name="EmployeeID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DepartmentID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="PeriodType" Type="int" Nullable="false" />
+          <Property Name="ForgotPunchInDateTime" Type="datetime" />
+          <Property Name="ForgotPunchOutDateTime" Type="datetime" />
+          <Property Name="Note" Type="nvarchar" MaxLength="200" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OvertimeForm">
+          <Key>
+            <PropertyRef Name="SN" />
+          </Key>
+          <Property Name="SN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FormID_FK" Type="int" />
+          <Property Name="SignDocID_FK" Type="nvarchar" MaxLength="20" />
+          <Property Name="ApplyID_FK" Type="nvarchar" MaxLength="10" />
+          <Property Name="ApplyDateTime" Type="datetime" />
+          <Property Name="EmployeeID_FK" Type="nvarchar" MaxLength="10" />
+          <Property Name="DepartmentID_FK" Type="nvarchar" MaxLength="10" />
+          <Property Name="StartDateTime" Type="datetime" />
+          <Property Name="EndDateTime" Type="datetime" />
+          <Property Name="SupportDeptID_FK" Type="nvarchar" MaxLength="10" />
+          <Property Name="PayTypeKey" Type="nvarchar" MaxLength="50" />
+          <Property Name="MealOrderKey" Type="nvarchar" MaxLength="50" />
+          <Property Name="AutoInsert" Type="bit" Nullable="false" />
+          <Property Name="IsHoliday" Type="bit" />
+          <Property Name="TotalHours" Type="float" />
+          <Property Name="Note" Type="nvarchar" MaxLength="50" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'RinnaiPortal_Formal.dbo.PeriodType' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="PeriodType">
+          <Key>
+            <PropertyRef Name="PunchID" />
+            <PropertyRef Name="PunchName" />
+          </Key>
+          <Property Name="PunchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PunchName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SalaryLimit">
+          <Key>
+            <PropertyRef Name="SN" />
+          </Key>
+          <Property Name="SN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LimitDate" Type="datetime" Nullable="false" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ModifyDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SignAgent">
+          <Key>
+            <PropertyRef Name="SN" />
+          </Key>
+          <Property Name="SN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="BeginDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" Nullable="false" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SignDocCode">
+          <Key>
+            <PropertyRef Name="SignDocID" />
+          </Key>
+          <Property Name="SignDocID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Date" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SequenceNum" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SignForm_Detail">
+          <Key>
+            <PropertyRef Name="SN" />
+          </Key>
+          <Property Name="SN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SignDocID_FK" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ChiefID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SignForm_Log">
+          <Key>
+            <PropertyRef Name="sn" />
+          </Key>
+          <Property Name="sn" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SignDocID_FK" Type="nvarchar" MaxLength="20" />
+          <Property Name="FormID_FK" Type="int" />
+          <Property Name="EmployeeID_FK" Type="nvarchar" MaxLength="10" />
+          <Property Name="SendDate" Type="datetime" />
+          <Property Name="CurrentSignLevelDeptID_FK" Type="nvarchar" MaxLength="10" />
+          <Property Name="FinalStatus" Type="int" />
+          <Property Name="Remainder" Type="int" />
+          <Property Name="AutoInsert" Type="bit" />
+          <Property Name="Creator_Main" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreateDate_Main" Type="datetime" />
+          <Property Name="Modifier_Main" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate_Main" Type="datetime" />
+          <Property Name="DetailSignDocID_FK" Type="nvarchar" MaxLength="20" />
+          <Property Name="ChiefID_FK" Type="nvarchar" MaxLength="10" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Creator_Detail" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreateDate_Detail" Type="datetime" />
+          <Property Name="Modifier_Detail" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate_Detail" Type="datetime" />
+          <Property Name="LogDatetime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SignForm_Main">
+          <Key>
+            <PropertyRef Name="SignDocID" />
+          </Key>
+          <Property Name="SignDocID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="FormID_FK" Type="int" Nullable="false" />
+          <Property Name="EmployeeID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SendDate" Type="datetime" />
+          <Property Name="CurrentSignLevelDeptID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="FinalStatus" Type="int" Nullable="false" />
+          <Property Name="Remainder" Type="int" Nullable="false" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SignProcedure">
+          <Key>
+            <PropertyRef Name="SignID" />
+          </Key>
+          <Property Name="SignID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SignLevel" Type="int" Nullable="false" />
+          <Property Name="MaxLevel" Type="int" Nullable="false" />
+          <Property Name="Disabled" Type="bit" Nullable="false" />
+          <Property Name="DisabledDate" Type="datetime" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SignType">
+          <Key>
+            <PropertyRef Name="FormID" />
+          </Key>
+          <Property Name="FormID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FormType" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="SignID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="FormSeries" Type="nvarchar" MaxLength="50" />
+          <Property Name="FilingDepartmentID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SysGroup">
+          <Key>
+            <PropertyRef Name="GroupType" />
+          </Key>
+          <Property Name="GroupType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GroupName" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Resource" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SystemArchitecture">
+          <Key>
+            <PropertyRef Name="NodeID" />
+          </Key>
+          <Property Name="NodeID" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="ParentID" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="NodeTitle" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NodeUri" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ModifyDateTime" Type="datetime" Nullable="false" />
+          <Property Name="ResourceAlias" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'RinnaiPortal_Formal.dbo.UserPriority' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="UserPriority">
+          <Key>
+            <PropertyRef Name="sn" />
+            <PropertyRef Name="motion" />
+          </Key>
+          <Property Name="sn" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="motion" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Department_ChiefID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Department" Type="Self.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="ChiefID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Department_FilingEmployeeID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Department" Type="Self.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="FilingEmployeeID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_DepartmentID">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DepartmentID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignAgent_EmployeeID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="SignAgent" Type="Self.SignAgent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="SignAgent">
+              <PropertyRef Name="EmployeeID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Detail_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="SignForm_Detail" Type="Self.SignForm_Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="SignForm_Detail">
+              <PropertyRef Name="ChiefID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Detail_SignForm_Main">
+          <End Role="SignForm_Main" Type="Self.SignForm_Main" Multiplicity="1" />
+          <End Role="SignForm_Detail" Type="Self.SignForm_Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SignForm_Main">
+              <PropertyRef Name="SignDocID" />
+            </Principal>
+            <Dependent Role="SignForm_Detail">
+              <PropertyRef Name="SignDocID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Main_Department">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="SignForm_Main" Type="Self.SignForm_Main" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="SignForm_Main">
+              <PropertyRef Name="CurrentSignLevelDeptID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Main_EmployeeID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="SignForm_Main" Type="Self.SignForm_Main" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="SignForm_Main">
+              <PropertyRef Name="EmployeeID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Main_SignType">
+          <End Role="SignType" Type="Self.SignType" Multiplicity="1" />
+          <End Role="SignForm_Main" Type="Self.SignForm_Main" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SignType">
+              <PropertyRef Name="FormID" />
+            </Principal>
+            <Dependent Role="SignForm_Main">
+              <PropertyRef Name="FormID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignType_DepartmentID">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="SignType" Type="Self.SignType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="SignType">
+              <PropertyRef Name="FilingDepartmentID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignType_SignType">
+          <End Role="SignProcedure" Type="Self.SignProcedure" Multiplicity="1" />
+          <End Role="SignType" Type="Self.SignType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SignProcedure">
+              <PropertyRef Name="SignID" />
+            </Principal>
+            <Dependent Role="SignType">
+              <PropertyRef Name="SignID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RinnaiPortal_FormalModelStoreContainer">
+          <EntitySet Name="BbsContent" EntityType="Self.BbsContent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OvertimeForm" EntityType="Self.OvertimeForm" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SalaryLimit" EntityType="Self.SalaryLimit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignAgent" EntityType="Self.SignAgent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignDocCode" EntityType="Self.SignDocCode" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignForm_Detail" EntityType="Self.SignForm_Detail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignForm_Log" EntityType="Self.SignForm_Log" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignForm_Main" EntityType="Self.SignForm_Main" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignProcedure" EntityType="Self.SignProcedure" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignType" EntityType="Self.SignType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SysGroup" EntityType="Self.SysGroup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SystemArchitecture" EntityType="Self.SystemArchitecture" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ForgotPunchForm" EntityType="Self.ForgotPunchForm" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ForgotPunchForm].[SN] AS [SN], 
+    [ForgotPunchForm].[FormID_FK] AS [FormID_FK], 
+    [ForgotPunchForm].[SignDocID_FK] AS [SignDocID_FK], 
+    [ForgotPunchForm].[ApplyID_FK] AS [ApplyID_FK], 
+    [ForgotPunchForm].[ApplyDateTime] AS [ApplyDateTime], 
+    [ForgotPunchForm].[EmployeeID_FK] AS [EmployeeID_FK], 
+    [ForgotPunchForm].[DepartmentID_FK] AS [DepartmentID_FK], 
+    [ForgotPunchForm].[PeriodType] AS [PeriodType], 
+    [ForgotPunchForm].[ForgotPunchInDateTime] AS [ForgotPunchInDateTime], 
+    [ForgotPunchForm].[ForgotPunchOutDateTime] AS [ForgotPunchOutDateTime], 
+    [ForgotPunchForm].[Note] AS [Note], 
+    [ForgotPunchForm].[Creator] AS [Creator], 
+    [ForgotPunchForm].[CreateDate] AS [CreateDate], 
+    [ForgotPunchForm].[Modifier] AS [Modifier], 
+    [ForgotPunchForm].[ModifyDate] AS [ModifyDate]
+    FROM [dbo].[ForgotPunchForm] AS [ForgotPunchForm]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PeriodType" EntityType="Self.PeriodType" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [PeriodType].[PunchID] AS [PunchID], 
+    [PeriodType].[PunchName] AS [PunchName]
+    FROM [dbo].[PeriodType] AS [PeriodType]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserPriority" EntityType="Self.UserPriority" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserPriority].[sn] AS [sn], 
+    [UserPriority].[motion] AS [motion]
+    FROM [dbo].[UserPriority] AS [UserPriority]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Department_ChiefID" Association="Self.FK_Department_ChiefID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Department" EntitySet="Department" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Department_FilingEmployeeID" Association="Self.FK_Department_FilingEmployeeID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Department" EntitySet="Department" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_DepartmentID" Association="Self.FK_Employee_DepartmentID">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignAgent_EmployeeID" Association="Self.FK_SignAgent_EmployeeID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="SignAgent" EntitySet="SignAgent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Detail_Employee" Association="Self.FK_SignForm_Detail_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="SignForm_Detail" EntitySet="SignForm_Detail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Detail_SignForm_Main" Association="Self.FK_SignForm_Detail_SignForm_Main">
+            <End Role="SignForm_Main" EntitySet="SignForm_Main" />
+            <End Role="SignForm_Detail" EntitySet="SignForm_Detail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Main_Department" Association="Self.FK_SignForm_Main_Department">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="SignForm_Main" EntitySet="SignForm_Main" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Main_EmployeeID" Association="Self.FK_SignForm_Main_EmployeeID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="SignForm_Main" EntitySet="SignForm_Main" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Main_SignType" Association="Self.FK_SignForm_Main_SignType">
+            <End Role="SignType" EntitySet="SignType" />
+            <End Role="SignForm_Main" EntitySet="SignForm_Main" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignType_DepartmentID" Association="Self.FK_SignType_DepartmentID">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="SignType" EntitySet="SignType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignType_SignType" Association="Self.FK_SignType_SignType">
+            <End Role="SignProcedure" EntitySet="SignProcedure" />
+            <End Role="SignType" EntitySet="SignType" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RinnaiPortal_FormalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BbsContent">
+          <Key>
+            <PropertyRef Name="bbs_id" />
+          </Key>
+          <Property Name="bbs_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="bbs_title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="bbs_content" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="startdatetime" Type="DateTime" Precision="3" />
+          <Property Name="enddatetime" Type="DateTime" Precision="3" />
+          <Property Name="bbs_http" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="bbs_photo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="bbs_file" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentID" />
+          </Key>
+          <Property Name="DepartmentID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DepartmentName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChiefID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UpperDepartmentID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DepartmentLevel" Type="Int32" Nullable="false" />
+          <Property Name="FilingEmployeeID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Virtual" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="Disabled" Type="Boolean" />
+          <Property Name="DisabledDate" Type="DateTime" Precision="3" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_Department_ChiefID" FromRole="Department" ToRole="Employee" />
+          <NavigationProperty Name="Employee1" Relationship="Self.FK_Department_FilingEmployeeID" FromRole="Department" ToRole="Employee" />
+          <NavigationProperty Name="Employee2" Relationship="Self.FK_Employee_DepartmentID" FromRole="Department" ToRole="Employee" />
+          <NavigationProperty Name="SignForm_Main" Relationship="Self.FK_SignForm_Main_Department" FromRole="Department" ToRole="SignForm_Main" />
+          <NavigationProperty Name="SignType" Relationship="Self.FK_SignType_DepartmentID" FromRole="Department" ToRole="SignType" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EmployeeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DepartmentID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CostDepartmentID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="AgentID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Disabled" Type="Boolean" Nullable="false" />
+          <Property Name="DisabledDate" Type="DateTime" Precision="3" />
+          <Property Name="ADAccount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <Property Name="AccessType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NationalType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SexType" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Department" Relationship="Self.FK_Department_ChiefID" FromRole="Employee" ToRole="Department" />
+          <NavigationProperty Name="Department1" Relationship="Self.FK_Department_FilingEmployeeID" FromRole="Employee" ToRole="Department" />
+          <NavigationProperty Name="Department2" Relationship="Self.FK_Employee_DepartmentID" FromRole="Employee" ToRole="Department" />
+          <NavigationProperty Name="SignAgent" Relationship="Self.FK_SignAgent_EmployeeID" FromRole="Employee" ToRole="SignAgent" />
+          <NavigationProperty Name="SignForm_Detail" Relationship="Self.FK_SignForm_Detail_Employee" FromRole="Employee" ToRole="SignForm_Detail" />
+          <NavigationProperty Name="SignForm_Main" Relationship="Self.FK_SignForm_Main_EmployeeID" FromRole="Employee" ToRole="SignForm_Main" />
+        </EntityType>
+        <EntityType Name="OvertimeForm">
+          <Key>
+            <PropertyRef Name="SN" />
+          </Key>
+          <Property Name="SN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FormID_FK" Type="Int32" />
+          <Property Name="SignDocID_FK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ApplyID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ApplyDateTime" Type="DateTime" Precision="3" />
+          <Property Name="EmployeeID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DepartmentID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="StartDateTime" Type="DateTime" Precision="3" />
+          <Property Name="EndDateTime" Type="DateTime" Precision="3" />
+          <Property Name="SupportDeptID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PayTypeKey" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MealOrderKey" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AutoInsert" Type="Boolean" Nullable="false" />
+          <Property Name="IsHoliday" Type="Boolean" />
+          <Property Name="TotalHours" Type="Double" />
+          <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SalaryLimit">
+          <Key>
+            <PropertyRef Name="SN" />
+          </Key>
+          <Property Name="SN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LimitDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ModifyDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="SignAgent">
+          <Key>
+            <PropertyRef Name="SN" />
+          </Key>
+          <Property Name="SN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BeginDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_SignAgent_EmployeeID" FromRole="SignAgent" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="SignDocCode">
+          <Key>
+            <PropertyRef Name="SignDocID" />
+          </Key>
+          <Property Name="SignDocID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SequenceNum" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SignForm_Detail">
+          <Key>
+            <PropertyRef Name="SN" />
+          </Key>
+          <Property Name="SN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SignDocID_FK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChiefID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_SignForm_Detail_Employee" FromRole="SignForm_Detail" ToRole="Employee" />
+          <NavigationProperty Name="SignForm_Main" Relationship="Self.FK_SignForm_Detail_SignForm_Main" FromRole="SignForm_Detail" ToRole="SignForm_Main" />
+        </EntityType>
+        <EntityType Name="SignForm_Log">
+          <Key>
+            <PropertyRef Name="sn" />
+          </Key>
+          <Property Name="sn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SignDocID_FK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="FormID_FK" Type="Int32" />
+          <Property Name="EmployeeID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SendDate" Type="DateTime" Precision="3" />
+          <Property Name="CurrentSignLevelDeptID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="FinalStatus" Type="Int32" />
+          <Property Name="Remainder" Type="Int32" />
+          <Property Name="AutoInsert" Type="Boolean" />
+          <Property Name="Creator_Main" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate_Main" Type="DateTime" Precision="3" />
+          <Property Name="Modifier_Main" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate_Main" Type="DateTime" Precision="3" />
+          <Property Name="DetailSignDocID_FK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ChiefID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Creator_Detail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate_Detail" Type="DateTime" Precision="3" />
+          <Property Name="Modifier_Detail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate_Detail" Type="DateTime" Precision="3" />
+          <Property Name="LogDatetime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="SignForm_Main">
+          <Key>
+            <PropertyRef Name="SignDocID" />
+          </Key>
+          <Property Name="SignDocID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FormID_FK" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SendDate" Type="DateTime" Precision="3" />
+          <Property Name="CurrentSignLevelDeptID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FinalStatus" Type="Int32" Nullable="false" />
+          <Property Name="Remainder" Type="Int32" Nullable="false" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Department" Relationship="Self.FK_SignForm_Main_Department" FromRole="SignForm_Main" ToRole="Department" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_SignForm_Main_EmployeeID" FromRole="SignForm_Main" ToRole="Employee" />
+          <NavigationProperty Name="SignForm_Detail" Relationship="Self.FK_SignForm_Detail_SignForm_Main" FromRole="SignForm_Main" ToRole="SignForm_Detail" />
+          <NavigationProperty Name="SignType" Relationship="Self.FK_SignForm_Main_SignType" FromRole="SignForm_Main" ToRole="SignType" />
+        </EntityType>
+        <EntityType Name="SignProcedure">
+          <Key>
+            <PropertyRef Name="SignID" />
+          </Key>
+          <Property Name="SignID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SignLevel" Type="Int32" Nullable="false" />
+          <Property Name="MaxLevel" Type="Int32" Nullable="false" />
+          <Property Name="Disabled" Type="Boolean" Nullable="false" />
+          <Property Name="DisabledDate" Type="DateTime" Precision="3" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="SignType" Relationship="Self.FK_SignType_SignType" FromRole="SignProcedure" ToRole="SignType" />
+        </EntityType>
+        <EntityType Name="SignType">
+          <Key>
+            <PropertyRef Name="FormID" />
+          </Key>
+          <Property Name="FormID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FormType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SignID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FormSeries" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FilingDepartmentID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Department" Relationship="Self.FK_SignType_DepartmentID" FromRole="SignType" ToRole="Department" />
+          <NavigationProperty Name="SignForm_Main" Relationship="Self.FK_SignForm_Main_SignType" FromRole="SignType" ToRole="SignForm_Main" />
+          <NavigationProperty Name="SignProcedure" Relationship="Self.FK_SignType_SignType" FromRole="SignType" ToRole="SignProcedure" />
+        </EntityType>
+        <EntityType Name="SysGroup">
+          <Key>
+            <PropertyRef Name="GroupType" />
+          </Key>
+          <Property Name="GroupType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GroupName" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Resource" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SystemArchitecture">
+          <Key>
+            <PropertyRef Name="NodeID" />
+          </Key>
+          <Property Name="NodeID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="ParentID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="NodeTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NodeUri" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ResourceAlias" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ForgotPunchForm">
+          <Key>
+            <PropertyRef Name="SN" />
+            <PropertyRef Name="FormID_FK" />
+            <PropertyRef Name="SignDocID_FK" />
+            <PropertyRef Name="ApplyID_FK" />
+            <PropertyRef Name="ApplyDateTime" />
+            <PropertyRef Name="EmployeeID_FK" />
+            <PropertyRef Name="DepartmentID_FK" />
+            <PropertyRef Name="PeriodType" />
+            <PropertyRef Name="Creator" />
+            <PropertyRef Name="CreateDate" />
+          </Key>
+          <Property Name="SN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FormID_FK" Type="Int32" Nullable="false" />
+          <Property Name="SignDocID_FK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ApplyID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ApplyDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EmployeeID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DepartmentID_FK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PeriodType" Type="Int32" Nullable="false" />
+          <Property Name="ForgotPunchInDateTime" Type="DateTime" Precision="3" />
+          <Property Name="ForgotPunchOutDateTime" Type="DateTime" Precision="3" />
+          <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="PeriodType">
+          <Key>
+            <PropertyRef Name="PunchID" />
+            <PropertyRef Name="PunchName" />
+          </Key>
+          <Property Name="PunchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PunchName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserPriority">
+          <Key>
+            <PropertyRef Name="sn" />
+            <PropertyRef Name="motion" />
+          </Key>
+          <Property Name="sn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="motion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Department_ChiefID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Department" Type="Self.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="ChiefID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Department_FilingEmployeeID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Department" Type="Self.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="FilingEmployeeID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_DepartmentID">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DepartmentID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Main_Department">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="SignForm_Main" Type="Self.SignForm_Main" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="SignForm_Main">
+              <PropertyRef Name="CurrentSignLevelDeptID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignType_DepartmentID">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="SignType" Type="Self.SignType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="SignType">
+              <PropertyRef Name="FilingDepartmentID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignAgent_EmployeeID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="SignAgent" Type="Self.SignAgent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="SignAgent">
+              <PropertyRef Name="EmployeeID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Detail_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="SignForm_Detail" Type="Self.SignForm_Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="SignForm_Detail">
+              <PropertyRef Name="ChiefID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Main_EmployeeID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="SignForm_Main" Type="Self.SignForm_Main" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="SignForm_Main">
+              <PropertyRef Name="EmployeeID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Detail_SignForm_Main">
+          <End Role="SignForm_Main" Type="Self.SignForm_Main" Multiplicity="1" />
+          <End Role="SignForm_Detail" Type="Self.SignForm_Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SignForm_Main">
+              <PropertyRef Name="SignDocID" />
+            </Principal>
+            <Dependent Role="SignForm_Detail">
+              <PropertyRef Name="SignDocID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignForm_Main_SignType">
+          <End Role="SignType" Type="Self.SignType" Multiplicity="1" />
+          <End Role="SignForm_Main" Type="Self.SignForm_Main" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SignType">
+              <PropertyRef Name="FormID" />
+            </Principal>
+            <Dependent Role="SignForm_Main">
+              <PropertyRef Name="FormID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignType_SignType">
+          <End Role="SignProcedure" Type="Self.SignProcedure" Multiplicity="1" />
+          <End Role="SignType" Type="Self.SignType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SignProcedure">
+              <PropertyRef Name="SignID" />
+            </Principal>
+            <Dependent Role="SignType">
+              <PropertyRef Name="SignID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DbPOR" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BbsContent" EntityType="Self.BbsContent" />
+          <EntitySet Name="Department" EntityType="Self.Department" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" />
+          <EntitySet Name="OvertimeForm" EntityType="Self.OvertimeForm" />
+          <EntitySet Name="SalaryLimit" EntityType="Self.SalaryLimit" />
+          <EntitySet Name="SignAgent" EntityType="Self.SignAgent" />
+          <EntitySet Name="SignDocCode" EntityType="Self.SignDocCode" />
+          <EntitySet Name="SignForm_Detail" EntityType="Self.SignForm_Detail" />
+          <EntitySet Name="SignForm_Log" EntityType="Self.SignForm_Log" />
+          <EntitySet Name="SignForm_Main" EntityType="Self.SignForm_Main" />
+          <EntitySet Name="SignProcedure" EntityType="Self.SignProcedure" />
+          <EntitySet Name="SignType" EntityType="Self.SignType" />
+          <EntitySet Name="SysGroup" EntityType="Self.SysGroup" />
+          <EntitySet Name="SystemArchitecture" EntityType="Self.SystemArchitecture" />
+          <EntitySet Name="ForgotPunchForm" EntityType="Self.ForgotPunchForm" />
+          <EntitySet Name="PeriodType" EntityType="Self.PeriodType" />
+          <EntitySet Name="UserPriority" EntityType="Self.UserPriority" />
+          <AssociationSet Name="FK_Department_ChiefID" Association="Self.FK_Department_ChiefID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Department" EntitySet="Department" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Department_FilingEmployeeID" Association="Self.FK_Department_FilingEmployeeID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Department" EntitySet="Department" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_DepartmentID" Association="Self.FK_Employee_DepartmentID">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Main_Department" Association="Self.FK_SignForm_Main_Department">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="SignForm_Main" EntitySet="SignForm_Main" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignType_DepartmentID" Association="Self.FK_SignType_DepartmentID">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="SignType" EntitySet="SignType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignAgent_EmployeeID" Association="Self.FK_SignAgent_EmployeeID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="SignAgent" EntitySet="SignAgent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Detail_Employee" Association="Self.FK_SignForm_Detail_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="SignForm_Detail" EntitySet="SignForm_Detail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Main_EmployeeID" Association="Self.FK_SignForm_Main_EmployeeID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="SignForm_Main" EntitySet="SignForm_Main" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Detail_SignForm_Main" Association="Self.FK_SignForm_Detail_SignForm_Main">
+            <End Role="SignForm_Main" EntitySet="SignForm_Main" />
+            <End Role="SignForm_Detail" EntitySet="SignForm_Detail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignForm_Main_SignType" Association="Self.FK_SignForm_Main_SignType">
+            <End Role="SignType" EntitySet="SignType" />
+            <End Role="SignForm_Main" EntitySet="SignForm_Main" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignType_SignType" Association="Self.FK_SignType_SignType">
+            <End Role="SignProcedure" EntitySet="SignProcedure" />
+            <End Role="SignType" EntitySet="SignType" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RinnaiPortal_FormalModelStoreContainer" CdmEntityContainer="DbPOR">
+          <EntitySetMapping Name="BbsContent">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.BbsContent">
+              <MappingFragment StoreEntitySet="BbsContent">
+                <ScalarProperty Name="bbs_id" ColumnName="bbs_id" />
+                <ScalarProperty Name="bbs_title" ColumnName="bbs_title" />
+                <ScalarProperty Name="bbs_content" ColumnName="bbs_content" />
+                <ScalarProperty Name="startdatetime" ColumnName="startdatetime" />
+                <ScalarProperty Name="enddatetime" ColumnName="enddatetime" />
+                <ScalarProperty Name="bbs_http" ColumnName="bbs_http" />
+                <ScalarProperty Name="bbs_photo" ColumnName="bbs_photo" />
+                <ScalarProperty Name="bbs_file" ColumnName="bbs_file" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Department">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="ChiefID_FK" ColumnName="ChiefID_FK" />
+                <ScalarProperty Name="UpperDepartmentID" ColumnName="UpperDepartmentID" />
+                <ScalarProperty Name="DepartmentLevel" ColumnName="DepartmentLevel" />
+                <ScalarProperty Name="FilingEmployeeID_FK" ColumnName="FilingEmployeeID_FK" />
+                <ScalarProperty Name="Virtual" ColumnName="Virtual" />
+                <ScalarProperty Name="Disabled" ColumnName="Disabled" />
+                <ScalarProperty Name="DisabledDate" ColumnName="DisabledDate" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employee">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="DepartmentID_FK" ColumnName="DepartmentID_FK" />
+                <ScalarProperty Name="CostDepartmentID" ColumnName="CostDepartmentID" />
+                <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+                <ScalarProperty Name="Disabled" ColumnName="Disabled" />
+                <ScalarProperty Name="DisabledDate" ColumnName="DisabledDate" />
+                <ScalarProperty Name="ADAccount" ColumnName="ADAccount" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+                <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+                <ScalarProperty Name="NationalType" ColumnName="NationalType" />
+                <ScalarProperty Name="SexType" ColumnName="SexType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OvertimeForm">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.OvertimeForm">
+              <MappingFragment StoreEntitySet="OvertimeForm">
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="FormID_FK" ColumnName="FormID_FK" />
+                <ScalarProperty Name="SignDocID_FK" ColumnName="SignDocID_FK" />
+                <ScalarProperty Name="ApplyID_FK" ColumnName="ApplyID_FK" />
+                <ScalarProperty Name="ApplyDateTime" ColumnName="ApplyDateTime" />
+                <ScalarProperty Name="EmployeeID_FK" ColumnName="EmployeeID_FK" />
+                <ScalarProperty Name="DepartmentID_FK" ColumnName="DepartmentID_FK" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="SupportDeptID_FK" ColumnName="SupportDeptID_FK" />
+                <ScalarProperty Name="PayTypeKey" ColumnName="PayTypeKey" />
+                <ScalarProperty Name="MealOrderKey" ColumnName="MealOrderKey" />
+                <ScalarProperty Name="AutoInsert" ColumnName="AutoInsert" />
+                <ScalarProperty Name="IsHoliday" ColumnName="IsHoliday" />
+                <ScalarProperty Name="TotalHours" ColumnName="TotalHours" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalaryLimit">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SalaryLimit">
+              <MappingFragment StoreEntitySet="SalaryLimit">
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="LimitDate" ColumnName="LimitDate" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignAgent">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SignAgent">
+              <MappingFragment StoreEntitySet="SignAgent">
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="EmployeeID_FK" ColumnName="EmployeeID_FK" />
+                <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignDocCode">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SignDocCode">
+              <MappingFragment StoreEntitySet="SignDocCode">
+                <ScalarProperty Name="SignDocID" ColumnName="SignDocID" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="SequenceNum" ColumnName="SequenceNum" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignForm_Detail">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SignForm_Detail">
+              <MappingFragment StoreEntitySet="SignForm_Detail">
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="SignDocID_FK" ColumnName="SignDocID_FK" />
+                <ScalarProperty Name="ChiefID_FK" ColumnName="ChiefID_FK" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignForm_Log">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SignForm_Log">
+              <MappingFragment StoreEntitySet="SignForm_Log">
+                <ScalarProperty Name="sn" ColumnName="sn" />
+                <ScalarProperty Name="SignDocID_FK" ColumnName="SignDocID_FK" />
+                <ScalarProperty Name="FormID_FK" ColumnName="FormID_FK" />
+                <ScalarProperty Name="EmployeeID_FK" ColumnName="EmployeeID_FK" />
+                <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+                <ScalarProperty Name="CurrentSignLevelDeptID_FK" ColumnName="CurrentSignLevelDeptID_FK" />
+                <ScalarProperty Name="FinalStatus" ColumnName="FinalStatus" />
+                <ScalarProperty Name="Remainder" ColumnName="Remainder" />
+                <ScalarProperty Name="AutoInsert" ColumnName="AutoInsert" />
+                <ScalarProperty Name="Creator_Main" ColumnName="Creator_Main" />
+                <ScalarProperty Name="CreateDate_Main" ColumnName="CreateDate_Main" />
+                <ScalarProperty Name="Modifier_Main" ColumnName="Modifier_Main" />
+                <ScalarProperty Name="ModifyDate_Main" ColumnName="ModifyDate_Main" />
+                <ScalarProperty Name="DetailSignDocID_FK" ColumnName="DetailSignDocID_FK" />
+                <ScalarProperty Name="ChiefID_FK" ColumnName="ChiefID_FK" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Creator_Detail" ColumnName="Creator_Detail" />
+                <ScalarProperty Name="CreateDate_Detail" ColumnName="CreateDate_Detail" />
+                <ScalarProperty Name="Modifier_Detail" ColumnName="Modifier_Detail" />
+                <ScalarProperty Name="ModifyDate_Detail" ColumnName="ModifyDate_Detail" />
+                <ScalarProperty Name="LogDatetime" ColumnName="LogDatetime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignForm_Main">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SignForm_Main">
+              <MappingFragment StoreEntitySet="SignForm_Main">
+                <ScalarProperty Name="SignDocID" ColumnName="SignDocID" />
+                <ScalarProperty Name="FormID_FK" ColumnName="FormID_FK" />
+                <ScalarProperty Name="EmployeeID_FK" ColumnName="EmployeeID_FK" />
+                <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+                <ScalarProperty Name="CurrentSignLevelDeptID_FK" ColumnName="CurrentSignLevelDeptID_FK" />
+                <ScalarProperty Name="FinalStatus" ColumnName="FinalStatus" />
+                <ScalarProperty Name="Remainder" ColumnName="Remainder" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignProcedure">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SignProcedure">
+              <MappingFragment StoreEntitySet="SignProcedure">
+                <ScalarProperty Name="SignID" ColumnName="SignID" />
+                <ScalarProperty Name="SignLevel" ColumnName="SignLevel" />
+                <ScalarProperty Name="MaxLevel" ColumnName="MaxLevel" />
+                <ScalarProperty Name="Disabled" ColumnName="Disabled" />
+                <ScalarProperty Name="DisabledDate" ColumnName="DisabledDate" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignType">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SignType">
+              <MappingFragment StoreEntitySet="SignType">
+                <ScalarProperty Name="FormID" ColumnName="FormID" />
+                <ScalarProperty Name="FormType" ColumnName="FormType" />
+                <ScalarProperty Name="SignID_FK" ColumnName="SignID_FK" />
+                <ScalarProperty Name="FormSeries" ColumnName="FormSeries" />
+                <ScalarProperty Name="FilingDepartmentID_FK" ColumnName="FilingDepartmentID_FK" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysGroup">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SysGroup">
+              <MappingFragment StoreEntitySet="SysGroup">
+                <ScalarProperty Name="GroupType" ColumnName="GroupType" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Resource" ColumnName="Resource" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemArchitecture">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.SystemArchitecture">
+              <MappingFragment StoreEntitySet="SystemArchitecture">
+                <ScalarProperty Name="NodeID" ColumnName="NodeID" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="NodeTitle" ColumnName="NodeTitle" />
+                <ScalarProperty Name="NodeUri" ColumnName="NodeUri" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+                <ScalarProperty Name="ResourceAlias" ColumnName="ResourceAlias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ForgotPunchForm">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.ForgotPunchForm">
+              <MappingFragment StoreEntitySet="ForgotPunchForm">
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="FormID_FK" ColumnName="FormID_FK" />
+                <ScalarProperty Name="SignDocID_FK" ColumnName="SignDocID_FK" />
+                <ScalarProperty Name="ApplyID_FK" ColumnName="ApplyID_FK" />
+                <ScalarProperty Name="ApplyDateTime" ColumnName="ApplyDateTime" />
+                <ScalarProperty Name="EmployeeID_FK" ColumnName="EmployeeID_FK" />
+                <ScalarProperty Name="DepartmentID_FK" ColumnName="DepartmentID_FK" />
+                <ScalarProperty Name="PeriodType" ColumnName="PeriodType" />
+                <ScalarProperty Name="ForgotPunchInDateTime" ColumnName="ForgotPunchInDateTime" />
+                <ScalarProperty Name="ForgotPunchOutDateTime" ColumnName="ForgotPunchOutDateTime" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PeriodType">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.PeriodType">
+              <MappingFragment StoreEntitySet="PeriodType">
+                <ScalarProperty Name="PunchID" ColumnName="PunchID" />
+                <ScalarProperty Name="PunchName" ColumnName="PunchName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserPriority">
+            <EntityTypeMapping TypeName="RinnaiPortal_FormalModel.UserPriority">
+              <MappingFragment StoreEntitySet="UserPriority">
+                <ScalarProperty Name="sn" ColumnName="sn" />
+                <ScalarProperty Name="motion" ColumnName="motion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

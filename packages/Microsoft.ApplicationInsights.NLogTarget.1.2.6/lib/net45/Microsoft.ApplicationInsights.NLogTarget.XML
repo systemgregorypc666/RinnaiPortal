@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.ApplicationInsights.NLogTarget</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.ApplicationInsights.NLogTarget.ApplicationInsightsTarget">
+            <summary>
+            NLog Target that routes all logging output to the Application Insights logging framework.
+            The messages will be uploaded to the Application Insights cloud service.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.NLogTarget.ApplicationInsightsTarget.InitializeTarget">
+            <summary>
+            Initializes the Target and perform instrumentationKey validation.
+            </summary>
+            <exception cref="T:NLog.NLogConfigurationException">Will throw when <see cref="P:Microsoft.ApplicationInsights.NLogTarget.ApplicationInsightsTarget.InstrumentationKey"/> is not set.</exception>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.NLogTarget.ApplicationInsightsTarget.Write(NLog.LogEventInfo)">
+            <summary>
+            Send the log message to Application Insights.
+            </summary>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="logEvent"/> is null.</exception>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.NLogTarget.ApplicationInsightsTarget.InstrumentationKey">
+            <summary>
+            The Application Insights instrumentationKey for your application. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.NLogTarget.ApplicationInsightsTarget.TelemetryClient">
+            <summary>
+            The logging controller we will be using.
+            </summary>
+        </member>
+    </members>
+</doc>

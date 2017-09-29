@@ -1,0 +1,6 @@
+2017-02-18 11:18:01.7852|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201701260002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201701260002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|

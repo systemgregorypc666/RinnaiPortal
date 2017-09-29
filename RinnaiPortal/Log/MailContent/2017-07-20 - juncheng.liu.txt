@@ -1,0 +1,66 @@
+2017-07-20 14:46:17.9146|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 14:47:21.1026|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200002 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200002 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>TEST</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 14:47:31.1866|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200003 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200003 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>TEST</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 14:47:35.3026|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200004 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200004 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>TEST</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 14:53:58.4996|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200005 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200005 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 15:02:30.8436|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200006 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200006 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 15:23:20.3447|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200007 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200007 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 15:39:57.6185|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200009 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200009 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 15:44:34.5942|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200013 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200013 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 15:45:40.4738|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200014 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200014 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|
+2017-07-20 17:06:33.4655|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201707200015 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201707200015 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>法定加班時數<br>(上限46H、不含本次)</th><th>本月加班累計時數<br>(不含本次)</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>01702</td><td>劉俊晨</td><td>2017-07-20 17:20:00</td><td>2017-07-20 19:20:00</td><td>0</td><td>0</td><td>資訊課人員</td><td>加班費</td><td>葷食</td><td>test</td></tr></table>此件為系統發送，請勿回覆!<br /><br />
+|

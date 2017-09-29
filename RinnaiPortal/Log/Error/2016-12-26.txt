@@ -1,0 +1,70 @@
+2016-12-26 09:52:10.2202|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 09:52:16.5859|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 09:52:25.1617|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 09:52:34.0596|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 09:53:54.8557|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 10:06:55.7521|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 10:07:07.9791|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 10:07:13.2511|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 11:00:03.9371|ERROR|
+{"ErrorMessage":"員工編號01654，假日加班工時未達1小時!請洽，03-3322101#6804-6806。","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 12:57:51.5841|ERROR|
+{"ErrorMessage":"員工編號01654，假日加班工時未達1小時!請洽，03-3322101#6804-6806。","Message":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 12:58:39.4191|ERROR|
+{"ErrorMessage":null,"Message":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"已經加入含有相同索引鍵的項目。"}|
+2016-12-26 13:01:02.1311|ERROR|
+{"ErrorMessage":null,"Message":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"已經加入含有相同索引鍵的項目。"}|
+2016-12-26 13:01:52.8031|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 13:06:48.6361|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 13:32:57.6391|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 13:58:55.7031|ERROR|
+{"ErrorMessage":"加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 13:59:06.4521|ERROR|
+{"ErrorMessage":"加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 13:59:45.1051|ERROR|
+{"ErrorMessage":"加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 13:59:47.8561|ERROR|
+{"ErrorMessage":"加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 14:21:38.3778|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 14:21:40.9943|ERROR|
+{"ErrorMessage":"員工編號01654的加班申請日期為國定假日，若非必要不得申請加班!","ActualException":"Do Not Pass Overtime Validation!"}|
+2016-12-26 16:48:02.7112|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 16:48:14.3504|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 16:54:10.3360|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 16:54:52.9922|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 16:54:55.8255|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 16:57:19.6409|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 17:00:18.3778|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 17:01:33.3843|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 17:01:50.6180|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 17:02:03.0602|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 17:03:43.0762|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 17:06:21.4411|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 17:06:25.5645|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|
+2016-12-26 17:08:32.9992|ERROR|
+{"ErrorMessage":null,"ActualException":"送出加班單失敗!Table Manipulation Failed, transaction was rollback!"}|

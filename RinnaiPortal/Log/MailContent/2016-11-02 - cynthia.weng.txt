@@ -1,0 +1,30 @@
+2016-11-02 14:54:49.3308|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611020001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611020001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00500</td><td>曹貴華</td><td>2016-09-15 07:00:00</td><td>2016-09-15 08:00:00</td><td>總務課人員</td><td>加班費</td><td>葷食</td><td>test5</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-02 14:58:12.6238|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611020001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611020001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00500</td><td>曹貴華</td><td>2016-09-22 07:00:00</td><td>2016-09-22 08:00:00</td><td>總務課人員</td><td>加班費</td><td>葷食</td><td>test5</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-02 14:58:30.1518|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611020001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611020001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00500</td><td>曹貴華</td><td>2016-09-22 07:00:00</td><td>2016-09-22 08:00:00</td><td>總務課人員</td><td>加班費</td><td>葷食</td><td>test5</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-02 15:00:45.9678|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611020001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611020001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00500</td><td>曹貴華</td><td>2016-08-16 17:20:00</td><td>2016-08-16 19:20:00</td><td>總務課人員</td><td>加班費</td><td>葷食</td><td>test5</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-02 15:00:48.8648|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611020001 已經送達!
+Content : 系統提醒!簽核單號 : OT201611020001 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201611020001'>連結</a> <br />此件為系統發送，請勿回覆!
+|

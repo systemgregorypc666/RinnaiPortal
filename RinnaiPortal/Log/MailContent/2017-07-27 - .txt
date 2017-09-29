@@ -1,0 +1,6 @@
+2017-07-27 10:57:46.9732|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : juncheng.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201707270001 已經送達!
+Content : 系統提醒!簽核單號 : TR201707270001 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201707270001'>連結</a> <br />此件為系統發送，請勿回覆!
+|

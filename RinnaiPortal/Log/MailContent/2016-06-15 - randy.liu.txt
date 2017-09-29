@@ -1,0 +1,18 @@
+2016-06-15 15:19:09.3600|TRACE|
+MailTo : randy.liud@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201606150001 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201606150001 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00554</td><td>戴美玉</td><td>2016-06-14 17:20:00</td><td>2016-06-14 19:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>zzzz</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-06-15 15:54:53.3694|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201606150007 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201606150007 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00554</td><td>戴美玉</td><td>2016-06-14 17:20:00</td><td>2016-06-14 19:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>ttest</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-06-15 15:56:46.1683|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : randy.liu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201606150007 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201606150007 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00554</td><td>戴美玉</td><td>2016-06-14 17:20:00</td><td>2016-06-14 19:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>ttest</td></tr></table>此件為系統發送，請勿回覆!<br />
+|

@@ -1,0 +1,42 @@
+2016-11-29 11:56:19.0022|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611290005 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611290005 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00915</td><td>張子亮</td><td>2016-10-24 17:20:00</td><td>2016-10-24 19:20:00</td><td>資訊課</td><td>加班費</td><td>葷食</td><td>test代填主管加班單</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-29 11:56:21.8520|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611290005 已經送達!
+Content : 系統提醒!簽核單號 : OT201611290005 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201611290005'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2016-11-29 11:58:06.0268|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611290005 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201611290005 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|
+2016-11-29 15:36:57.2825|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611290009 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611290009 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00304</td><td>徐明增</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00360</td><td>翻英俊</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00874</td><td>阮越恢</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00876</td><td>朱黃定</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00877</td><td>何文位</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01012</td><td>許美玉</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01022</td><td>李國輝</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01078</td><td>林保元</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01167</td><td>阮克職</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01188</td><td>陳文泰</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01189</td><td>阮江南</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01231</td><td>曾緯宸</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01454</td><td>徐偉欽</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01572</td><td>高玉炫</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01600</td><td>謝柳妹</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-29 15:38:41.5860|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611290009 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611290009 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00360</td><td>翻英俊</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00874</td><td>阮越恢</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00876</td><td>朱黃定</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00877</td><td>何文位</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01012</td><td>許美玉</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01022</td><td>李國輝</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01078</td><td>林保元</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01167</td><td>阮克職</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01188</td><td>陳文泰</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01189</td><td>阮江南</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01231</td><td>曾緯宸</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01454</td><td>徐偉欽</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01572</td><td>高玉炫</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01600</td><td>謝柳妹</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-29 15:40:59.0467|TRACE|
+MailTo : steven.peng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201611290009 已經產生,請儘速檢視!
+Content : 系統提醒!簽核單號 : OT201611290009 明細如下 : <br /> <table border=1 style=''><th>員工編號</th><th>員工姓名</th><th>加班起</th><th>加班迄</th><th>支援單位</th><th>報酬類型</th><th>餐別</th><th>加班原因</th><tr><td>00360</td><td>翻英俊</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00874</td><td>阮越恢</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00876</td><td>朱黃定</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>00877</td><td>何文位</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01012</td><td>許美玉</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01022</td><td>李國輝</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01078</td><td>林保元</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01167</td><td>阮克職</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01188</td><td>陳文泰</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01189</td><td>阮江南</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01231</td><td>曾緯宸</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01454</td><td>徐偉欽</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01572</td><td>高玉炫</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr><tr><td>01600</td><td>謝柳妹</td><td>2016-10-31 17:20:00</td><td>2016-10-31 19:20:00</td><td>水箱班</td><td>加班費</td><td>葷食</td><td>test水箱班</td></tr></table>此件為系統發送，請勿回覆!<br />
+|
+2016-11-29 15:46:51.6039|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201611250003 已被駁回，請儘速修改!
+Content : 系統提醒!簽核單號 : OT201611250003 已被駁回，請儘速修改!此件為系統發送，請勿回覆!
+|

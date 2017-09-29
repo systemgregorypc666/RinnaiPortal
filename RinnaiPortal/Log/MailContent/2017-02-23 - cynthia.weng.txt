@@ -1,0 +1,42 @@
+2017-02-23 10:19:46.0315|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : chris.chiu@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170004 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201702170004 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-02-23 10:19:58.8393|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170004 已經送達!
+Content : <span style='color:red;font-size:medium;'>此加班單為事後補單!</span><br />系統提醒!簽核單號 : OT201702170004 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201702170004'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-02-23 10:20:45.2656|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170004 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : OT201702170004 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-02-23 10:20:58.7704|TRACE|
+MailTo : cynthia.weng@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702170004 已經送達!
+Content : <span style='color:red;font-size:medium;'>此加班單為事後補單!</span><br />系統提醒!簽核單號 : OT201702170004 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201702170004'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-02-23 11:38:57.3563|TRACE|
+MailTo : dondon.hsu@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702230001 已經送達!
+Content : <span style='color:red;font-size:medium;'>此加班單為事後補單!</span><br />系統提醒!簽核單號 : OT201702230001 已經送達，請儘速檢視!<br /><a href='Report-1:8080/Area/Sign/ProcessWorkflowList.aspx?queryText=OT201702230001'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-02-23 11:40:03.6040|TRACE|
+MailTo : chris.chiu@rinnai.com.tw
+cc : 
+Title : 系統提醒!簽核單號 : OT201702230001 已經送達，請儘速處理!
+Content : 系統提醒!簽核單號 : OT201702230001 已經送達，請儘速處理!此件為系統發送，請勿回覆!
+|
+2017-02-23 11:47:47.6387|TRACE|
+MailTo : wensin.chang@rinnai.com.tw
+cc : tiffany.huang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : OT201702230001 已通過審核並結案，請儘速確認!
+Content : 系統提醒!簽核單號 : OT201702230001 已通過審核並結案，請儘速確認!此件為系統發送，請勿回覆!
+|

@@ -1,0 +1,72 @@
+2017-05-05 15:22:31.3138|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050006 已經送達!
+Content : 系統提醒!簽核單號 : TR201705050006 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201705050006'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-05-05 15:59:07.0293|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : cynthia.weng@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050007 已經送達!
+Content : 系統提醒!簽核單號 : TR201705050007 已經送達，請儘速檢視!<br /><a href='localhost:52982/Area/Sign/ProcessWorkflowList.aspx?queryText=TR201705050007'>連結</a> <br />此件為系統發送，請勿回覆!
+|
+2017-05-05 16:27:55.7260|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050007 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705050007 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:35:26.6687|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050006 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705050006 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:35:33.9617|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050005 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705050005 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:35:38.3617|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050004 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705050004 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:36:16.7807|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705050003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:36:27.0527|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705050002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:36:31.5847|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705050001 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705050001 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:36:35.9177|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705030004 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705030004 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:36:40.6877|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705030003 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705030003 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
+2017-05-05 16:36:44.8347|TRACE|
+MailTo : george.chang@rinnai.com.tw
+cc : george.chang@rinnai.com.tw
+Title : 系統提醒!簽核單號 : TR201705030002 已經由填單者抽單!
+Content : 系統提醒!簽核單號 : TR201705030002 已經由填單者抽單!此件為系統發送，請勿回覆!
+|
