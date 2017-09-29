@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>林內發票明細查詢</title>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<!--http://192.168.1.206:1004/api/EinvoiceApi?invTerm=10608-->
+<body>
+    <h1>
+        查詢中獎發票號碼
+    </h1>
+
+    <label>請輸入欲查詢之年月份 ex.10608</label>
+    <input type="text" name="name" value="" id="invTerm" />
+    <input type="button" name="name" value="查詢" id="searchBtn" />
+    <script>
+        $(function () {
+            $('#searchBtn').on('click', function () {
+                var invTerm = $('#invTerm').val();
+                //http://127.0.0.1/
+                //var url = 'http://192.168.1.206:1004/api/EinvoiceApi/GetEinvoiceWinningNumber?invTerm=' + invTerm;
+                //var url = 'http://portal.rinnai.com.tw:1004/api/EinvoiceApi/GetEinvoiceWinningNumber?invTerm=' + invTerm;
+                var url = "http://192.168.1.206/api/EinvoiceApi/GetEinvoiceWinningNumber?invTerm=" + invTerm;
+                $.ajax({
+                    url: url,
+                    dataType: 'jsonp',
+                    jsonpCallback: 'callback',
+                    type: 'GET',
+                    success: function (data) {
+                        alert(data.msg);
+                        console.log(data);
+                    }
+                });
+            })
+        })
+    </script>
+</body>
+</html>

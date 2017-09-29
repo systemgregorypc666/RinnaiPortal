@@ -1,0 +1,1279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="eInvoiceSLNDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="A0401D">
+          <Key>
+            <PropertyRef Name="A0401DSN" />
+          </Key>
+          <Property Name="A0401DSN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MInvoiceNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DDescription" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="DQuantity" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DUnit" Type="nvarchar" MaxLength="6" />
+          <Property Name="DUnitPrice" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DSequenceNumber" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="DRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="DRelateNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="A0401H">
+          <Key>
+            <PropertyRef Name="A0401SN" />
+          </Key>
+          <Property Name="A0401SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MInvoiceNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MInvoiceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="MInvoiceTime" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="MSIdentifier" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MSName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="MSAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="MSPersonInCharge" Type="nvarchar" MaxLength="30" />
+          <Property Name="MSTelephoneNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MSFacsimileNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MSEmailAddress" Type="nvarchar" MaxLength="80" />
+          <Property Name="MSCustomerNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MSRoleRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="MBIdentifier" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MBName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="MBAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="MBPersonInCharge" Type="nvarchar" MaxLength="30" />
+          <Property Name="MBTelephoneNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MBFacsimileNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MBEmailAddress" Type="nvarchar" MaxLength="80" />
+          <Property Name="MBCustomerNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MBRoleRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="MCheckNumber" Type="nvarchar" MaxLength="10" />
+          <Property Name="MBuyerRemark" Type="nvarchar" MaxLength="1" />
+          <Property Name="MMainRemark" Type="nvarchar" MaxLength="200" />
+          <Property Name="MCustomsClearanceMark" Type="nvarchar" MaxLength="1" />
+          <Property Name="MCategory" Type="nvarchar" MaxLength="2" />
+          <Property Name="MRelateNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MInvoiceType" Type="nvarchar" MaxLength="2" Nullable="false" />
+          <Property Name="MGroupMark" Type="nvarchar" MaxLength="1" />
+          <Property Name="MDonateMark" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="MCarrierType" Type="nvarchar" MaxLength="6" />
+          <Property Name="MCarrierId1" Type="nvarchar" MaxLength="64" />
+          <Property Name="MCarrierId2" Type="nvarchar" MaxLength="64" />
+          <Property Name="MPrintMark" Type="nvarchar" MaxLength="1" />
+          <Property Name="MNPOBAN" Type="nvarchar" MaxLength="10" />
+          <Property Name="MRandomNumber" Type="nvarchar" MaxLength="4" />
+          <Property Name="ASalesAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AFreeTaxSalesAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="AZeroTaxSalesAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="ATaxType" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="ATaxRate" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ATaxAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ATotalAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ADiscountAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="AOriginalCurrencyAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="AExchangeRate" Type="nvarchar" MaxLength="50" />
+          <Property Name="ACurrency" Type="nvarchar" MaxLength="50" />
+          <Property Name="DataTime" Type="datetime" Nullable="false" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExPdfYN" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="A0501">
+          <Key>
+            <PropertyRef Name="A0501SN" />
+          </Key>
+          <Property Name="A0501SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CancelInvoiceNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="InvoiceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="BuyerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SellerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CancelDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CancelTime" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CancelReason" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ReturnTaxDocumentNumber" Type="nvarchar" MaxLength="60" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExXmlTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="A0601">
+          <Key>
+            <PropertyRef Name="A0601SN" />
+          </Key>
+          <Property Name="A0601SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RejectInvoiceNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="InvoiceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="BuyerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SellerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="RejectDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="RejectTime" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="RejectReason" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExXmlTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="B0401D">
+          <Key>
+            <PropertyRef Name="B0401DSN" />
+          </Key>
+          <Property Name="B0401DSN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MAllowanceNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="DOriginalInvoiceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="DOriginalInvoiceNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DOriginalSequenceNumber" Type="nvarchar" MaxLength="3" />
+          <Property Name="DOriginalDescription" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="DQuantity" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DUnit" Type="nvarchar" MaxLength="6" />
+          <Property Name="DUnitPrice" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DTax" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DAllowanceSequenceNumber" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="DTaxType" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExXmlTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="B0401H">
+          <Key>
+            <PropertyRef Name="B0401SN" />
+          </Key>
+          <Property Name="B0401SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MAllowanceNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="MAllowanceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="MSIdentifier" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MSName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="MSAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="MSPersonInCharge" Type="nvarchar" MaxLength="30" />
+          <Property Name="MSTelephoneNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MSFacsimileNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MSEmailAddress" Type="nvarchar" MaxLength="80" />
+          <Property Name="MSCustomerNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MSRoleRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="MBIdentifier" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MBName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="MBAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="MBPersonInCharge" Type="nvarchar" MaxLength="30" />
+          <Property Name="MBTelephoneNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MBFacsimileNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MBEmailAddress" Type="nvarchar" MaxLength="80" />
+          <Property Name="MBCustomerNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MBRoleRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="MAllowanceType" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="ATaxAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ATotalAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExPdfYN" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="B0501">
+          <Key>
+            <PropertyRef Name="B0501SN" />
+          </Key>
+          <Property Name="B0501SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CancelAllowanceNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="AllowanceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="BuyerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SellerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CancelDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CancelTime" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CancelReason" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExXmlTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="C0401D">
+          <Key>
+            <PropertyRef Name="C0401DSN" />
+          </Key>
+          <Property Name="C0401DSN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MInvoiceNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DDescription" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="DQuantity" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DUnit" Type="nvarchar" MaxLength="6" />
+          <Property Name="DUnitPrice" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DSequenceNumber" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="DRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="DRelateNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="C0401H">
+          <Key>
+            <PropertyRef Name="C0401SN" />
+          </Key>
+          <Property Name="C0401SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MInvoiceNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MInvoiceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="MInvoiceTime" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="MSIdentifier" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MSName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="MSAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="MSPersonInCharge" Type="nvarchar" MaxLength="30" />
+          <Property Name="MSTelephoneNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MSFacsimileNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MSEmailAddress" Type="nvarchar" MaxLength="80" />
+          <Property Name="MSCustomerNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MSRoleRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="MBIdentifier" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MBName" Type="nvarchar" MaxLength="60" />
+          <Property Name="MBAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="MBPersonInCharge" Type="nvarchar" MaxLength="30" />
+          <Property Name="MBTelephoneNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MBFacsimileNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MBEmailAddress" Type="nvarchar" MaxLength="80" />
+          <Property Name="MBCustomerNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MBRoleRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="MCheckNumber" Type="nvarchar" MaxLength="10" />
+          <Property Name="MBuyerRemark" Type="nvarchar" MaxLength="1" />
+          <Property Name="MMainRemark" Type="nvarchar" MaxLength="200" />
+          <Property Name="MCustomsClearanceMark" Type="nvarchar" MaxLength="1" />
+          <Property Name="MCategory" Type="nvarchar" MaxLength="2" />
+          <Property Name="MRelateNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MInvoiceType" Type="nvarchar" MaxLength="2" Nullable="false" />
+          <Property Name="MGroupMark" Type="nvarchar" MaxLength="1" />
+          <Property Name="MDonateMark" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="MCarrierType" Type="nvarchar" MaxLength="6" />
+          <Property Name="MCarrierId1" Type="nvarchar" MaxLength="64" />
+          <Property Name="MCarrierId2" Type="nvarchar" MaxLength="64" />
+          <Property Name="MPrintMark" Type="nvarchar" MaxLength="1" />
+          <Property Name="MNPOBAN" Type="nvarchar" MaxLength="10" />
+          <Property Name="MRandomNumber" Type="nvarchar" MaxLength="4" />
+          <Property Name="ASalesAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AFreeTaxSalesAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="AZeroTaxSalesAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="ATaxType" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="ATaxRate" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ATaxAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ATotalAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADiscountAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="AOriginalCurrencyAmount" Type="nvarchar" MaxLength="50" />
+          <Property Name="AExchangeRate" Type="nvarchar" MaxLength="50" />
+          <Property Name="ACurrency" Type="nvarchar" MaxLength="50" />
+          <Property Name="DataTime" Type="datetime" Nullable="false" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExPdfYN" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="C0501">
+          <Key>
+            <PropertyRef Name="C0501SN" />
+          </Key>
+          <Property Name="C0501SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CancelInvoiceNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="InvoiceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="BuyerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SellerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CancelDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CancelTime" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CancelReason" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ReturnTaxDocumentNumber" Type="nvarchar" MaxLength="60" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExXmlTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="C0701">
+          <Key>
+            <PropertyRef Name="C0701SN" />
+          </Key>
+          <Property Name="C0701SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VoidInvoiceNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="InvoiceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="BuyerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SellerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="VoidDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="VoidTime" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="VoidReason" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExXmlTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="D0401D">
+          <Key>
+            <PropertyRef Name="D0401DSN" />
+          </Key>
+          <Property Name="D0401DSN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MAllowanceNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="DOriginalInvoiceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="DOriginalInvoiceNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DOriginalSequenceNumber" Type="nvarchar" MaxLength="3" />
+          <Property Name="DOriginalDescription" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="DQuantity" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DUnit" Type="nvarchar" MaxLength="6" />
+          <Property Name="DUnitPrice" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DTax" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DAllowanceSequenceNumber" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="DTaxType" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExXmlTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="D0401H">
+          <Key>
+            <PropertyRef Name="D0401SN" />
+          </Key>
+          <Property Name="D0401SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MAllowanceNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="MAllowanceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="MSIdentifier" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MSName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="MSAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="MSPersonInCharge" Type="nvarchar" MaxLength="30" />
+          <Property Name="MSTelephoneNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MSFacsimileNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MSEmailAddress" Type="nvarchar" MaxLength="80" />
+          <Property Name="MSCustomerNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MSRoleRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="MBIdentifier" Type="nvarchar" MaxLength="10" />
+          <Property Name="MBName" Type="nvarchar" MaxLength="60" />
+          <Property Name="MBAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="MBPersonInCharge" Type="nvarchar" MaxLength="30" />
+          <Property Name="MBTelephoneNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MBFacsimileNumber" Type="nvarchar" MaxLength="26" />
+          <Property Name="MBEmailAddress" Type="nvarchar" MaxLength="80" />
+          <Property Name="MBCustomerNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="MBRoleRemark" Type="nvarchar" MaxLength="40" />
+          <Property Name="MAllowanceType" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="ATaxAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ATotalAmount" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExPdfYN" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="D0501">
+          <Key>
+            <PropertyRef Name="D0501SN" />
+          </Key>
+          <Property Name="D0501SN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CancelAllowanceNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="AllowanceDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="BuyerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SellerId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CancelDate" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CancelTime" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CancelReason" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="DataTime" Type="datetime" />
+          <Property Name="TxFileNmae" Type="nvarchar" MaxLength="100" />
+          <Property Name="ExXmlYN" Type="nvarchar" MaxLength="1" />
+          <Property Name="ExXmlTime" Type="datetime" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6013: 資料表/檢視 'eInvoiceSLNDB.dbo.LogsAll' 未定義主索引鍵，也無法推斷有效的主索引鍵。此資料表/檢視已被排除。如果要使用此實體，您必須檢閱您的結構描述，加入正確的索引鍵，並將它取消註解。
+        <EntityType Name="LogsAll">
+          <Property Name="ProgramKey" Type="nvarchar" MaxLength="17" />
+          <Property Name="ProgramName" Type="nvarchar" MaxLength="500" />
+          <Property Name="ProgramMotion" Type="nvarchar" MaxLength="4000" />
+          <Property Name="ProgramState" Type="nvarchar" MaxLength="2" />
+          <Property Name="ProgramTime" Type="datetime" />
+        </EntityType>-->
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'eInvoiceSLNDB.dbo.SParameter' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="SParameter">
+          <Key>
+            <PropertyRef Name="SParameterSN" />
+          </Key>
+          <Property Name="SParameterSN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="eKind" Type="nvarchar" MaxLength="1000" />
+          <Property Name="eSN" Type="nvarchar" MaxLength="1000" />
+          <Property Name="eName" Type="nvarchar" MaxLength="1000" />
+          <Property Name="eMemo" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'eInvoiceSLNDB.dbo.STemp' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="STemp">
+          <Key>
+            <PropertyRef Name="STempSN" />
+          </Key>
+          <Property Name="STempSN" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="STempKind" Type="nvarchar" MaxLength="100" />
+          <Property Name="STempNo" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="eInvoiceSLNDBModelStoreContainer">
+          <EntitySet Name="A0401D" EntityType="Self.A0401D" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="A0401H" EntityType="Self.A0401H" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="A0501" EntityType="Self.A0501" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="A0601" EntityType="Self.A0601" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="B0401D" EntityType="Self.B0401D" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="B0401H" EntityType="Self.B0401H" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="B0501" EntityType="Self.B0501" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="C0401D" EntityType="Self.C0401D" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="C0401H" EntityType="Self.C0401H" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="C0501" EntityType="Self.C0501" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="C0701" EntityType="Self.C0701" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="D0401D" EntityType="Self.D0401D" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="D0401H" EntityType="Self.D0401H" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="D0501" EntityType="Self.D0501" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SParameter" EntityType="Self.SParameter" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [SParameter].[SParameterSN] AS [SParameterSN], 
+    [SParameter].[eKind] AS [eKind], 
+    [SParameter].[eSN] AS [eSN], 
+    [SParameter].[eName] AS [eName], 
+    [SParameter].[eMemo] AS [eMemo]
+    FROM [dbo].[SParameter] AS [SParameter]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="STemp" EntityType="Self.STemp" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [STemp].[STempSN] AS [STempSN], 
+    [STemp].[STempKind] AS [STempKind], 
+    [STemp].[STempNo] AS [STempNo]
+    FROM [dbo].[STemp] AS [STemp]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="eInvoiceSLNDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="A0401D">
+          <Key>
+            <PropertyRef Name="A0401DSN" />
+          </Key>
+          <Property Name="A0401DSN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MInvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DDescription" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DQuantity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DUnit" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="DUnitPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DSequenceNumber" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="DRelateNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="A0401H">
+          <Key>
+            <PropertyRef Name="A0401SN" />
+          </Key>
+          <Property Name="A0401SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MInvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MInvoiceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MInvoiceTime" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSIdentifier" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MSPersonInCharge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MSTelephoneNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MSFacsimileNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MSEmailAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MSCustomerNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MSRoleRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MBIdentifier" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MBName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MBAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MBPersonInCharge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MBTelephoneNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MBFacsimileNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MBEmailAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MBCustomerNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MBRoleRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MCheckNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MBuyerRemark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MMainRemark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="MCustomsClearanceMark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MCategory" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="MRelateNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MInvoiceType" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MGroupMark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MDonateMark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MCarrierType" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="MCarrierId1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="MCarrierId2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="MPrintMark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MNPOBAN" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MRandomNumber" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="ASalesAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AFreeTaxSalesAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AZeroTaxSalesAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ATaxType" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATaxRate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATaxAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATotalAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ADiscountAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AOriginalCurrencyAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AExchangeRate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ACurrency" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExPdfYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="A0501">
+          <Key>
+            <PropertyRef Name="A0501SN" />
+          </Key>
+          <Property Name="A0501SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CancelInvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InvoiceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BuyerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SellerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelTime" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelReason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReturnTaxDocumentNumber" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="A0601">
+          <Key>
+            <PropertyRef Name="A0601SN" />
+          </Key>
+          <Property Name="A0601SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RejectInvoiceNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InvoiceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BuyerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SellerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RejectDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RejectTime" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RejectReason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="B0401D">
+          <Key>
+            <PropertyRef Name="B0401DSN" />
+          </Key>
+          <Property Name="B0401DSN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MAllowanceNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DOriginalInvoiceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DOriginalInvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DOriginalSequenceNumber" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="DOriginalDescription" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DQuantity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DUnit" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="DUnitPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DTax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DAllowanceSequenceNumber" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DTaxType" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="B0401H">
+          <Key>
+            <PropertyRef Name="B0401SN" />
+          </Key>
+          <Property Name="B0401SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MAllowanceNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MAllowanceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSIdentifier" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MSPersonInCharge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MSTelephoneNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MSFacsimileNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MSEmailAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MSCustomerNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MSRoleRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MBIdentifier" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MBName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MBAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MBPersonInCharge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MBTelephoneNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MBFacsimileNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MBEmailAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MBCustomerNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MBRoleRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MAllowanceType" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATaxAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATotalAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExPdfYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="B0501">
+          <Key>
+            <PropertyRef Name="B0501SN" />
+          </Key>
+          <Property Name="B0501SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CancelAllowanceNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AllowanceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BuyerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SellerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelTime" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelReason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="C0401D">
+          <Key>
+            <PropertyRef Name="C0401DSN" />
+          </Key>
+          <Property Name="C0401DSN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MInvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DDescription" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DQuantity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DUnit" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="DUnitPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DSequenceNumber" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="DRelateNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="C0401H">
+          <Key>
+            <PropertyRef Name="C0401SN" />
+          </Key>
+          <Property Name="C0401SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MInvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MInvoiceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MInvoiceTime" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSIdentifier" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MSPersonInCharge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MSTelephoneNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MSFacsimileNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MSEmailAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MSCustomerNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MSRoleRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MBIdentifier" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MBName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="MBAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MBPersonInCharge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MBTelephoneNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MBFacsimileNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MBEmailAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MBCustomerNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MBRoleRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MCheckNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MBuyerRemark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MMainRemark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="MCustomsClearanceMark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MCategory" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="MRelateNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MInvoiceType" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MGroupMark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MDonateMark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MCarrierType" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="MCarrierId1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="MCarrierId2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="MPrintMark" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MNPOBAN" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MRandomNumber" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="ASalesAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AFreeTaxSalesAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AZeroTaxSalesAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ATaxType" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATaxRate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATaxAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATotalAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADiscountAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AOriginalCurrencyAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AExchangeRate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ACurrency" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExPdfYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="C0501">
+          <Key>
+            <PropertyRef Name="C0501SN" />
+          </Key>
+          <Property Name="C0501SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CancelInvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InvoiceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BuyerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SellerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelTime" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelReason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReturnTaxDocumentNumber" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="C0701">
+          <Key>
+            <PropertyRef Name="C0701SN" />
+          </Key>
+          <Property Name="C0701SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VoidInvoiceNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InvoiceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BuyerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SellerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VoidDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VoidTime" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VoidReason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="D0401D">
+          <Key>
+            <PropertyRef Name="D0401DSN" />
+          </Key>
+          <Property Name="D0401DSN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MAllowanceNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DOriginalInvoiceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DOriginalInvoiceNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DOriginalSequenceNumber" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="DOriginalDescription" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DQuantity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DUnit" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="DUnitPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DTax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DAllowanceSequenceNumber" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DTaxType" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="D0401H">
+          <Key>
+            <PropertyRef Name="D0401SN" />
+          </Key>
+          <Property Name="D0401SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MAllowanceNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MAllowanceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSIdentifier" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MSPersonInCharge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MSTelephoneNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MSFacsimileNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MSEmailAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MSCustomerNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MSRoleRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MBIdentifier" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MBName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="MBAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MBPersonInCharge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MBTelephoneNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MBFacsimileNumber" Type="String" MaxLength="26" FixedLength="false" Unicode="true" />
+          <Property Name="MBEmailAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MBCustomerNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MBRoleRemark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MAllowanceType" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATaxAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ATotalAmount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExPdfYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="D0501">
+          <Key>
+            <PropertyRef Name="D0501SN" />
+          </Key>
+          <Property Name="D0501SN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CancelAllowanceNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AllowanceDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BuyerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SellerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelTime" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CancelReason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DataTime" Type="DateTime" Precision="3" />
+          <Property Name="TxFileNmae" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlYN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ExXmlTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SParameter">
+          <Key>
+            <PropertyRef Name="SParameterSN" />
+          </Key>
+          <Property Name="SParameterSN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="eKind" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="eSN" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="eName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="eMemo" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="STemp">
+          <Key>
+            <PropertyRef Name="STempSN" />
+          </Key>
+          <Property Name="STempSN" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="STempKind" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="STempNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DbINV" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="A0401D" EntityType="Self.A0401D" />
+          <EntitySet Name="A0401H" EntityType="Self.A0401H" />
+          <EntitySet Name="A0501" EntityType="Self.A0501" />
+          <EntitySet Name="A0601" EntityType="Self.A0601" />
+          <EntitySet Name="B0401D" EntityType="Self.B0401D" />
+          <EntitySet Name="B0401H" EntityType="Self.B0401H" />
+          <EntitySet Name="B0501" EntityType="Self.B0501" />
+          <EntitySet Name="C0401D" EntityType="Self.C0401D" />
+          <EntitySet Name="C0401H" EntityType="Self.C0401H" />
+          <EntitySet Name="C0501" EntityType="Self.C0501" />
+          <EntitySet Name="C0701" EntityType="Self.C0701" />
+          <EntitySet Name="D0401D" EntityType="Self.D0401D" />
+          <EntitySet Name="D0401H" EntityType="Self.D0401H" />
+          <EntitySet Name="D0501" EntityType="Self.D0501" />
+          <EntitySet Name="SParameter" EntityType="Self.SParameter" />
+          <EntitySet Name="STemp" EntityType="Self.STemp" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="eInvoiceSLNDBModelStoreContainer" CdmEntityContainer="DbINV">
+          <EntitySetMapping Name="A0401D">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.A0401D">
+              <MappingFragment StoreEntitySet="A0401D">
+                <ScalarProperty Name="A0401DSN" ColumnName="A0401DSN" />
+                <ScalarProperty Name="MInvoiceNumber" ColumnName="MInvoiceNumber" />
+                <ScalarProperty Name="DDescription" ColumnName="DDescription" />
+                <ScalarProperty Name="DQuantity" ColumnName="DQuantity" />
+                <ScalarProperty Name="DUnit" ColumnName="DUnit" />
+                <ScalarProperty Name="DUnitPrice" ColumnName="DUnitPrice" />
+                <ScalarProperty Name="DAmount" ColumnName="DAmount" />
+                <ScalarProperty Name="DSequenceNumber" ColumnName="DSequenceNumber" />
+                <ScalarProperty Name="DRemark" ColumnName="DRemark" />
+                <ScalarProperty Name="DRelateNumber" ColumnName="DRelateNumber" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="A0401H">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.A0401H">
+              <MappingFragment StoreEntitySet="A0401H">
+                <ScalarProperty Name="A0401SN" ColumnName="A0401SN" />
+                <ScalarProperty Name="MInvoiceNumber" ColumnName="MInvoiceNumber" />
+                <ScalarProperty Name="MInvoiceDate" ColumnName="MInvoiceDate" />
+                <ScalarProperty Name="MInvoiceTime" ColumnName="MInvoiceTime" />
+                <ScalarProperty Name="MSIdentifier" ColumnName="MSIdentifier" />
+                <ScalarProperty Name="MSName" ColumnName="MSName" />
+                <ScalarProperty Name="MSAddress" ColumnName="MSAddress" />
+                <ScalarProperty Name="MSPersonInCharge" ColumnName="MSPersonInCharge" />
+                <ScalarProperty Name="MSTelephoneNumber" ColumnName="MSTelephoneNumber" />
+                <ScalarProperty Name="MSFacsimileNumber" ColumnName="MSFacsimileNumber" />
+                <ScalarProperty Name="MSEmailAddress" ColumnName="MSEmailAddress" />
+                <ScalarProperty Name="MSCustomerNumber" ColumnName="MSCustomerNumber" />
+                <ScalarProperty Name="MSRoleRemark" ColumnName="MSRoleRemark" />
+                <ScalarProperty Name="MBIdentifier" ColumnName="MBIdentifier" />
+                <ScalarProperty Name="MBName" ColumnName="MBName" />
+                <ScalarProperty Name="MBAddress" ColumnName="MBAddress" />
+                <ScalarProperty Name="MBPersonInCharge" ColumnName="MBPersonInCharge" />
+                <ScalarProperty Name="MBTelephoneNumber" ColumnName="MBTelephoneNumber" />
+                <ScalarProperty Name="MBFacsimileNumber" ColumnName="MBFacsimileNumber" />
+                <ScalarProperty Name="MBEmailAddress" ColumnName="MBEmailAddress" />
+                <ScalarProperty Name="MBCustomerNumber" ColumnName="MBCustomerNumber" />
+                <ScalarProperty Name="MBRoleRemark" ColumnName="MBRoleRemark" />
+                <ScalarProperty Name="MCheckNumber" ColumnName="MCheckNumber" />
+                <ScalarProperty Name="MBuyerRemark" ColumnName="MBuyerRemark" />
+                <ScalarProperty Name="MMainRemark" ColumnName="MMainRemark" />
+                <ScalarProperty Name="MCustomsClearanceMark" ColumnName="MCustomsClearanceMark" />
+                <ScalarProperty Name="MCategory" ColumnName="MCategory" />
+                <ScalarProperty Name="MRelateNumber" ColumnName="MRelateNumber" />
+                <ScalarProperty Name="MInvoiceType" ColumnName="MInvoiceType" />
+                <ScalarProperty Name="MGroupMark" ColumnName="MGroupMark" />
+                <ScalarProperty Name="MDonateMark" ColumnName="MDonateMark" />
+                <ScalarProperty Name="MCarrierType" ColumnName="MCarrierType" />
+                <ScalarProperty Name="MCarrierId1" ColumnName="MCarrierId1" />
+                <ScalarProperty Name="MCarrierId2" ColumnName="MCarrierId2" />
+                <ScalarProperty Name="MPrintMark" ColumnName="MPrintMark" />
+                <ScalarProperty Name="MNPOBAN" ColumnName="MNPOBAN" />
+                <ScalarProperty Name="MRandomNumber" ColumnName="MRandomNumber" />
+                <ScalarProperty Name="ASalesAmount" ColumnName="ASalesAmount" />
+                <ScalarProperty Name="AFreeTaxSalesAmount" ColumnName="AFreeTaxSalesAmount" />
+                <ScalarProperty Name="AZeroTaxSalesAmount" ColumnName="AZeroTaxSalesAmount" />
+                <ScalarProperty Name="ATaxType" ColumnName="ATaxType" />
+                <ScalarProperty Name="ATaxRate" ColumnName="ATaxRate" />
+                <ScalarProperty Name="ATaxAmount" ColumnName="ATaxAmount" />
+                <ScalarProperty Name="ATotalAmount" ColumnName="ATotalAmount" />
+                <ScalarProperty Name="ADiscountAmount" ColumnName="ADiscountAmount" />
+                <ScalarProperty Name="AOriginalCurrencyAmount" ColumnName="AOriginalCurrencyAmount" />
+                <ScalarProperty Name="AExchangeRate" ColumnName="AExchangeRate" />
+                <ScalarProperty Name="ACurrency" ColumnName="ACurrency" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExPdfYN" ColumnName="ExPdfYN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="A0501">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.A0501">
+              <MappingFragment StoreEntitySet="A0501">
+                <ScalarProperty Name="A0501SN" ColumnName="A0501SN" />
+                <ScalarProperty Name="CancelInvoiceNumber" ColumnName="CancelInvoiceNumber" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="BuyerId" ColumnName="BuyerId" />
+                <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+                <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+                <ScalarProperty Name="CancelTime" ColumnName="CancelTime" />
+                <ScalarProperty Name="CancelReason" ColumnName="CancelReason" />
+                <ScalarProperty Name="ReturnTaxDocumentNumber" ColumnName="ReturnTaxDocumentNumber" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExXmlTime" ColumnName="ExXmlTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="A0601">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.A0601">
+              <MappingFragment StoreEntitySet="A0601">
+                <ScalarProperty Name="A0601SN" ColumnName="A0601SN" />
+                <ScalarProperty Name="RejectInvoiceNumber" ColumnName="RejectInvoiceNumber" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="BuyerId" ColumnName="BuyerId" />
+                <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+                <ScalarProperty Name="RejectDate" ColumnName="RejectDate" />
+                <ScalarProperty Name="RejectTime" ColumnName="RejectTime" />
+                <ScalarProperty Name="RejectReason" ColumnName="RejectReason" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExXmlTime" ColumnName="ExXmlTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="B0401D">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.B0401D">
+              <MappingFragment StoreEntitySet="B0401D">
+                <ScalarProperty Name="B0401DSN" ColumnName="B0401DSN" />
+                <ScalarProperty Name="MAllowanceNumber" ColumnName="MAllowanceNumber" />
+                <ScalarProperty Name="DOriginalInvoiceDate" ColumnName="DOriginalInvoiceDate" />
+                <ScalarProperty Name="DOriginalInvoiceNumber" ColumnName="DOriginalInvoiceNumber" />
+                <ScalarProperty Name="DOriginalSequenceNumber" ColumnName="DOriginalSequenceNumber" />
+                <ScalarProperty Name="DOriginalDescription" ColumnName="DOriginalDescription" />
+                <ScalarProperty Name="DQuantity" ColumnName="DQuantity" />
+                <ScalarProperty Name="DUnit" ColumnName="DUnit" />
+                <ScalarProperty Name="DUnitPrice" ColumnName="DUnitPrice" />
+                <ScalarProperty Name="DAmount" ColumnName="DAmount" />
+                <ScalarProperty Name="DTax" ColumnName="DTax" />
+                <ScalarProperty Name="DAllowanceSequenceNumber" ColumnName="DAllowanceSequenceNumber" />
+                <ScalarProperty Name="DTaxType" ColumnName="DTaxType" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExXmlTime" ColumnName="ExXmlTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="B0401H">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.B0401H">
+              <MappingFragment StoreEntitySet="B0401H">
+                <ScalarProperty Name="B0401SN" ColumnName="B0401SN" />
+                <ScalarProperty Name="MAllowanceNumber" ColumnName="MAllowanceNumber" />
+                <ScalarProperty Name="MAllowanceDate" ColumnName="MAllowanceDate" />
+                <ScalarProperty Name="MSIdentifier" ColumnName="MSIdentifier" />
+                <ScalarProperty Name="MSName" ColumnName="MSName" />
+                <ScalarProperty Name="MSAddress" ColumnName="MSAddress" />
+                <ScalarProperty Name="MSPersonInCharge" ColumnName="MSPersonInCharge" />
+                <ScalarProperty Name="MSTelephoneNumber" ColumnName="MSTelephoneNumber" />
+                <ScalarProperty Name="MSFacsimileNumber" ColumnName="MSFacsimileNumber" />
+                <ScalarProperty Name="MSEmailAddress" ColumnName="MSEmailAddress" />
+                <ScalarProperty Name="MSCustomerNumber" ColumnName="MSCustomerNumber" />
+                <ScalarProperty Name="MSRoleRemark" ColumnName="MSRoleRemark" />
+                <ScalarProperty Name="MBIdentifier" ColumnName="MBIdentifier" />
+                <ScalarProperty Name="MBName" ColumnName="MBName" />
+                <ScalarProperty Name="MBAddress" ColumnName="MBAddress" />
+                <ScalarProperty Name="MBPersonInCharge" ColumnName="MBPersonInCharge" />
+                <ScalarProperty Name="MBTelephoneNumber" ColumnName="MBTelephoneNumber" />
+                <ScalarProperty Name="MBFacsimileNumber" ColumnName="MBFacsimileNumber" />
+                <ScalarProperty Name="MBEmailAddress" ColumnName="MBEmailAddress" />
+                <ScalarProperty Name="MBCustomerNumber" ColumnName="MBCustomerNumber" />
+                <ScalarProperty Name="MBRoleRemark" ColumnName="MBRoleRemark" />
+                <ScalarProperty Name="MAllowanceType" ColumnName="MAllowanceType" />
+                <ScalarProperty Name="ATaxAmount" ColumnName="ATaxAmount" />
+                <ScalarProperty Name="ATotalAmount" ColumnName="ATotalAmount" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExPdfYN" ColumnName="ExPdfYN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="B0501">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.B0501">
+              <MappingFragment StoreEntitySet="B0501">
+                <ScalarProperty Name="B0501SN" ColumnName="B0501SN" />
+                <ScalarProperty Name="CancelAllowanceNumber" ColumnName="CancelAllowanceNumber" />
+                <ScalarProperty Name="AllowanceDate" ColumnName="AllowanceDate" />
+                <ScalarProperty Name="BuyerId" ColumnName="BuyerId" />
+                <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+                <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+                <ScalarProperty Name="CancelTime" ColumnName="CancelTime" />
+                <ScalarProperty Name="CancelReason" ColumnName="CancelReason" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExXmlTime" ColumnName="ExXmlTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C0401D">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.C0401D">
+              <MappingFragment StoreEntitySet="C0401D">
+                <ScalarProperty Name="C0401DSN" ColumnName="C0401DSN" />
+                <ScalarProperty Name="MInvoiceNumber" ColumnName="MInvoiceNumber" />
+                <ScalarProperty Name="DDescription" ColumnName="DDescription" />
+                <ScalarProperty Name="DQuantity" ColumnName="DQuantity" />
+                <ScalarProperty Name="DUnit" ColumnName="DUnit" />
+                <ScalarProperty Name="DUnitPrice" ColumnName="DUnitPrice" />
+                <ScalarProperty Name="DAmount" ColumnName="DAmount" />
+                <ScalarProperty Name="DSequenceNumber" ColumnName="DSequenceNumber" />
+                <ScalarProperty Name="DRemark" ColumnName="DRemark" />
+                <ScalarProperty Name="DRelateNumber" ColumnName="DRelateNumber" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C0401H">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.C0401H">
+              <MappingFragment StoreEntitySet="C0401H">
+                <ScalarProperty Name="C0401SN" ColumnName="C0401SN" />
+                <ScalarProperty Name="MInvoiceNumber" ColumnName="MInvoiceNumber" />
+                <ScalarProperty Name="MInvoiceDate" ColumnName="MInvoiceDate" />
+                <ScalarProperty Name="MInvoiceTime" ColumnName="MInvoiceTime" />
+                <ScalarProperty Name="MSIdentifier" ColumnName="MSIdentifier" />
+                <ScalarProperty Name="MSName" ColumnName="MSName" />
+                <ScalarProperty Name="MSAddress" ColumnName="MSAddress" />
+                <ScalarProperty Name="MSPersonInCharge" ColumnName="MSPersonInCharge" />
+                <ScalarProperty Name="MSTelephoneNumber" ColumnName="MSTelephoneNumber" />
+                <ScalarProperty Name="MSFacsimileNumber" ColumnName="MSFacsimileNumber" />
+                <ScalarProperty Name="MSEmailAddress" ColumnName="MSEmailAddress" />
+                <ScalarProperty Name="MSCustomerNumber" ColumnName="MSCustomerNumber" />
+                <ScalarProperty Name="MSRoleRemark" ColumnName="MSRoleRemark" />
+                <ScalarProperty Name="MBIdentifier" ColumnName="MBIdentifier" />
+                <ScalarProperty Name="MBName" ColumnName="MBName" />
+                <ScalarProperty Name="MBAddress" ColumnName="MBAddress" />
+                <ScalarProperty Name="MBPersonInCharge" ColumnName="MBPersonInCharge" />
+                <ScalarProperty Name="MBTelephoneNumber" ColumnName="MBTelephoneNumber" />
+                <ScalarProperty Name="MBFacsimileNumber" ColumnName="MBFacsimileNumber" />
+                <ScalarProperty Name="MBEmailAddress" ColumnName="MBEmailAddress" />
+                <ScalarProperty Name="MBCustomerNumber" ColumnName="MBCustomerNumber" />
+                <ScalarProperty Name="MBRoleRemark" ColumnName="MBRoleRemark" />
+                <ScalarProperty Name="MCheckNumber" ColumnName="MCheckNumber" />
+                <ScalarProperty Name="MBuyerRemark" ColumnName="MBuyerRemark" />
+                <ScalarProperty Name="MMainRemark" ColumnName="MMainRemark" />
+                <ScalarProperty Name="MCustomsClearanceMark" ColumnName="MCustomsClearanceMark" />
+                <ScalarProperty Name="MCategory" ColumnName="MCategory" />
+                <ScalarProperty Name="MRelateNumber" ColumnName="MRelateNumber" />
+                <ScalarProperty Name="MInvoiceType" ColumnName="MInvoiceType" />
+                <ScalarProperty Name="MGroupMark" ColumnName="MGroupMark" />
+                <ScalarProperty Name="MDonateMark" ColumnName="MDonateMark" />
+                <ScalarProperty Name="MCarrierType" ColumnName="MCarrierType" />
+                <ScalarProperty Name="MCarrierId1" ColumnName="MCarrierId1" />
+                <ScalarProperty Name="MCarrierId2" ColumnName="MCarrierId2" />
+                <ScalarProperty Name="MPrintMark" ColumnName="MPrintMark" />
+                <ScalarProperty Name="MNPOBAN" ColumnName="MNPOBAN" />
+                <ScalarProperty Name="MRandomNumber" ColumnName="MRandomNumber" />
+                <ScalarProperty Name="ASalesAmount" ColumnName="ASalesAmount" />
+                <ScalarProperty Name="AFreeTaxSalesAmount" ColumnName="AFreeTaxSalesAmount" />
+                <ScalarProperty Name="AZeroTaxSalesAmount" ColumnName="AZeroTaxSalesAmount" />
+                <ScalarProperty Name="ATaxType" ColumnName="ATaxType" />
+                <ScalarProperty Name="ATaxRate" ColumnName="ATaxRate" />
+                <ScalarProperty Name="ATaxAmount" ColumnName="ATaxAmount" />
+                <ScalarProperty Name="ATotalAmount" ColumnName="ATotalAmount" />
+                <ScalarProperty Name="ADiscountAmount" ColumnName="ADiscountAmount" />
+                <ScalarProperty Name="AOriginalCurrencyAmount" ColumnName="AOriginalCurrencyAmount" />
+                <ScalarProperty Name="AExchangeRate" ColumnName="AExchangeRate" />
+                <ScalarProperty Name="ACurrency" ColumnName="ACurrency" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExPdfYN" ColumnName="ExPdfYN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C0501">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.C0501">
+              <MappingFragment StoreEntitySet="C0501">
+                <ScalarProperty Name="C0501SN" ColumnName="C0501SN" />
+                <ScalarProperty Name="CancelInvoiceNumber" ColumnName="CancelInvoiceNumber" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="BuyerId" ColumnName="BuyerId" />
+                <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+                <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+                <ScalarProperty Name="CancelTime" ColumnName="CancelTime" />
+                <ScalarProperty Name="CancelReason" ColumnName="CancelReason" />
+                <ScalarProperty Name="ReturnTaxDocumentNumber" ColumnName="ReturnTaxDocumentNumber" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExXmlTime" ColumnName="ExXmlTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C0701">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.C0701">
+              <MappingFragment StoreEntitySet="C0701">
+                <ScalarProperty Name="C0701SN" ColumnName="C0701SN" />
+                <ScalarProperty Name="VoidInvoiceNumber" ColumnName="VoidInvoiceNumber" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="BuyerId" ColumnName="BuyerId" />
+                <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+                <ScalarProperty Name="VoidDate" ColumnName="VoidDate" />
+                <ScalarProperty Name="VoidTime" ColumnName="VoidTime" />
+                <ScalarProperty Name="VoidReason" ColumnName="VoidReason" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExXmlTime" ColumnName="ExXmlTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="D0401D">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.D0401D">
+              <MappingFragment StoreEntitySet="D0401D">
+                <ScalarProperty Name="D0401DSN" ColumnName="D0401DSN" />
+                <ScalarProperty Name="MAllowanceNumber" ColumnName="MAllowanceNumber" />
+                <ScalarProperty Name="DOriginalInvoiceDate" ColumnName="DOriginalInvoiceDate" />
+                <ScalarProperty Name="DOriginalInvoiceNumber" ColumnName="DOriginalInvoiceNumber" />
+                <ScalarProperty Name="DOriginalSequenceNumber" ColumnName="DOriginalSequenceNumber" />
+                <ScalarProperty Name="DOriginalDescription" ColumnName="DOriginalDescription" />
+                <ScalarProperty Name="DQuantity" ColumnName="DQuantity" />
+                <ScalarProperty Name="DUnit" ColumnName="DUnit" />
+                <ScalarProperty Name="DUnitPrice" ColumnName="DUnitPrice" />
+                <ScalarProperty Name="DAmount" ColumnName="DAmount" />
+                <ScalarProperty Name="DTax" ColumnName="DTax" />
+                <ScalarProperty Name="DAllowanceSequenceNumber" ColumnName="DAllowanceSequenceNumber" />
+                <ScalarProperty Name="DTaxType" ColumnName="DTaxType" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExXmlTime" ColumnName="ExXmlTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="D0401H">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.D0401H">
+              <MappingFragment StoreEntitySet="D0401H">
+                <ScalarProperty Name="D0401SN" ColumnName="D0401SN" />
+                <ScalarProperty Name="MAllowanceNumber" ColumnName="MAllowanceNumber" />
+                <ScalarProperty Name="MAllowanceDate" ColumnName="MAllowanceDate" />
+                <ScalarProperty Name="MSIdentifier" ColumnName="MSIdentifier" />
+                <ScalarProperty Name="MSName" ColumnName="MSName" />
+                <ScalarProperty Name="MSAddress" ColumnName="MSAddress" />
+                <ScalarProperty Name="MSPersonInCharge" ColumnName="MSPersonInCharge" />
+                <ScalarProperty Name="MSTelephoneNumber" ColumnName="MSTelephoneNumber" />
+                <ScalarProperty Name="MSFacsimileNumber" ColumnName="MSFacsimileNumber" />
+                <ScalarProperty Name="MSEmailAddress" ColumnName="MSEmailAddress" />
+                <ScalarProperty Name="MSCustomerNumber" ColumnName="MSCustomerNumber" />
+                <ScalarProperty Name="MSRoleRemark" ColumnName="MSRoleRemark" />
+                <ScalarProperty Name="MBIdentifier" ColumnName="MBIdentifier" />
+                <ScalarProperty Name="MBName" ColumnName="MBName" />
+                <ScalarProperty Name="MBAddress" ColumnName="MBAddress" />
+                <ScalarProperty Name="MBPersonInCharge" ColumnName="MBPersonInCharge" />
+                <ScalarProperty Name="MBTelephoneNumber" ColumnName="MBTelephoneNumber" />
+                <ScalarProperty Name="MBFacsimileNumber" ColumnName="MBFacsimileNumber" />
+                <ScalarProperty Name="MBEmailAddress" ColumnName="MBEmailAddress" />
+                <ScalarProperty Name="MBCustomerNumber" ColumnName="MBCustomerNumber" />
+                <ScalarProperty Name="MBRoleRemark" ColumnName="MBRoleRemark" />
+                <ScalarProperty Name="MAllowanceType" ColumnName="MAllowanceType" />
+                <ScalarProperty Name="ATaxAmount" ColumnName="ATaxAmount" />
+                <ScalarProperty Name="ATotalAmount" ColumnName="ATotalAmount" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExPdfYN" ColumnName="ExPdfYN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="D0501">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.D0501">
+              <MappingFragment StoreEntitySet="D0501">
+                <ScalarProperty Name="D0501SN" ColumnName="D0501SN" />
+                <ScalarProperty Name="CancelAllowanceNumber" ColumnName="CancelAllowanceNumber" />
+                <ScalarProperty Name="AllowanceDate" ColumnName="AllowanceDate" />
+                <ScalarProperty Name="BuyerId" ColumnName="BuyerId" />
+                <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+                <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+                <ScalarProperty Name="CancelTime" ColumnName="CancelTime" />
+                <ScalarProperty Name="CancelReason" ColumnName="CancelReason" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="DataTime" ColumnName="DataTime" />
+                <ScalarProperty Name="TxFileNmae" ColumnName="TxFileNmae" />
+                <ScalarProperty Name="ExXmlYN" ColumnName="ExXmlYN" />
+                <ScalarProperty Name="ExXmlTime" ColumnName="ExXmlTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SParameter">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.SParameter">
+              <MappingFragment StoreEntitySet="SParameter">
+                <ScalarProperty Name="SParameterSN" ColumnName="SParameterSN" />
+                <ScalarProperty Name="eKind" ColumnName="eKind" />
+                <ScalarProperty Name="eSN" ColumnName="eSN" />
+                <ScalarProperty Name="eName" ColumnName="eName" />
+                <ScalarProperty Name="eMemo" ColumnName="eMemo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="STemp">
+            <EntityTypeMapping TypeName="eInvoiceSLNDBModel.STemp">
+              <MappingFragment StoreEntitySet="STemp">
+                <ScalarProperty Name="STempSN" ColumnName="STempSN" />
+                <ScalarProperty Name="STempKind" ColumnName="STempKind" />
+                <ScalarProperty Name="STempNo" ColumnName="STempNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

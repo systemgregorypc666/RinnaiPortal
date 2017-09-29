@@ -355,6 +355,8 @@
     <Content Include="Content\redmond\jquery-ui-1.10.4.custom.min.css" />
     <Content Include="Content\select2.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="EinvoiceAPI.aspx" />
+    <Content Include="EinvoiceSearch.html" />
     <Content Include="Files\25img.gif" />
     <Content Include="Files\phone.gif" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -967,6 +969,13 @@
     </Compile>
     <Compile Include="DefaultDataList.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EinvoiceAPI.aspx.cs">
+      <DependentUpon>EinvoiceAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EinvoiceAPI.aspx.designer.cs">
+      <DependentUpon>EinvoiceAPI.aspx</DependentUpon>
     </Compile>
     <Compile Include="Enums\SignTypeEnum.cs" />
     <Compile Include="Enums\TrainingTableTypeEnum.cs" />
