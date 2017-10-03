@@ -2,40 +2,247 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>林內發票明細查詢</title>
+    <title>林內發票訂單查詢頁面</title>
     <script src="Scripts/jquery-1.10.2.min.js"></script>
 
     <script src="Scripts/bootstrap.min.js"></script>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-</head>
-<!--http://192.168.1.206:1004/api/EinvoiceApi?invTerm=10608-->
-<body>
-    <h1>
-        查詢中獎發票號碼
-    </h1>
+    <script src="Scripts/jquery-confirm.min.js"></script>
 
-    <label>請輸入欲查詢之年月份 ex.10608</label>
-    <input type="text" name="name" value="" id="invTerm" />
-    <input type="button" name="name" value="查詢" id="searchBtn" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/jquery-confirm.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-image: url("img/rinnai-logo-big_3.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: bottom;
+        }
+
+        #detailsMain {
+            margin-left: auto;
+            width: 50%;
+            margin-right: auto;
+            margin-top: 5%;
+        }
+
+        .green-text {
+            color: green;
+        }
+
+        .loader {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid blue;
+            border-right: 16px solid green;
+            border-bottom: 16px solid red;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--/*
+    rowNum 明細編號
+    description 品名
+    quantity 數量
+    unitPrice 單價
+    amount 小計
+
+    amount:"57.00"
+    description:"【113F 12092005】９２無鉛汽油"
+    quantity:"2.2800"
+    rowNum:"1"
+    unitPrice:"24.8000"
+    */-->
+    <div class="loader" style="display:none;"></div>
+
+    <div id="details" style="display:none;">
+        <div id="detailsMain">
+            <input type="button" class="btn btn-info" value="查詢" id="searchBtn" style="margin-bottom:10px;" />
+            <div class="detail-title" style="margin-bottom:20px;">
+                <label>訂單號碼</label>
+                <span id="orderID"></span>
+                <label>發票號碼</label>
+                <span id="invNo"></span>
+                <label>查詢狀態</label>
+                <span id="status"></span>
+            </div>
+            <div>
+                <table id="detailsTable" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>明細編號</th>
+                            <th>品名</th>
+                            <th>數量</th>
+                            <th>單價</th>
+                            <th>小計</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <script>
         $(function () {
+            searchOrder();
             $('#searchBtn').on('click', function () {
-                var invTerm = $('#invTerm').val();
-                //http://127.0.0.1/
-                //var url = 'http://192.168.1.206:1004/api/EinvoiceApi/GetEinvoiceWinningNumber?invTerm=' + invTerm;
-                //var url = 'http://portal.rinnai.com.tw:1004/api/EinvoiceApi/GetEinvoiceWinningNumber?invTerm=' + invTerm;
-                var url = "http://192.168.1.206/api/EinvoiceApi/GetEinvoiceWinningNumber?invTerm=" + invTerm;
-                $.ajax({
-                    url: url,
-                    dataType: 'jsonp',
-                    jsonpCallback: 'callback',
-                    type: 'GET',
-                    success: function (data) {
-                        alert(data.msg);
-                        console.log(data);
+                searchOrder();
+            });
+
+            function searchOrder() {
+                var jc = $.confirm({
+                    title: '請輸入欲查詢訂單號碼',
+                    content: '' +
+                    '<form action="" class="formName">' +
+                    '<div class="form-group">' +
+                    '<label> 例：<span style="color:red;">CSSO</span>000000001  <br>測試：170612810</label>' +
+                    '<div style="display: -webkit-inline-box;">'+
+                    '<input type="text"  class="form-control" disabled style="width:20%;" value="CSSO" />' +
+                    '<input type="text" placeholder="ex.000000001" class="orderNo form-control" required style="width:75%;" />' +
+                    '</div>' +
+                    '</div>' +
+                    '</form>',
+                    buttons: {
+                        formSubmit: {
+                            text: '查詢',
+                            btnClass: 'btn-blue',
+                            action: function () {
+                                var orderNo = 'CSSO' + this.$content.find('.orderNo').val();
+                                if (this.$content.find('.orderNo').val() == '') {
+                                    $.alert('請輸入發票號碼');
+                                    return false;
+                                }
+                                else {
+                                    var invTerm = $('#invTerm').val();
+                                    var url = "/api/EinvoiceApi/GetEinvoiceDetalisByOrderNo?orderNo=" + orderNo;
+                                    $('#details').hide();
+                                    $('.loader').show();
+
+                                    $.ajax({
+                                        url: url,
+                                        type: 'GET',
+                                        success: function (data) {
+                                            var rCode = data.code;
+                                            if (rCode != '200') {
+                                                alert(data.msg);
+                                                window.location.reload();
+                                            }
+                                            else {
+                                                dataEmpty();
+                                                $('#status').removeClass().addClass('green-text ');
+                                                jc.close();
+                                                $('#details').show();
+                                                for (var i = 0; i < data.details.length; i++) {
+                                                    var detail = data.details[i];
+                                                    $('#orderID').html(orderNo);
+                                                    $('#invNo').html(data.invNum);
+                                                    $('#status').html(data.msg);
+                                                    var $tr =
+                                                    '<tr class=""> ' +
+                                                        '<td>' + detail.rowNum + '</td>' +
+                                                        '<td>' + detail.description + '</td>' +
+                                                        '<td>' + detail.quantity + '</td>' +
+                                                        '<td>' + detail.unitPrice + '</td>' +
+                                                        '<td>' + detail.amount + '</td>' +
+                                                    '</tr>';
+                                                    $('#detailsTable tbody').append($tr);
+                                                    $('.loader').hide();
+
+                                                    /*
+                                                    rowNum 明細編號
+                                                    description 品名
+                                                    quantity 數量
+                                                    unitPrice 單價
+                                                    amount 小計
+
+                                                    amount:"57.00"
+                                                    description:"【113F 12092005】９２無鉛汽油"
+                                                    quantity:"2.2800"
+                                                    rowNum:"1"
+                                                    unitPrice:"24.8000"
+                                                    */
+                                                }
+                                            }
+                                        }, error: function (error) {
+                                            $('.loader').hide();
+                                            alert(error);
+                                        }
+                                    });
+                                }
+                            }
+                        },
+                        cancel:
+                            {
+                                text: '取消',
+                                action: function () {
+                                    window.location.reload();
+                                }
+                            },
+                    },
+                    onContentReady: function () {
+                        // bind to events
+                        var jc = this;
+                        this.$content.find('form').on('submit', function (e) {
+                            // if the user submits the form by pressing enter in the field.
+                            e.preventDefault();
+                            jc.$$formSubmit.trigger('click'); // reference the button and click it
+                        });
                     }
                 });
-            })
+            }
+
+            function dataEmpty() {
+                $('#orderID').html('');
+                $('#invNo').html('');
+                $('#status').html('');
+                $('#detailsTable tbody').empty();
+            }
+
+            //中獎號
+            //$('#searchBtn').on('click', function () {
+            //    var invTerm = $('#invTerm').val();
+            //    var url = "/api/EinvoiceApi/GetEinvoiceWinningNumber?invTerm=" + invTerm;
+            //    $.ajax({
+            //        url: url,
+            //        //dataType: 'jsonp',
+            //        //jsonpCallback: 'callback',
+            //        type: 'GET',
+            //        success: function (data) {
+            //            alert(data.msg);
+            //            console.log(data);
+            //        }, error: function (error) {
+            //            alert(error);
+            //        }
+            //    });
+            //})
         })
     </script>
 </body>

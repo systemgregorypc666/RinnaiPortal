@@ -1,5 +1,4 @@
 ﻿using DBTools;
-using Newtonsoft.Json;
 using RinnaiPortal.Extensions;
 using RinnaiPortal.FactoryMethod;
 using RinnaiPortal.Interface;
@@ -102,7 +101,8 @@ namespace RinnaiPortal.Repository
             }
             return chkIsInRule;
         }
-        #endregion
+
+        #endregion #0012 簽核之前確認是否符合班別的時間
 
         //列表
         public Pagination GetPagination(SignListParms slParms, PaggerParms pParms)
@@ -456,7 +456,6 @@ WHERE  signdocid = @SignDocID AND finalstatus = 2 AND
             return result;
         }
 
-
         /// <summary>
         /// 上呈簽核SQL(判斷是否還有上層需要簽核)
         /// </summary>
@@ -468,9 +467,12 @@ WHERE  signdocid = @SignDocID AND finalstatus = 2 AND
             var result = new List<MultiConditions>();
             //取出指定明細
             //var detailModel = mainModel.WorkflowDetailList.Single(row => currentSignerID.Equals(row.ChiefID_FK));
+
             #region 0020 會有多筆資料 不該用Single
+
             var detailModel = mainModel.WorkflowDetailList.FirstOrDefault(row => currentSignerID.Equals(row.ChiefID_FK));
-            #endregion
+
+            #endregion 0020 會有多筆資料 不該用Single
 
             //更新時間
             mainModel.ModifyDate = DateTime.Now;
@@ -572,7 +574,13 @@ WHERE  signdocid = @SignDocID AND finalstatus = 2 AND
                 result.Add(new MultiConditions() { { sql, conditions } });
 
                 //轉交 AutoInsertHandler
+
+                #region 決定將寫入志元與否
+
                 AutoInsertHandler autoInsert = RepositoryFactory.CreateAutoInsert(mainModel.SignDocID);
+
+                #endregion 決定將寫入志元與否
+
                 var autoInsertDML = autoInsert.GetDML();
                 if (autoInsertDML != null)
                 {

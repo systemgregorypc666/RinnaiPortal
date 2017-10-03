@@ -816,6 +816,7 @@ ON              otf.supportdeptid_fk = supdept.departmentid {0} {1}";
         {
             var strSQL =
             @"select distinct 
+AutoInsert,
 SN,
 type.FormType Type,
 EmployeeID_FK EmployeeID,
@@ -882,6 +883,7 @@ left outer join (select EMPLOYECD,ISNULL(sum(OVERWORKHOURS),0)-ISNULL(sum(case w
             {
                 result.Add(new OvertimeViewModel()
                 {
+                    AutoInsert = Convert.ToBoolean(row["AutoInsert"]),
                     SN = Int32.Parse(row["SN"].ToString()),
                     EmployeeID_FK = row["EmployeeID"].ToString(),
                     EmployeeName = row["EmployeeName"].ToString(),

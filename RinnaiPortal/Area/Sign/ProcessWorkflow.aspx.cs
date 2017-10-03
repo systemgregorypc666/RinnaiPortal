@@ -198,7 +198,7 @@ namespace RinnaiPortal.Area.Sign
                 }
             }
 
-            #endregion #0012 忘刷單的時間如果不符合邏輯，在確認簽核的時候主管要看到明顯提示 ()
+            #endregion #0012 忘刷單的時間如果不符合邏輯，在確認簽核的時候主管要看到明顯提示 (目前針對桃園所做設定)
 
             try
             {
@@ -307,9 +307,9 @@ namespace RinnaiPortal.Area.Sign
                     //結案
                     case 6:
 
-                        #region #0013 加班時間小於結薪日，通知email給總務手動要寫入志元
+                        #region #0013 加班時間小於結薪日，通知email給總務手動要寫入志元 直接判斷Table=>OvertimeForm的AutoInsert
 
-                        //姑且認為是加班單的時候傳的參數為2，方能判斷是否送來簽核的是加班單
+                        //加班單的時候傳的參數為2，方能判斷是否送來簽核的是加班單
                         if (model_M.FormID_FK == 2)
                         {
                             string sid = Request["SignDocID"].ToString();
@@ -322,16 +322,22 @@ namespace RinnaiPortal.Area.Sign
                             //取得加班資料明細
                             OvertimeRepository _overtimeRepo = RepositoryFactory.CreateOvertimeRepo();
                             DataTable tableData = _overtimeRepo.QueryOvertimeFormData(sid);
+                            var rows = tableData.Select();
+
+
                             overDataList = _overtimeRepo.dataMapping(tableData);
                             foreach (var over in overDataList)
                             {
-                                DateTime startDate = (DateTime)over.StartDateTime;
-                                int mathDate = new TimeSpan(startDate.Ticks - salaryLimit.Ticks).Days;
-                                if (mathDate <= 0)
+                                if (!over.AutoInsert)
                                     resultDataList.Add(over);
+                                //DateTime startDate = (DateTime)over.StartDateTime;
+                                //int mathDate = new TimeSpan(startDate.Ticks - salaryLimit.Ticks).Days;
+                                //if (mathDate <= 0)
+                                //resultDataList.Add(over);
                             }
-                            info.To = "wenhua.yu";
-                            //info.To = "juncheng.liu";
+
+                            //info.To = "wenhua.yu";
+                            info.To = "juncheng.liu";
                             info.CC = new List<string>() { "juncheng.liu" };
                             foreach (var ov in resultDataList)
                             {
@@ -355,7 +361,7 @@ namespace RinnaiPortal.Area.Sign
                             }
                         }
 
-                        #endregion #0013 加班時間小於結薪日，通知email給總務手動要寫入志元
+                        #endregion #0013 加班時間小於結薪日，通知email給總務手動要寫入志元 直接判斷Table=>OvertimeForm的AutoInsert
 
                         //尋找歸檔人員
                         var fillingDept = (string)_rootRepo.QueryForDepartmentByFormID(mainData.FormID_FK)["DepartmentID"];

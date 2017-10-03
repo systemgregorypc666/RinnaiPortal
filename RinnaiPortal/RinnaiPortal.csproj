@@ -67,6 +67,9 @@
     <Reference Include="NLog">
       <HintPath>..\packages\NLog.3.2.1\lib\net45\NLog.dll</HintPath>
     </Reference>
+    <Reference Include="OpenUDIDCSharp">
+      <HintPath>..\..\..\..\元件\OpenUDIDCSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -78,6 +81,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -355,8 +360,27 @@
     <Content Include="Content\redmond\jquery-ui-1.10.4.custom.min.css" />
     <Content Include="Content\select2.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="EinvoiceAPI.aspx" />
     <Content Include="EinvoiceSearch.html" />
+    <Content Include="Entities\EINVDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EINVDB.edmx</DependentUpon>
+      <LastGenOutput>EINVDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\EINVDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EINVDB.edmx</DependentUpon>
+      <LastGenOutput>EINVDB.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\SQLOLEDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SQLOLEDB.edmx</DependentUpon>
+      <LastGenOutput>SQLOLEDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\SQLOLEDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SQLOLEDB.edmx</DependentUpon>
+      <LastGenOutput>SQLOLEDB.cs</LastGenOutput>
+    </Content>
     <Content Include="Files\25img.gif" />
     <Content Include="Files\phone.gif" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -376,6 +400,10 @@
     <Content Include="Area\Sign\bbs_content.aspx" />
     <Content Include="Area\Sign\bbs_contentList.aspx" />
     <Content Include="Area\Sign\bbs_Detail.aspx" />
+    <Content Include="img\rinnai-logo-big.jpg" />
+    <Content Include="img\rinnai-logo-big2.jpg" />
+    <Content Include="img\rinnai-logo-big_3.png" />
+    <Content Include="img\rinnailogo5.jpg" />
     <Content Include="img\SetpTeach\1.jpg" />
     <Content Include="img\SetpTeach\2.jpg" />
     <Content Include="img\SetpTeach\3.jpg" />
@@ -384,6 +412,20 @@
     <Content Include="Daily_Result.aspx" />
     <Content Include="Area\Sign\Forms\TrainData.aspx" />
     <Content Include="Content\jquery-confirm.less" />
+    <EntityDeploy Include="Entities\EINVDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EINVDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Entities\EINVDB.edmx.diagram">
+      <DependentUpon>EINVDB.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Entities\SQLOLEDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SQLOLEDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Entities\SQLOLEDB.edmx.diagram">
+      <DependentUpon>SQLOLEDB.edmx</DependentUpon>
+    </Content>
     <None Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -473,6 +515,7 @@
     <Content Include="Global.asax" />
     <Content Include="Service\Sign\Forms\Train.asmx" />
     <Content Include="Site.Master" />
+    <Content Include="SmsResult.aspx" />
     <Content Include="TEST.aspx" />
     <Content Include="testLoginError.html" />
     <Content Include="ViewSwitcher.ascx" />
@@ -963,19 +1006,96 @@
     <Compile Include="Area\Training\TrainingInfo\UnitTranslate.aspx.designer.cs">
       <DependentUpon>UnitTranslate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\api\Default1Controller.cs" />
+    <Compile Include="Controllers\api\EinvoiceApiController.cs" />
     <Compile Include="DailyDataList.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DefaultDataList.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EinvoiceAPI.aspx.cs">
-      <DependentUpon>EinvoiceAPI.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="Entities\A0401D.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="EinvoiceAPI.aspx.designer.cs">
-      <DependentUpon>EinvoiceAPI.aspx</DependentUpon>
+    <Compile Include="Entities\A0401H.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\A0501.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\A0601.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\B0401D.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\B0401H.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\B0501.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\C0401D.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\C0401H.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\C0501.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\C0701.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\D0401D.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\D0401H.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\D0501.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EINVDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EINVDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EINVDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EINVDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EINVDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Rinnai_Sales_Invoice_Line.cs">
+      <DependentUpon>SQLOLEDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Rinnai_Service_Ledger_Entry.cs">
+      <DependentUpon>SQLOLEDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SParameter.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SQLOLEDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQLOLEDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SQLOLEDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQLOLEDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SQLOLEDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQLOLEDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\STemp.cs">
+      <DependentUpon>EINVDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Enums\SignTypeEnum.cs" />
     <Compile Include="Enums\TrainingTableTypeEnum.cs" />
@@ -990,13 +1110,24 @@
     <Compile Include="Interface\IForms.cs" />
     <Compile Include="Interface\IManageRepository.cs" />
     <Compile Include="Interface\ISignRepository.cs" />
+    <Compile Include="Models\ApiModels\EinvoiceModels\ConnectionStringModel.cs" />
+    <Compile Include="Models\ApiModels\EinvoiceModels\EinvoiceApiModels\EinvoiceDetalisModels\EinvoiceDetalisResultModel.cs" />
+    <Compile Include="Models\ApiModels\EinvoiceModels\EinvoiceApiModels\EinvoiceDetalisModels\EinvoiceDetalisSendModel.cs" />
+    <Compile Include="Models\ApiModels\EinvoiceModels\EinvoiceApiModels\EinvoiceWinningNumberModels\EinvoiceWinningNumberResultModel.cs" />
+    <Compile Include="Models\ApiModels\EinvoiceModels\EinvoiceApiModels\EinvoiceWinningNumberModels\EinvoiceWinningNumberSendModel.cs" />
     <Compile Include="Models\ApiModels\EmpDataModel.cs" />
     <Compile Include="Models\OverDetailsModel.cs" />
+    <Compile Include="Models\SmsModels\SmsResultModel.cs" />
+    <Compile Include="Modules\ApiModules\Modules\ApiModule.cs" />
+    <Compile Include="Modules\ApiModules\Modules\EinvoiceModule.cs" />
     <Compile Include="Repository\APIRepository.cs" />
     <Compile Include="Repository\BbsListRepository.cs" />
     <Compile Include="Repository\DailyRepository.cs" />
     <Compile Include="Repository\MonthlyRepository.cs" />
     <Compile Include="Repository\PublicRepository.cs" />
+    <Compile Include="Repository\ApiRepositories\APIRepository.cs" />
+    <Compile Include="Repository\ApiRepositories\EinvoiceApRepository.cs" />
+    <Compile Include="Repository\ApiRepositories\JsonpFormatter.cs" />
     <Compile Include="Repository\Sign\BbsRepository.cs" />
     <Compile Include="Repository\Manage\OvertimeReportRepository.cs" />
     <Compile Include="Repository\Manage\OvertimeSettingRepository.cs" />
@@ -1007,6 +1138,13 @@
     <Compile Include="Repository\SmartMan\AutoInsertHandler.cs" />
     <Compile Include="Repository\RecreateRepository.cs" />
     <Compile Include="Controllers\api\AdminServiceApiController.cs" />
+    <Compile Include="SmsResult.aspx.cs">
+      <DependentUpon>SmsResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsResult.aspx.designer.cs">
+      <DependentUpon>SmsResult.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TEST.aspx.cs">
       <DependentUpon>TEST.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1310,6 +1448,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

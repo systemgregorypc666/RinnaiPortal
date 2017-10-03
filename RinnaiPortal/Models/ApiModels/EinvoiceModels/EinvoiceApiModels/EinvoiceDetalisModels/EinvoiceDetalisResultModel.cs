@@ -1,0 +1,28 @@
+﻿using System.Collections.Generic;
+namespace RinnaiPortalOpenApi.Models.EinvoiceApiModels.EinvoiceDetalisModels
+{
+    public class EinvoiceDetalisResultModel
+    {
+        public string invNum { get; set; }
+        public string invDate { get; set; }
+        public string sellerName { get; set; }
+        public string invStatus { get; set; }
+        public string invPeriod { get; set; }
+        public string sellerBan { get; set; }
+        public string sellerAddress { get; set; }
+        public string invoiceTime { get; set; }
+        public List<Detail> details { get; set; }
+        public string v { get; set; }
+        public string code { get; set; }
+        public string msg { get; set; }
+    }
+
+    public class Detail
+    {
+        public string amount { get; set; }
+        public string description { get; set; }
+        public string unitPrice { get; set; }
+        public string quantity { get; set; }
+        public string rowNum { get; set; }
+    }
+}
