@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RinnaiPortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="IsoFiles">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MAP_MAIN_ID" Type="int" Nullable="false" />
+          <Property Name="FILE_PATH" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="BUD_DT" Type="datetime" Nullable="false" />
+          <Property Name="REF_ISO_NUM" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FILE_NM" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FILE_SZ" Type="float" Nullable="false" />
+          <Property Name="URL_PATH" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IsoMain">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="APP_USR" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="APP_DT" Type="datetime" Nullable="false" />
+          <Property Name="APP_ST" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="APP_UP_DT" Type="datetime" Nullable="false" />
+          <Property Name="ISO_NUM" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="RinnaiPortalModelStoreContainer">
+          <EntitySet Name="IsoFiles" EntityType="Self.IsoFiles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IsoMain" EntityType="Self.IsoMain" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RinnaiPortalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DBISO" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="IsoMain" EntityType="RinnaiPortalModel.IsoMain" />
+          <EntitySet Name="IsoFiles" EntityType="RinnaiPortalModel.IsoFiles" />
+        </EntityContainer>
+        <EntityType Name="IsoMain">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="APP_USR" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="APP_DT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="APP_ST" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="APP_UP_DT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ISO_NUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="IsoFiles">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MAP_MAIN_ID" Type="Int32" Nullable="false" />
+          <Property Name="FILE_PATH" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BUD_DT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="REF_ISO_NUM" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FILE_NM" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FILE_SZ" Type="Double" Nullable="false" />
+          <Property Name="URL_PATH" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RinnaiPortalModelStoreContainer" CdmEntityContainer="DBISO">
+          <EntitySetMapping Name="IsoMain">
+            <EntityTypeMapping TypeName="RinnaiPortalModel.IsoMain">
+              <MappingFragment StoreEntitySet="IsoMain">
+                <ScalarProperty Name="ISO_NUM" ColumnName="ISO_NUM" />
+                <ScalarProperty Name="APP_UP_DT" ColumnName="APP_UP_DT" />
+                <ScalarProperty Name="APP_ST" ColumnName="APP_ST" />
+                <ScalarProperty Name="APP_DT" ColumnName="APP_DT" />
+                <ScalarProperty Name="APP_USR" ColumnName="APP_USR" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IsoFiles">
+            <EntityTypeMapping TypeName="RinnaiPortalModel.IsoFiles">
+              <MappingFragment StoreEntitySet="IsoFiles">
+                <ScalarProperty Name="URL_PATH" ColumnName="URL_PATH" />
+                <ScalarProperty Name="FILE_SZ" ColumnName="FILE_SZ" />
+                <ScalarProperty Name="FILE_NM" ColumnName="FILE_NM" />
+                <ScalarProperty Name="REF_ISO_NUM" ColumnName="REF_ISO_NUM" />
+                <ScalarProperty Name="BUD_DT" ColumnName="BUD_DT" />
+                <ScalarProperty Name="FILE_PATH" ColumnName="FILE_PATH" />
+                <ScalarProperty Name="MAP_MAIN_ID" ColumnName="MAP_MAIN_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

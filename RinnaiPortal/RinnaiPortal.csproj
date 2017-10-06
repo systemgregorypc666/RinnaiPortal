@@ -212,6 +212,10 @@
     <Content Include="Account\Logon.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="AdminInDebug.aspx" />
+    <Content Include="Area\Iso\manage\Default.aspx" />
+    <Content Include="Area\Iso\User\IsoDefault.aspx" />
+    <Content Include="Area\Iso\User\IsoDocDetalis.aspx" />
+    <Content Include="Area\Iso\User\IsoManage.aspx" />
     <Content Include="Area\Manage\MealTaxiReport.aspx" />
     <Content Include="Area\Manage\OvertimeReport.aspx" />
     <Content Include="Area\Manage\OvertimeSetting.aspx" />
@@ -334,6 +338,7 @@
     <Content Include="Content\dialog-layout.css" />
     <Content Include="Content\easy-autocomplete.css" />
     <Content Include="Content\easy-autocomplete.themes.css" />
+    <Content Include="Content\fileinput.min.css" />
     <Content Include="Content\jquery-confirm.css" />
     <Content Include="Content\jquery-confirm.min.css" />
     <Content Include="Content\jquery-ui-1.10.4.custom.css" />
@@ -370,6 +375,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>EINVDB.edmx</DependentUpon>
       <LastGenOutput>EINVDB.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ISODB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ISODB.edmx</DependentUpon>
+      <LastGenOutput>ISODB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ISODB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ISODB.edmx</DependentUpon>
+      <LastGenOutput>ISODB.cs</LastGenOutput>
     </Content>
     <Content Include="Entities\SQLOLEDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -426,6 +441,13 @@
     <Content Include="Entities\SQLOLEDB.edmx.diagram">
       <DependentUpon>SQLOLEDB.edmx</DependentUpon>
     </Content>
+    <EntityDeploy Include="Entities\ISODB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ISODB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Entities\ISODB.edmx.diagram">
+      <DependentUpon>ISODB.edmx</DependentUpon>
+    </Content>
     <None Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -445,6 +467,7 @@
     <Content Include="img\Remove.png" />
     <Content Include="img\submenu1.gif" />
     <Content Include="PageNotFound.aspx" />
+    <Content Include="Scripts\fileinput.js" />
     <Content Include="Scripts\jquery-confirm.min.js" />
     <Content Include="Scripts\jquery-ui-1.10.4.custom.js" />
     <Content Include="Scripts\jquery-ui-1.10.4.custom.min.js" />
@@ -567,6 +590,34 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Area\Iso\manage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Iso\manage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Iso\User\IsoDefault.aspx.cs">
+      <DependentUpon>IsoDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Iso\User\IsoDefault.aspx.designer.cs">
+      <DependentUpon>IsoDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Iso\User\IsoDocDetalis.aspx.cs">
+      <DependentUpon>IsoDocDetalis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Iso\User\IsoDocDetalis.aspx.designer.cs">
+      <DependentUpon>IsoDocDetalis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Iso\User\IsoManage.aspx.cs">
+      <DependentUpon>IsoManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Iso\User\IsoManage.aspx.designer.cs">
+      <DependentUpon>IsoManage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Area\Manage\ManageDataList.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -1070,6 +1121,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EINVDB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Entities\ISODB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ISODB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ISODB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ISODB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ISODB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ISODB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IsoFiles.cs">
+      <DependentUpon>ISODB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IsoMain.cs">
+      <DependentUpon>ISODB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Rinnai_Sales_Invoice_Line.cs">
       <DependentUpon>SQLOLEDB.tt</DependentUpon>
     </Compile>
@@ -1097,6 +1169,7 @@
     <Compile Include="Entities\STemp.cs">
       <DependentUpon>EINVDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Enums\IsoStatus.cs" />
     <Compile Include="Enums\SignTypeEnum.cs" />
     <Compile Include="Enums\TrainingTableTypeEnum.cs" />
     <Compile Include="Enums\WorkflowTypeEnum.cs" />
@@ -1123,6 +1196,7 @@
     <Compile Include="Repository\APIRepository.cs" />
     <Compile Include="Repository\BbsListRepository.cs" />
     <Compile Include="Repository\DailyRepository.cs" />
+    <Compile Include="Repository\IsoRepository.cs" />
     <Compile Include="Repository\MonthlyRepository.cs" />
     <Compile Include="Repository\PublicRepository.cs" />
     <Compile Include="Repository\ApiRepositories\APIRepository.cs" />
@@ -1447,6 +1521,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="FileUploads\Document\" />
     <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>

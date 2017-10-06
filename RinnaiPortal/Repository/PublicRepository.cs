@@ -10,7 +10,7 @@ namespace RinnaiPortal.Repository
 {
     public static class PublicRepository
     {
-        public static WorkflowTypeEnum CurrentWorkflowMode = WorkflowTypeEnum.RELEASE;
+        public static WorkflowTypeEnum CurrentWorkflowMode = WorkflowTypeEnum.DEBUG;
         /// <summary>
         /// To the full taiwan date.
         /// </summary>

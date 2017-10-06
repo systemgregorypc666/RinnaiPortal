@@ -124,7 +124,7 @@
                     '<form action="" class="formName">' +
                     '<div class="form-group">' +
                     '<label> 例：<span style="color:red;">CSSO</span>000000001  <br>測試：170612810</label>' +
-                    '<div style="display: -webkit-inline-box;">'+
+                    '<div style="display: -webkit-inline-box;">' +
                     '<input type="text"  class="form-control" disabled style="width:20%;" value="CSSO" />' +
                     '<input type="text" placeholder="ex.000000001" class="orderNo form-control" required style="width:75%;" />' +
                     '</div>' +
@@ -151,13 +151,18 @@
                                         type: 'GET',
                                         success: function (data) {
                                             var rCode = data.code;
-                                            if (rCode != '200') {
+                                            if (rCode == '1') {
                                                 alert(data.msg);
+                                                window.location.reload();
+                                                return;
+                                            }
+                                            if (rCode != '200') {
+                                                alert('系統忙碌中...請稍候再查詢，謝謝!');
                                                 window.location.reload();
                                             }
                                             else {
                                                 dataEmpty();
-                                                $('#status').removeClass().addClass('green-text ');
+                                                $('#status').removeClass().addClass('green-text');
                                                 jc.close();
                                                 $('#details').show();
                                                 for (var i = 0; i < data.details.length; i++) {

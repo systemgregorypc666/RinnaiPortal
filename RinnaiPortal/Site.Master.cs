@@ -11,7 +11,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using System.Linq;
 namespace RinnaiPortal
 {
     public partial class SiteMaster : MasterPage
@@ -147,7 +147,9 @@ namespace RinnaiPortal
             {
                 int tmpNodeID = Int32.Parse(row["NodeID"].ToString());
                 string tmpMenuTitle = row["NodeTitle"].ToString();
-                string tmpMenuUri = row["NodeUri"].ToString();
+                if (tmpMenuTitle.Equals("ISO文件明細"))
+                    continue;
+                string tmpMenuUri = tmpMenuTitle == "ISO文件申請" ? row["NodeUri"].ToString() + "?uId=" + HttpContext.Current.User.Identity.Name : row["NodeUri"].ToString();
                 MenuItem newMenuItem = new MenuItem(tmpMenuTitle, String.Empty, String.Empty, tmpMenuUri, String.Empty);
 
                 //看看當前的節點，是哪些節點的老爸，把那些人找出來，加到自己的下面當成子節點

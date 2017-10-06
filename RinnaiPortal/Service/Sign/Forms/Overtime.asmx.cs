@@ -519,6 +519,7 @@ namespace RinnaiPortal
             var overtimeList = _rootRepo.QueryForOvertimeFormDataBySignDocID(signDocID);
             // 根據加班日期找出已送出加班單列表，排除草稿
             var alreadyApplyData = _rootRepo.QueryForOvertimeFormDataByDate(punchDate, "1", "5");
+            //依照日期找出該日所有加班人員
             var dailyPunchData = _smartRepo.QueryForDailyOnOffByDate(punchDate.ToString("yyyyMMdd"));
             //判斷智源是否存有當日打卡紀錄
             if (dailyPunchData == null)
