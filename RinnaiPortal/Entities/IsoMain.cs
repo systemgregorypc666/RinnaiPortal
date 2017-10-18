@@ -20,5 +20,7 @@ namespace RinnaiPortal.Entities
         public string APP_ST { get; set; }
         public System.DateTime APP_UP_DT { get; set; }
         public string ISO_NUM { get; set; }
+        public Nullable<int> DOC_LEVEL { get; set; }
+        public string REMARK { get; set; }
     }
 }

@@ -5,9 +5,15 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="4901ae6abd7943b8987ac171a70c7643" Name="Diagram1">
-        <EntityTypeShape EntityType="RinnaiPortalModel.IsoMain" Width="1.5" PointX="2.75" PointY="0.75" />
         <EntityTypeShape EntityType="RinnaiPortalModel.IsoFiles" Width="1.5" PointX="0.75" PointY="3.75" />
-      </Diagram>
+        <EntityTypeShape EntityType="RinnaiPortalModel.Department" Width="1.5" PointX="3.375" PointY="5.25" />
+        <EntityTypeShape EntityType="RinnaiPortalModel.IsoMain" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="RinnaiPortalModel.IsoFileLog" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RinnaiPortalModel.IsoFileSetting" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RinnaiPortalModel.IsoPublishGroup" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="RinnaiPortalModel.Employee" Width="1.5" PointX="5.625" PointY="5" />
+        <AssociationConnector Association="RinnaiPortalModel.FK_Employee_DepartmentID" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

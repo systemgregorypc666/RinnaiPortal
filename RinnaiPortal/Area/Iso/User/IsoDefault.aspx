@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="IsoDefault.aspx.cs" Inherits="RinnaiPortal.Area.Iso.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="IsoDefault.aspx.cs" Inherits="RinnaiPortal.Area.Iso.User.IsoDefault" %>
 
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="RinnaiPortal.Entities" %>
@@ -36,22 +36,22 @@
             text-align: center !Important;
             vertical-align: middle;
         }
+
+        .bak-green {
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        .bak-red {
+            background-color: #d9534f;
+            color: white;
+        }
     </style>
     <div class="iso-main-div">
+
         <div class="row" style="padding-left: 15px;">
             <div class="col-md-2 get-num-div" runat="server" id="divNum">
                 <asp:Button ID="GetNewNumBtn" runat="server" Text="Iso文件取號申請" CssClass="btn btn-info get-num-btn" OnClick="GetNewNumBtn_Click" />
-
-                <%--    <div runat="server" id="resultDiv" visible="false">
-                    <p>取號狀態：</p>
-                    <span class="label label-success span-result">
-                        <asp:Literal ID="resultStatus" runat="server"></asp:Literal>
-                    </span>
-                    <p style="margin-top: 20px;">取得號碼：</p>
-                    <span class="label label-info span-result">
-                        <asp:Literal ID="resultNum" runat="server"></asp:Literal>
-                    </span>
-                </div>--%>
             </div>
         </div>
 
@@ -64,10 +64,10 @@
                     <table id="isoDocList" class="table table-bordered data-table">
                         <thead>
                             <tr style="background-color: #d9534f; text-align: center;">
-                                <td colspan="6"><span style="background-color: #d9534f; color: white;">列表</span></td>
+                                <td colspan="6"><span style="background-color: #d9534f; color: white;">ISO文件列表</span></td>
                             </tr>
                             <tr>
-                                <th>編號</th>
+                                <th>No</th>
                                 <th>管理</th>
                                 <th>文件編號</th>
                                 <th>申請狀態</th>
@@ -79,7 +79,9 @@
                         <tbody>
                             <% foreach (var data in BindData)
                                {
+                                   int index = BindData.IndexOf(data) + 1;
                                    string statusDesc = string.Empty;
+                                   string statusStyle = string.Empty;
                                    switch (data.APP_ST)
                                    {
                                        case "W":
@@ -87,9 +89,11 @@
                                            break;
                                        case "Y":
                                            statusDesc = "已核准";
+                                           statusStyle = "bak-green";
                                            break;
                                        case "N":
                                            statusDesc = "拒絕";
+                                           statusStyle = "bak-red";
                                            break;
                                        default:
                                            break;
@@ -98,13 +102,12 @@
                             <tr>
                                 <td><%= data.ID %></td>
                                 <td>
-                                    <input type="button" value="檢視" class="btn btn-success view-btn" id="<%= data.ID %>" />
+                                    <input type="button" value="管理" class="btn btn-success view-btn" id="<%= data.ID %>" />
                                 </td>
                                 <td><%= data.ISO_NUM %></td>
-                                <td><%= statusDesc %></td>
+                                <td class="<%= statusStyle %>"><%= statusDesc %></td>
                                 <td><%= data.APP_DT %></td>
                                 <td><%= data.APP_USR %></td>
-
                             </tr>
                             <% } %>
                         </tbody>
@@ -120,6 +123,5 @@
             var id = $(this).attr('id');
             window.location.href = window.location.href = '/Area/Iso/User/IsoDocDetalis.aspx?docId=' + id;
         });
-        var test = '';
     </script>
 </asp:Content>

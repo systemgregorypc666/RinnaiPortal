@@ -1,12 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
+using RinnaiPortal.Models;
+using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using RinnaiPortal.Models;
 
 namespace RinnaiPortal.Models
 {
@@ -42,6 +41,7 @@ namespace RinnaiPortal.Models
 }
 
 #region Helpers
+
 namespace RinnaiPortal
 {
     public static class IdentityHelper
@@ -58,18 +58,21 @@ namespace RinnaiPortal
         }
 
         public const string ProviderNameKey = "providerName";
+
         public static string GetProviderNameFromRequest(HttpRequest request)
         {
             return request.QueryString[ProviderNameKey];
         }
 
         public const string CodeKey = "code";
+
         public static string GetCodeFromRequest(HttpRequest request)
         {
             return request.QueryString[CodeKey];
         }
 
         public const string UserIdKey = "userId";
+
         public static string GetUserIdFromRequest(HttpRequest request)
         {
             return HttpUtility.UrlDecode(request.QueryString[UserIdKey]);
@@ -105,4 +108,5 @@ namespace RinnaiPortal
         }
     }
 }
-#endregion
+
+#endregion Helpers

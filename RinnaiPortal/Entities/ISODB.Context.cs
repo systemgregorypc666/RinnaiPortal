@@ -25,7 +25,12 @@ namespace RinnaiPortal.Entities
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<IsoMain> IsoMain { get; set; }
         public virtual DbSet<IsoFiles> IsoFiles { get; set; }
+        public virtual DbSet<Department> Department { get; set; }
+        public virtual DbSet<IsoMain> IsoMain { get; set; }
+        public virtual DbSet<IsoFileLog> IsoFileLog { get; set; }
+        public virtual DbSet<IsoFileSetting> IsoFileSetting { get; set; }
+        public virtual DbSet<IsoPublishGroup> IsoPublishGroup { get; set; }
+        public virtual DbSet<Employee> Employee { get; set; }
     }
 }

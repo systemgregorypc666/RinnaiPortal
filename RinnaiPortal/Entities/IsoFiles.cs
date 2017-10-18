@@ -22,5 +22,6 @@ namespace RinnaiPortal.Entities
         public string FILE_NM { get; set; }
         public double FILE_SZ { get; set; }
         public string URL_PATH { get; set; }
+        public string UP_MODE { get; set; }
     }
 }

@@ -212,10 +212,12 @@
     <Content Include="Account\Logon.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="AdminInDebug.aspx" />
-    <Content Include="Area\Iso\manage\Default.aspx" />
+    <Content Include="Area\Iso\Manage\IsoManage.aspx" />
+    <Content Include="Area\Iso\Manage\IsoManageDetalis.aspx" />
+    <Content Include="Area\Iso\Manage\IsoPublishDocEdit.aspx" />
     <Content Include="Area\Iso\User\IsoDefault.aspx" />
     <Content Include="Area\Iso\User\IsoDocDetalis.aspx" />
-    <Content Include="Area\Iso\User\IsoManage.aspx" />
+    <Content Include="Area\Iso\User\IsoDocView.aspx" />
     <Content Include="Area\Manage\MealTaxiReport.aspx" />
     <Content Include="Area\Manage\OvertimeReport.aspx" />
     <Content Include="Area\Manage\OvertimeSetting.aspx" />
@@ -339,6 +341,10 @@
     <Content Include="Content\easy-autocomplete.css" />
     <Content Include="Content\easy-autocomplete.themes.css" />
     <Content Include="Content\fileinput.min.css" />
+    <Content Include="Content\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\font-awesome-4.7.0\HELP-US-OUT.txt" />
     <Content Include="Content\jquery-confirm.css" />
     <Content Include="Content\jquery-confirm.min.css" />
     <Content Include="Content\jquery-ui-1.10.4.custom.css" />
@@ -448,6 +454,39 @@
     <Content Include="Entities\ISODB.edmx.diagram">
       <DependentUpon>ISODB.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Content\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Content\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Content\font-awesome-4.7.0\scss\_variables.scss" />
     <None Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -467,6 +506,7 @@
     <Content Include="img\Remove.png" />
     <Content Include="img\submenu1.gif" />
     <Content Include="PageNotFound.aspx" />
+    <Content Include="Scripts\datepicker-zh-TW.js" />
     <Content Include="Scripts\fileinput.js" />
     <Content Include="Scripts\jquery-confirm.min.js" />
     <Content Include="Scripts\jquery-ui-1.10.4.custom.js" />
@@ -590,12 +630,26 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Area\Iso\manage\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Area\Iso\Manage\IsoManage.aspx.cs">
+      <DependentUpon>IsoManage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Area\Iso\manage\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Area\Iso\Manage\IsoManage.aspx.designer.cs">
+      <DependentUpon>IsoManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Iso\Manage\IsoManageDetalis.aspx.cs">
+      <DependentUpon>IsoManageDetalis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Iso\Manage\IsoManageDetalis.aspx.designer.cs">
+      <DependentUpon>IsoManageDetalis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area\Iso\Manage\IsoPublishDocEdit.aspx.cs">
+      <DependentUpon>IsoPublishDocEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area\Iso\Manage\IsoPublishDocEdit.aspx.designer.cs">
+      <DependentUpon>IsoPublishDocEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Area\Iso\User\IsoDefault.aspx.cs">
       <DependentUpon>IsoDefault.aspx</DependentUpon>
@@ -611,12 +665,12 @@
     <Compile Include="Area\Iso\User\IsoDocDetalis.aspx.designer.cs">
       <DependentUpon>IsoDocDetalis.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Area\Iso\User\IsoManage.aspx.cs">
-      <DependentUpon>IsoManage.aspx</DependentUpon>
+    <Compile Include="Area\Iso\User\IsoDocView.aspx.cs">
+      <DependentUpon>IsoDocView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Area\Iso\User\IsoManage.aspx.designer.cs">
-      <DependentUpon>IsoManage.aspx</DependentUpon>
+    <Compile Include="Area\Iso\User\IsoDocView.aspx.designer.cs">
+      <DependentUpon>IsoDocView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Area\Manage\ManageDataList.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -1106,6 +1160,9 @@
     <Compile Include="Entities\D0501.cs">
       <DependentUpon>EINVDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Department.cs">
+      <DependentUpon>ISODB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\EINVDB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1120,6 +1177,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EINVDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Employee.cs">
+      <DependentUpon>ISODB.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\ISODB.Context.cs">
       <AutoGen>True</AutoGen>
@@ -1136,10 +1196,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ISODB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Entities\IsoFileLog.cs">
+      <DependentUpon>ISODB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\IsoFiles.cs">
       <DependentUpon>ISODB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\IsoFileSetting.cs">
+      <DependentUpon>ISODB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\IsoMain.cs">
+      <DependentUpon>ISODB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IsoPublishGroup.cs">
       <DependentUpon>ISODB.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Rinnai_Sales_Invoice_Line.cs">
@@ -1189,6 +1258,11 @@
     <Compile Include="Models\ApiModels\EinvoiceModels\EinvoiceApiModels\EinvoiceWinningNumberModels\EinvoiceWinningNumberResultModel.cs" />
     <Compile Include="Models\ApiModels\EinvoiceModels\EinvoiceApiModels\EinvoiceWinningNumberModels\EinvoiceWinningNumberSendModel.cs" />
     <Compile Include="Models\ApiModels\EmpDataModel.cs" />
+    <Compile Include="Models\IsoModels\IsoEmployeeModel.cs" />
+    <Compile Include="Models\IsoModels\IsoFileModel.cs" />
+    <Compile Include="Models\IsoModels\IsoManageDataModel.cs" />
+    <Compile Include="Models\IsoModels\IsoManageListViewModel.cs" />
+    <Compile Include="Models\IsoModels\IsoManagePublishModel.cs" />
     <Compile Include="Models\OverDetailsModel.cs" />
     <Compile Include="Models\SmsModels\SmsResultModel.cs" />
     <Compile Include="Modules\ApiModules\Modules\ApiModule.cs" />

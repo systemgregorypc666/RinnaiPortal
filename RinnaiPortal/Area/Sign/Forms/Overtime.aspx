@@ -2,9 +2,14 @@
 
 <asp:Content ID="OvertimeContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">
-        body input {
-        font-size:1vh;
+        .container {
+            width: 100% !important;
         }
+
+        body input {
+            font-size: 1vh;
+        }
+
         .employeeID {
             width: 80px;
         }
@@ -17,9 +22,6 @@
             width: 130px;
         }
 
-        /*.startDateTime, .endDateTime {
-            width: 170px;
-        }*/
 
         .supportDept {
             width: 145px;
@@ -29,8 +31,12 @@
             width: 160px;
         }
 
-        .payType, .mealOrder {
-            width: 110px;
+        .payType {
+            width: 8%;
+        }
+
+        .mealOrder {
+            width: 7%;
         }
 
         .block:hover {
@@ -59,24 +65,22 @@
         }
 
         .startDateTime, .endDateTime {
-            width: 16%;
+            width: 20%;
         }
 
         .diaplayTime {
-        margin-top:5px;
+            margin-top: 5px;
         }
 
         .supportDept, {
             width: 13%;
         }
-
-        .mealOrder {
-            width: 9%;
-        }
     </style>
     <script type="text/javascript">
         $(function () {
+            $('#DefaultDeptName').select2();
             $("#DefaultSupportDeptName").select2();
+
 
             $('.block').click(function () {
                 if ($(this).find('i').hasClass('glyphicon-chevron-up')) {
@@ -94,7 +98,6 @@
 
             var addRows = function (responses) {
                 $.each(responses, function (i, response) {
-                    console.log(response);
                     //debugger;
                     var $res = $(response).appendTo($('.OvertimeSummary table'));
                     var $datetimeElem = $res.find(".startDateTime,.endDateTime");
@@ -172,6 +175,14 @@
             }
 
             $('.CreateDetailData').click(function () {
+                var note = $('#DefaultNote').val();
+
+                if (note.length > 100)
+                {
+                    alert('加班原因不得超過100字!');
+                    return;
+                }
+
                 var defaultData = getDefaultData();
                 var isValid = true;
                 $('.required input, .required select').each(function () {
@@ -195,6 +206,7 @@
                     data: defaultData,
                     success: function (responses) {
                         addRows(responses);
+
                     },
                     beforeSend: function () {
                         $('.create-footer .CreateDetailData').hide();

@@ -147,7 +147,7 @@ namespace RinnaiPortal
             {
                 int tmpNodeID = Int32.Parse(row["NodeID"].ToString());
                 string tmpMenuTitle = row["NodeTitle"].ToString();
-                if (tmpMenuTitle.Equals("ISO文件明細"))
+                if (tmpMenuTitle.Equals("ISO文件明細") || tmpMenuTitle.Equals("ISO文件管理明細"))
                     continue;
                 string tmpMenuUri = tmpMenuTitle == "ISO文件申請" ? row["NodeUri"].ToString() + "?uId=" + HttpContext.Current.User.Identity.Name : row["NodeUri"].ToString();
                 MenuItem newMenuItem = new MenuItem(tmpMenuTitle, String.Empty, String.Empty, tmpMenuUri, String.Empty);

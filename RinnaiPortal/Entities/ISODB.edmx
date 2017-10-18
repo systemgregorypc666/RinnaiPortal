@@ -5,6 +5,52 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="RinnaiPortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentID" />
+          </Key>
+          <Property Name="DepartmentID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DepartmentName" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ChiefID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="UpperDepartmentID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="DepartmentLevel" Type="int" Nullable="false" />
+          <Property Name="FilingEmployeeID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Virtual" Type="nchar" MaxLength="1" />
+          <Property Name="Disabled" Type="bit" />
+          <Property Name="DisabledDate" Type="datetime" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="EmployeeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DepartmentID_FK" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CostDepartmentID" Type="nvarchar" MaxLength="10" />
+          <Property Name="AgentID" Type="nvarchar" MaxLength="10" />
+          <Property Name="Disabled" Type="bit" Nullable="false" />
+          <Property Name="DisabledDate" Type="datetime" />
+          <Property Name="ADAccount" Type="nvarchar" MaxLength="30" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Modifier" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+          <Property Name="AccessType" Type="nvarchar" MaxLength="500" />
+          <Property Name="NationalType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SexType" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="IsoFileLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MAP_FILE_ID" Type="int" Nullable="false" />
+          <Property Name="UP_DT" Type="datetime" Nullable="false" />
+        </EntityType>
         <EntityType Name="IsoFiles">
           <Key>
             <PropertyRef Name="ID" />
@@ -17,6 +63,21 @@
           <Property Name="FILE_NM" Type="nvarchar(max)" Nullable="false" />
           <Property Name="FILE_SZ" Type="float" Nullable="false" />
           <Property Name="URL_PATH" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="UP_MODE" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IsoFileSetting">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MAP_FILE_ID" Type="int" Nullable="false" />
+          <Property Name="REF_DOC_ID" Type="int" Nullable="false" />
+          <Property Name="REF_ISO_NUM" Type="nvarchar" MaxLength="50" />
+          <Property Name="NM_OF_PRODT" Type="nvarchar" MaxLength="100" />
+          <Property Name="TAKE_ON_DEP_ID" Type="int" Nullable="false" />
+          <Property Name="EFF_DT" Type="datetime" Nullable="false" />
+          <Property Name="VERSION" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="PAGE" Type="nvarchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="IsoMain">
           <Key>
@@ -28,30 +89,59 @@
           <Property Name="APP_ST" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="APP_UP_DT" Type="datetime" Nullable="false" />
           <Property Name="ISO_NUM" Type="nvarchar" MaxLength="50" />
+          <Property Name="DOC_LEVEL" Type="int" />
+          <Property Name="REMARK" Type="nvarchar" MaxLength="600" />
         </EntityType>
+        <EntityType Name="IsoPublishGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GROUP_TYPE_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MAP_FILE_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Employee_DepartmentID">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DepartmentID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="RinnaiPortalModelStoreContainer">
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IsoFileLog" EntityType="Self.IsoFileLog" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IsoFiles" EntityType="Self.IsoFiles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IsoFileSetting" EntityType="Self.IsoFileSetting" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IsoMain" EntityType="Self.IsoMain" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IsoPublishGroup" EntityType="Self.IsoPublishGroup" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Employee_DepartmentID" Association="Self.FK_Employee_DepartmentID">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="RinnaiPortalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="DBISO" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="IsoMain" EntityType="RinnaiPortalModel.IsoMain" />
           <EntitySet Name="IsoFiles" EntityType="RinnaiPortalModel.IsoFiles" />
-        </EntityContainer>
-        <EntityType Name="IsoMain">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="APP_USR" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="APP_DT" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="APP_ST" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
-          <Property Name="APP_UP_DT" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="ISO_NUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
+          <EntitySet Name="Department" EntityType="RinnaiPortalModel.Department" />
+          <EntitySet Name="IsoMain" EntityType="RinnaiPortalModel.IsoMain" />
+          <EntitySet Name="IsoFileLog" EntityType="RinnaiPortalModel.IsoFileLog" />
+          <EntitySet Name="IsoFileSetting" EntityType="RinnaiPortalModel.IsoFileSetting" />
+          <EntitySet Name="IsoPublishGroup" EntityType="RinnaiPortalModel.IsoPublishGroup" />
+          <EntitySet Name="Employee" EntityType="RinnaiPortalModel.Employee" />
+          <AssociationSet Name="FK_Employee_DepartmentID" Association="RinnaiPortalModel.FK_Employee_DepartmentID">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          </EntityContainer>
         <EntityType Name="IsoFiles">
           <Key>
             <PropertyRef Name="ID" />
@@ -64,16 +154,148 @@
           <Property Name="FILE_NM" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="FILE_SZ" Type="Double" Nullable="false" />
           <Property Name="URL_PATH" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UP_MODE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-      </Schema>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentID" />
+          </Key>
+          <Property Name="DepartmentID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DepartmentName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ChiefID_FK" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="UpperDepartmentID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DepartmentLevel" Type="Int32" Nullable="false" />
+          <Property Name="FilingEmployeeID_FK" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Virtual" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="Disabled" Type="Boolean" />
+          <Property Name="DisabledDate" Type="DateTime" Precision="3" />
+          <Property Name="Creator" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Employee" Relationship="RinnaiPortalModel.FK_Employee_DepartmentID" FromRole="Department" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="IsoMain">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="APP_USR" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="APP_DT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="APP_ST" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="APP_UP_DT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ISO_NUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DOC_LEVEL" Type="Int32" />
+          <Property Name="REMARK" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="IsoFileLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MAP_FILE_ID" Type="Int32" Nullable="false" />
+          <Property Name="UP_DT" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="IsoFileSetting">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MAP_FILE_ID" Type="Int32" Nullable="false" />
+          <Property Name="REF_DOC_ID" Type="Int32" Nullable="false" />
+          <Property Name="REF_ISO_NUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NM_OF_PRODT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TAKE_ON_DEP_ID" Type="Int32" Nullable="false" />
+          <Property Name="EFF_DT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VERSION" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PAGE" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="IsoPublishGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GROUP_TYPE_NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAP_FILE_ID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DepartmentID_FK" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CostDepartmentID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="AgentID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Disabled" Type="Boolean" Nullable="false" />
+          <Property Name="DisabledDate" Type="DateTime" Precision="3" />
+          <Property Name="ADAccount" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Creator" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <Property Name="AccessType" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="NationalType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SexType" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Department" Relationship="RinnaiPortalModel.FK_Employee_DepartmentID" FromRole="Employee" ToRole="Department" />
+        </EntityType>
+        <Association Name="FK_Employee_DepartmentID">
+          <End Type="RinnaiPortalModel.Department" Role="Department" Multiplicity="1" />
+          <End Type="RinnaiPortalModel.Employee" Role="Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DepartmentID_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="RinnaiPortalModelStoreContainer" CdmEntityContainer="DBISO">
+          <EntitySetMapping Name="IsoFiles">
+            <EntityTypeMapping TypeName="RinnaiPortalModel.IsoFiles">
+              <MappingFragment StoreEntitySet="IsoFiles">
+                <ScalarProperty Name="UP_MODE" ColumnName="UP_MODE" />
+                <ScalarProperty Name="URL_PATH" ColumnName="URL_PATH" />
+                <ScalarProperty Name="FILE_SZ" ColumnName="FILE_SZ" />
+                <ScalarProperty Name="FILE_NM" ColumnName="FILE_NM" />
+                <ScalarProperty Name="REF_ISO_NUM" ColumnName="REF_ISO_NUM" />
+                <ScalarProperty Name="BUD_DT" ColumnName="BUD_DT" />
+                <ScalarProperty Name="FILE_PATH" ColumnName="FILE_PATH" />
+                <ScalarProperty Name="MAP_MAIN_ID" ColumnName="MAP_MAIN_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Department">
+            <EntityTypeMapping TypeName="RinnaiPortalModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="DisabledDate" ColumnName="DisabledDate" />
+                <ScalarProperty Name="Disabled" ColumnName="Disabled" />
+                <ScalarProperty Name="Virtual" ColumnName="Virtual" />
+                <ScalarProperty Name="FilingEmployeeID_FK" ColumnName="FilingEmployeeID_FK" />
+                <ScalarProperty Name="DepartmentLevel" ColumnName="DepartmentLevel" />
+                <ScalarProperty Name="UpperDepartmentID" ColumnName="UpperDepartmentID" />
+                <ScalarProperty Name="ChiefID_FK" ColumnName="ChiefID_FK" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="IsoMain">
             <EntityTypeMapping TypeName="RinnaiPortalModel.IsoMain">
               <MappingFragment StoreEntitySet="IsoMain">
+                <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+                <ScalarProperty Name="DOC_LEVEL" ColumnName="DOC_LEVEL" />
                 <ScalarProperty Name="ISO_NUM" ColumnName="ISO_NUM" />
                 <ScalarProperty Name="APP_UP_DT" ColumnName="APP_UP_DT" />
                 <ScalarProperty Name="APP_ST" ColumnName="APP_ST" />
@@ -83,17 +305,57 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="IsoFiles">
-            <EntityTypeMapping TypeName="RinnaiPortalModel.IsoFiles">
-              <MappingFragment StoreEntitySet="IsoFiles">
-                <ScalarProperty Name="URL_PATH" ColumnName="URL_PATH" />
-                <ScalarProperty Name="FILE_SZ" ColumnName="FILE_SZ" />
-                <ScalarProperty Name="FILE_NM" ColumnName="FILE_NM" />
-                <ScalarProperty Name="REF_ISO_NUM" ColumnName="REF_ISO_NUM" />
-                <ScalarProperty Name="BUD_DT" ColumnName="BUD_DT" />
-                <ScalarProperty Name="FILE_PATH" ColumnName="FILE_PATH" />
-                <ScalarProperty Name="MAP_MAIN_ID" ColumnName="MAP_MAIN_ID" />
+          <EntitySetMapping Name="IsoFileLog">
+            <EntityTypeMapping TypeName="RinnaiPortalModel.IsoFileLog">
+              <MappingFragment StoreEntitySet="IsoFileLog">
+                <ScalarProperty Name="UP_DT" ColumnName="UP_DT" />
+                <ScalarProperty Name="MAP_FILE_ID" ColumnName="MAP_FILE_ID" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IsoFileSetting">
+            <EntityTypeMapping TypeName="RinnaiPortalModel.IsoFileSetting">
+              <MappingFragment StoreEntitySet="IsoFileSetting">
+                <ScalarProperty Name="PAGE" ColumnName="PAGE" />
+                <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+                <ScalarProperty Name="EFF_DT" ColumnName="EFF_DT" />
+                <ScalarProperty Name="TAKE_ON_DEP_ID" ColumnName="TAKE_ON_DEP_ID" />
+                <ScalarProperty Name="NM_OF_PRODT" ColumnName="NM_OF_PRODT" />
+                <ScalarProperty Name="REF_ISO_NUM" ColumnName="REF_ISO_NUM" />
+                <ScalarProperty Name="REF_DOC_ID" ColumnName="REF_DOC_ID" />
+                <ScalarProperty Name="MAP_FILE_ID" ColumnName="MAP_FILE_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IsoPublishGroup">
+            <EntityTypeMapping TypeName="RinnaiPortalModel.IsoPublishGroup">
+              <MappingFragment StoreEntitySet="IsoPublishGroup">
+                <ScalarProperty Name="MAP_FILE_ID" ColumnName="MAP_FILE_ID" />
+                <ScalarProperty Name="GROUP_TYPE_NAME" ColumnName="GROUP_TYPE_NAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employee">
+            <EntityTypeMapping TypeName="RinnaiPortalModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="SexType" ColumnName="SexType" />
+                <ScalarProperty Name="NationalType" ColumnName="NationalType" />
+                <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+                <ScalarProperty Name="Modifier" ColumnName="Modifier" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="ADAccount" ColumnName="ADAccount" />
+                <ScalarProperty Name="DisabledDate" ColumnName="DisabledDate" />
+                <ScalarProperty Name="Disabled" ColumnName="Disabled" />
+                <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+                <ScalarProperty Name="CostDepartmentID" ColumnName="CostDepartmentID" />
+                <ScalarProperty Name="DepartmentID_FK" ColumnName="DepartmentID_FK" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
