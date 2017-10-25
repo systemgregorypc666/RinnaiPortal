@@ -372,6 +372,16 @@
     <Content Include="Content\select2.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="EinvoiceSearch.html" />
+    <Content Include="Entities\DBERP.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBERP.edmx</DependentUpon>
+      <LastGenOutput>DBERP.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\DBERP.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBERP.edmx</DependentUpon>
+      <LastGenOutput>DBERP.cs</LastGenOutput>
+    </Content>
     <Content Include="Entities\EINVDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>EINVDB.edmx</DependentUpon>
@@ -391,16 +401,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ISODB.edmx</DependentUpon>
       <LastGenOutput>ISODB.cs</LastGenOutput>
-    </Content>
-    <Content Include="Entities\SQLOLEDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SQLOLEDB.edmx</DependentUpon>
-      <LastGenOutput>SQLOLEDB.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Entities\SQLOLEDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SQLOLEDB.edmx</DependentUpon>
-      <LastGenOutput>SQLOLEDB.cs</LastGenOutput>
     </Content>
     <Content Include="Files\25img.gif" />
     <Content Include="Files\phone.gif" />
@@ -439,13 +439,6 @@
     </EntityDeploy>
     <Content Include="Entities\EINVDB.edmx.diagram">
       <DependentUpon>EINVDB.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Entities\SQLOLEDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SQLOLEDB.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Entities\SQLOLEDB.edmx.diagram">
-      <DependentUpon>SQLOLEDB.edmx</DependentUpon>
     </Content>
     <EntityDeploy Include="Entities\ISODB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -487,6 +480,13 @@
     <Content Include="Content\font-awesome-4.7.0\scss\_screen-reader.scss" />
     <Content Include="Content\font-awesome-4.7.0\scss\_stacked.scss" />
     <Content Include="Content\font-awesome-4.7.0\scss\_variables.scss" />
+    <EntityDeploy Include="Entities\DBERP.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBERP.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Entities\DBERP.edmx.diagram">
+      <DependentUpon>DBERP.edmx</DependentUpon>
+    </Content>
     <None Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1160,6 +1160,21 @@
     <Compile Include="Entities\D0501.cs">
       <DependentUpon>EINVDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\DBERP.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBERP.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DBERP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBERP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DBERP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBERP.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Department.cs">
       <DependentUpon>ISODB.tt</DependentUpon>
     </Compile>
@@ -1212,28 +1227,13 @@
       <DependentUpon>ISODB.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Rinnai_Sales_Invoice_Line.cs">
-      <DependentUpon>SQLOLEDB.tt</DependentUpon>
+      <DependentUpon>DBERP.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Rinnai_Service_Ledger_Entry.cs">
-      <DependentUpon>SQLOLEDB.tt</DependentUpon>
+      <DependentUpon>DBERP.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\SParameter.cs">
       <DependentUpon>EINVDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\SQLOLEDB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SQLOLEDB.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\SQLOLEDB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SQLOLEDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\SQLOLEDB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SQLOLEDB.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entities\STemp.cs">
       <DependentUpon>EINVDB.tt</DependentUpon>

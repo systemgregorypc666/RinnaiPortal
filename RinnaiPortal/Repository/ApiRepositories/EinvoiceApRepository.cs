@@ -61,7 +61,7 @@ namespace RinnaiPortalOpenApi.Repositories
         public string GetEinvoiceNoByOrderNo(string orderNo)
         {
             string einvoiceNo = string.Empty;
-            NavisionNewDB db = new NavisionNewDB();
+            ERPDB db = new ERPDB();
             var order = db.Rinnai_Service_Ledger_Entry.Where(o => o.Service_Order_No_ == orderNo && o.Document_Type == 2).FirstOrDefault();
             if (order == null)
                 throw new Exception("[系統]無法取得該訂單相關資料");
@@ -76,9 +76,13 @@ namespace RinnaiPortalOpenApi.Repositories
         {
             invNo = string.Concat(invNo[0], invNo[1]).ToUpper() + invNo.Substring(2, invNo.Length - 2);
             EinvoiceDetalisSendModel send = new EinvoiceDetalisSendModel();
-            #region 測試時請註解 正式請取消註解
-            //send = GetEinvoiceProtoDetalisByNo(invNo);
-            #endregion
+
+            #region 取發票原始檔明細 測試時請註解 正式請取消註解
+
+            send = GetEinvoiceProtoDetalisByNo(invNo);
+
+            #endregion 取發票原始檔明細 測試時請註解 正式請取消註解
+
             send.version = 0.3;
             send.type = "Barcode";
             send.invNum = invNo;
@@ -86,11 +90,12 @@ namespace RinnaiPortalOpenApi.Repositories
             send.generation = "V2";
 
             #region 測試時請取消註解並給時寄發票的資訊 正式請註解
-            send.invTerm = "10610";
-            send.invDate = "2017/09/26";
-            send.randomNumber = "6157";
-            #endregion
 
+            //send.invTerm =  "10610";
+            //send.invDate = "2017/09/26";
+            //send.randomNumber = "6157";
+
+            #endregion 測試時請取消註解並給時寄發票的資訊 正式請註解
 
             string resultStr = string.Empty;
             WebRequest webRequest = null;
@@ -122,6 +127,11 @@ namespace RinnaiPortalOpenApi.Repositories
             return result;
         }
 
+        /// <summary>
+        /// 取得電子發票原始檔明細
+        /// </summary>
+        /// <param name="invNo"></param>
+        /// <returns></returns>
         private EinvoiceDetalisSendModel GetEinvoiceProtoDetalisByNo(string invNo)
         {
             invNo = string.Concat(invNo[0], invNo[1]).ToUpper() + invNo.Substring(2, invNo.Length - 2);
@@ -130,7 +140,7 @@ namespace RinnaiPortalOpenApi.Repositories
             {
                 C0401H einvoice = this.module.GetEinvoiceDetalisByNo(invNo);
                 if (einvoice == null)
-                    throw new Exception("[系統]查無相關發票明細");
+                    throw new Exception("[系統]查無相關電子發票原始檔明細明細");
                 int getMonth = Convert.ToInt16(einvoice.MInvoiceDate.Substring(4, 2));
                 var chkMonth = (getMonth % 2) == 1;
                 string invTerm = string.Format("{0}{1}", einvoice.MInvoiceDate.Substring(0, 4), chkMonth ? (getMonth + 1).ToString().PadLeft(2, '0') : (getMonth).ToString().PadLeft(2, '0'));

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="NavisionNewModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="GeorgeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Rinnai$Sales Invoice Line">
           <Key>
             <PropertyRef Name="Document No_" />
@@ -182,14 +182,15 @@
           <Property Name="Applies-to Entry No_" Type="int" Nullable="false" />
           <Property Name="Amount" Type="decimal" Precision="38" Scale="20" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="NavisionNewModelStoreContainer">
+        <EntityContainer Name="GeorgeModelStoreContainer">
           <EntitySet Name="Rinnai$Sales Invoice Line" EntityType="Self.Rinnai$Sales Invoice Line" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Rinnai$Service Ledger Entry" EntityType="Self.Rinnai$Service Ledger Entry" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="NavisionNewModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="GeorgeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Rinnai_Sales_Invoice_Line">
           <Key>
             <PropertyRef Name="Document_No_" />
@@ -367,7 +368,7 @@
           <Property Name="Applies_to_Entry_No_" Type="Int32" Nullable="false" />
           <Property Name="Amount" Type="Decimal" Precision="38" Scale="20" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="NavisionNewDB" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ERPDB" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Rinnai_Sales_Invoice_Line" EntityType="Self.Rinnai_Sales_Invoice_Line" />
           <EntitySet Name="Rinnai_Service_Ledger_Entry" EntityType="Self.Rinnai_Service_Ledger_Entry" />
         </EntityContainer>
@@ -376,9 +377,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="NavisionNewModelStoreContainer" CdmEntityContainer="NavisionNewDB">
+        <EntityContainerMapping StorageEntityContainer="GeorgeModelStoreContainer" CdmEntityContainer="ERPDB">
           <EntitySetMapping Name="Rinnai_Sales_Invoice_Line">
-            <EntityTypeMapping TypeName="NavisionNewModel.Rinnai_Sales_Invoice_Line">
+            <EntityTypeMapping TypeName="GeorgeModel.Rinnai_Sales_Invoice_Line">
               <MappingFragment StoreEntitySet="Rinnai$Sales Invoice Line">
                 <ScalarProperty Name="timestamp" ColumnName="timestamp" />
                 <ScalarProperty Name="Document_No_" ColumnName="Document No_" />
@@ -497,7 +498,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Rinnai_Service_Ledger_Entry">
-            <EntityTypeMapping TypeName="NavisionNewModel.Rinnai_Service_Ledger_Entry">
+            <EntityTypeMapping TypeName="GeorgeModel.Rinnai_Service_Ledger_Entry">
               <MappingFragment StoreEntitySet="Rinnai$Service Ledger Entry">
                 <ScalarProperty Name="timestamp" ColumnName="timestamp" />
                 <ScalarProperty Name="Entry_No_" ColumnName="Entry No_" />

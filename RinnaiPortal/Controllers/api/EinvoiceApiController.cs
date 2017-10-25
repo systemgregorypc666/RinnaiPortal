@@ -37,7 +37,13 @@ namespace RinnaiPortalOpenApi.Controllers
             try
             {
                 string invNo = this.Repository.GetEinvoiceNoByOrderNo(orderNo);
-                invNo = "XC47895844";
+
+                #region 測試資料請給真實發票號碼做測試
+
+                //string invNo = "XC47895844";
+
+                #endregion 測試資料請給真實發票號碼做測試
+
                 result = this.Repository.GetEinvoiceDetalisByNo(invNo);
             }
             catch (Exception ex)

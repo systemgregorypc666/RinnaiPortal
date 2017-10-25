@@ -237,8 +237,9 @@ namespace RinnaiPortal.Repository.Sign.Forms
             }
             //#0001 2017-07-19 by 俊晨 開課日期 <  2017/7/1的資料因不簽核故不顯示(經理指示)。
             //#0019 受訓心得報告不顯示B10，C01，A09 的課程代碼
+            //#0023 主管成效評核追縱維護新增時不顯示B10 ，C01，A09 的課程代碼 by 淑娟 原slParms.TABLE_ID == "02"增加slParms.TABLE_ID == "03"
             strSQL += " and class.START_DATE >= '2017-07-01' ";
-            if (slParms.TABLE_ID == "02")
+            if (slParms.TABLE_ID == "02" || slParms.TABLE_ID == "03")
                 strSQL += " and class.CTID not in ('B10','C01','A09') ";
 
             var paginationParms = new PaginationParms()
@@ -272,7 +273,6 @@ namespace RinnaiPortal.Repository.Sign.Forms
                 if (resultPagination.Data != null)
                 {
                     var filterData = getResult.Data.Rows.Cast<DataRow>().ToList();
-
                     string queryHasFeedbackSQL = @"
                                         SELECT distinct
                                         class.clid       CLID,

@@ -13,10 +13,10 @@ namespace RinnaiPortal.Entities
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NavisionNewDB : DbContext
+    public partial class ERPDB : DbContext
     {
-        public NavisionNewDB()
-            : base("name=NavisionNewDB")
+        public ERPDB()
+            : base("name=ERPDB")
         {
         }
     

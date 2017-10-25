@@ -1,15 +1,12 @@
 ﻿using DBTools;
-using RinnaiPortal.Tools;
-using RinnaiPortal.ViewModel;
-using RinnaiPortal.ViewModel.Sign.Forms;
 using RinnaiPortal.Extensions;
+using RinnaiPortal.Interface;
+using RinnaiPortal.Tools;
+using RinnaiPortal.ViewModel.Sign.Forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Web;
-using RinnaiPortal.Interface;
-using RinnaiPortal.FactoryMethod;
 
 namespace RinnaiPortal.Repository.Sign.Forms
 {
@@ -18,13 +15,13 @@ namespace RinnaiPortal.Repository.Sign.Forms
         private DB _dc { get; set; }
         private RootRepository _rootRepo { get; set; }
         private ProcessWorkflowRepository _pwfRepo { get; set; }
+
         public ForgotPunchRepository(DB dc, RootRepository rootRepo, ProcessWorkflowRepository pwfRepo)
         {
             _dc = dc;
             _rootRepo = rootRepo;
             _pwfRepo = pwfRepo;
         }
-
 
         //是否為主管
         protected bool IsChief(string employeeID, string departmentID)
@@ -33,6 +30,33 @@ namespace RinnaiPortal.Repository.Sign.Forms
             return employeeID.Equals(deptData["ChiefID_FK"]);
         }
 
+        /// <summary>
+        /// 找尋送簽人的主管
+        /// </summary>
+        /// <param name="signDocID">忘刷單簽核單號</param>
+        /// <returns></returns>
+        public string FindChiefID(string signDocID, string empName)
+        {
+            string strSQL = @"
+            select ADAccount from Employee where EmployeeID =(
+            select ChiefID_FK from Department where  DepartmentID = 
+            (select DepartmentID_FK from ForgotPunchForm where SignDocID_FK = @SignDocID_FK)) ";
+            var strCondition = new Conditions() { { "@SignDocID_FK", signDocID } };
+
+            DataRow result = _dc.QueryForDataRow(strSQL, strCondition);
+            if (result == null)
+            {
+                strSQL = @"
+            select ADAccount from Employee where EmployeeID =(
+            select ChiefID_FK from Department where  DepartmentID = 
+            (select DepartmentID_FK from Employee where ADAccount = @empID)) ";
+                strCondition = new Conditions() { { "@empID", empName } };
+                result = _dc.QueryForDataRow(strSQL, strCondition);
+                if (result == null)
+                return "";
+            }
+            return result["ADAccount"].ToString();
+        }
 
         //簽核作業頁面 > 取得表單資料
         public ForgotPunchViewModel GetForgotPunchForm(string signDocID)
@@ -119,7 +143,7 @@ Where SignDocID_FK = @SignDocID_FK";
             var strSQL = _dc.ConstructInsertDML("signform_main", dic);
             manipulationConditions.Add(new MultiConditions() { { strSQL, dic } });
 
-            // create SignForm_Detail data 
+            // create SignForm_Detail data
             dic = new Conditions()
 			{
 				{"@SignDocID_FK", model.SignDocID_FK},
@@ -152,7 +176,6 @@ Where SignDocID_FK = @SignDocID_FK";
 			};
             strSQL = _dc.ConstructInsertDML("signform_log", dic);
             manipulationConditions.Add(new MultiConditions() { { strSQL, dic } });
-
 
             // create ForgotPunch data
             dic = new Conditions()
@@ -205,21 +228,20 @@ Where SignDocID_FK = @SignDocID_FK";
                 throw new Exception("不符合簽核規則，無法編輯!");
             }
 
-
             var upperDeptData = _pwfRepo.FindUpperDeptData(model.DepartmentID_FK, model.EmployeeID_FK);
             var chiefID = upperDeptData.Keys.Single();
             var currentSignLevelDeptID = upperDeptData.Values.Single();
 
             // Update SignForm_Main
             strSQL =
-@"UPDATE signform_main 
-SET    employeeid_fk = @EmployeeID_FK, 
-	   senddate = @SendDate, 
-	   currentsignleveldeptid_fk = @CurrentSignLevelDeptID_FK, 
-	   finalstatus = @FinalStatus, 
+@"UPDATE signform_main
+SET    employeeid_fk = @EmployeeID_FK,
+	   senddate = @SendDate,
+	   currentsignleveldeptid_fk = @CurrentSignLevelDeptID_FK,
+	   finalstatus = @FinalStatus,
 	   remainder = @remainder,
-	   modifier = @Modifier, 
-	   modifydate = @ModifyDate 
+	   modifier = @Modifier,
+	   modifydate = @ModifyDate
 WHERE  signdocid = @SignDocID ";
             dic = new Conditions()
 			{
@@ -234,18 +256,18 @@ WHERE  signdocid = @SignDocID ";
 			};
             manipulationConditions.Add(new MultiConditions() { { strSQL, dic } });
 
-            // create SignForm_Detail data 
+            // create SignForm_Detail data
             strSQL =
-@"INSERT INTO signform_detail 
-			(signdocid_fk, 
-			 chiefid_fk, 
-			 status, 
-			 creator, 
-			 createdate) 
-VALUES      (@SignDocID_FK, 
-			 @ChiefID_FK, 
-			 @Status, 
-			 @Creator, 
+@"INSERT INTO signform_detail
+			(signdocid_fk,
+			 chiefid_fk,
+			 status,
+			 creator,
+			 createdate)
+VALUES      (@SignDocID_FK,
+			 @ChiefID_FK,
+			 @Status,
+			 @Creator,
 			 @CreateDate) ";
             dic = new Conditions()
 			{
@@ -259,36 +281,36 @@ VALUES      (@SignDocID_FK,
 
             // add log
             strSQL =
-@"INSERT INTO SIGNFORM_LOG 
-			(signdocid_fk, 
-			 formid_fk, 
-			 employeeid_fk, 
-			 senddate, 
-			 currentsignleveldeptid_fk, 
-			 finalstatus, 
-			 remainder, 
-			 modifier_main, 
-			 modifydate_main, 
-			 detailsigndocid_fk, 
-			 chiefid_fk, 
-			 status, 
-			 creator_detail, 
-			 createdate_detail, 
-			 logdatetime) 
-VALUES      (@SignDocID_FK, 
-			 @FormID_FK, 
-			 @EmployeeID_FK, 
-			 @SendDate, 
-			 @CurrentSignLevelDeptID_FK, 
-			 @FinalStatus, 
-			 @Remainder, 
-			 @Modifier_Main, 
-			 @ModifyDate_Main, 
-			 @DetailSignDocID_FK, 
-			 @ChiefID_FK, 
-			 @Status, 
-			 @Creator_Detail, 
-			 @CreateDate_Detail, 
+@"INSERT INTO SIGNFORM_LOG
+			(signdocid_fk,
+			 formid_fk,
+			 employeeid_fk,
+			 senddate,
+			 currentsignleveldeptid_fk,
+			 finalstatus,
+			 remainder,
+			 modifier_main,
+			 modifydate_main,
+			 detailsigndocid_fk,
+			 chiefid_fk,
+			 status,
+			 creator_detail,
+			 createdate_detail,
+			 logdatetime)
+VALUES      (@SignDocID_FK,
+			 @FormID_FK,
+			 @EmployeeID_FK,
+			 @SendDate,
+			 @CurrentSignLevelDeptID_FK,
+			 @FinalStatus,
+			 @Remainder,
+			 @Modifier_Main,
+			 @ModifyDate_Main,
+			 @DetailSignDocID_FK,
+			 @ChiefID_FK,
+			 @Status,
+			 @Creator_Detail,
+			 @CreateDate_Detail,
 			 @LogDatetime ) ";
             dic = new Conditions()
 			{
@@ -312,16 +334,16 @@ VALUES      (@SignDocID_FK,
 
             // Update ForgotPunch data
             strSQL =
-@"UPDATE forgotpunchform 
-SET    applydatetime = @ApplyDateTime, 
-	   employeeid_fk = @EmployeeID_FK, 
-	   departmentid_fk = @DepartmentID_FK, 
-	   periodtype = @PeriodType, 
-	   forgotpunchindatetime = @ForgotPunchInDateTime, 
-	   forgotpunchoutdatetime = @ForgotPunchOutDateTime, 
-	   note = @Note, 
-	   modifier = @Modifier, 
-	   modifydate = @ModifyDate 
+@"UPDATE forgotpunchform
+SET    applydatetime = @ApplyDateTime,
+	   employeeid_fk = @EmployeeID_FK,
+	   departmentid_fk = @DepartmentID_FK,
+	   periodtype = @PeriodType,
+	   forgotpunchindatetime = @ForgotPunchInDateTime,
+	   forgotpunchoutdatetime = @ForgotPunchOutDateTime,
+	   note = @Note,
+	   modifier = @Modifier,
+	   modifydate = @ModifyDate
 WHERE  signdocid_fk = @SignDocID_FK ";
             dic = new Conditions()
 			{
@@ -346,7 +368,6 @@ WHERE  signdocid_fk = @SignDocID_FK ";
             {
                 throw new Exception("編輯忘刷單失敗!" + ex.Message);
             }
-
         }
 
         //todo
@@ -354,6 +375,5 @@ WHERE  signdocid_fk = @SignDocID_FK ";
         {
             return new MultiConditions() { { "Delete From forgotpunchform Where SignDocID_FK = @SignDocID_FK", new Conditions() { { "@SignDocID_FK", signDocID } } } };
         }
-
     }
 }
